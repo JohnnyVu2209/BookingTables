@@ -1,0 +1,3 @@
+include ':reservationmanager'
+include ':app'
+rootProject.name = "ReservationUser"
