@@ -7,12 +7,14 @@
     tools:context=".Login"
     android:background="@drawable/gradien_color">
 
+    <include layout="@layout/appbar"/>
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="413dp"
         android:layout_height="358dp"
         android:layout_marginTop="28dp"
-        android:src="@drawable/img_20201013_112812"
+        android:src="@drawable/IMG_20201013_112812"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
