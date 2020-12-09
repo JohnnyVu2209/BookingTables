@@ -6,5 +6,6 @@
     <color name="white">#FFFf</color>
     <color name="lightGray">#F2F2F2</color>
     <color name="greenPhone">#3BBB95</color>
+    <color name="add">#F33C3C</color>
 
 </resources>
