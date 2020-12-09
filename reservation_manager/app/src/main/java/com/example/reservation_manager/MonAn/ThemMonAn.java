@@ -1,4 +1,4 @@
-package com.example.reservation_manager;
+package com.example.reservation_manager.MonAn;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,6 +19,8 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.reservation_manager.FirebaseController;
+import com.example.reservation_manager.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.ChildEventListener;
@@ -50,7 +52,7 @@ public class ThemMonAn extends AppCompatActivity {
     StorageTask         uploadTask;
     MonAn               monAn;
     String              idhinh;
-    FirebaseController  controller;
+    FirebaseController controller;
     DatabaseReference   referencer = FirebaseDatabase.getInstance().getReference();
     private final String TAG = "READ DATABASE";
     @Override
@@ -73,7 +75,6 @@ public class ThemMonAn extends AppCompatActivity {
                 LoaiMonAn loaiMonAn = snapshot.getValue(LoaiMonAn.class);
                 TypeFood.add(loaiMonAn.TenLoai);
                 adapter.notifyDataSetChanged();
-                Toast.makeText(ThemMonAn.this, ""+TypeFood.toArray(), Toast.LENGTH_SHORT).show();
             }
 
             @Override

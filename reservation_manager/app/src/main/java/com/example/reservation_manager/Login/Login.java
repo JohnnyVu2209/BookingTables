@@ -1,4 +1,4 @@
-package com.example.reservation_manager;
+package com.example.reservation_manager.Login;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.reservation_manager.MainActivity;
+import com.example.reservation_manager.MonAn.MonAn;
+import com.example.reservation_manager.MonAn.ThemMonAn;
+import com.example.reservation_manager.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -81,7 +85,7 @@ public class Login extends AppCompatActivity {
         etPassword = (EditText)findViewById(R.id.password_text);
     }
     private void updateUI(FirebaseUser user){
-        Intent goHome = new Intent(Login.this,MainActivity.class);
+        Intent goHome = new Intent(Login.this, ThemMonAn.class);
         goHome.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         goHome.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(goHome);

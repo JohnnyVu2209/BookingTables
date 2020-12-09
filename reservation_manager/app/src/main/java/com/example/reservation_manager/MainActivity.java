@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import java.lang.ref.SoftReference;
+import com.example.reservation_manager.MonAn.LoaiMonAn;
 
 public class MainActivity extends AppCompatActivity {
 

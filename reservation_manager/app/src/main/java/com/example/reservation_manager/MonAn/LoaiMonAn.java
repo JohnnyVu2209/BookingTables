@@ -1,4 +1,4 @@
-package com.example.reservation_manager;
+package com.example.reservation_manager.MonAn;
 
 public class LoaiMonAn {
     public String TenLoai;
