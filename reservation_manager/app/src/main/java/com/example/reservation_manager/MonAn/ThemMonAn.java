@@ -116,10 +116,17 @@ public class ThemMonAn extends AppCompatActivity {
 
 
                     controller.WirteWithAutoIncreaseKey("MonAn",monAn);
+                    intentToListFood();
                 }
             }
         });
-
+    }
+    private void intentToListFood(){
+        Intent ListFood_intent = new Intent(ThemMonAn.this,XemDanhSachMonAn.class);
+        ListFood_intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        ListFood_intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(ListFood_intent);
+        finish();
     }
     private void UploadData(String mt){
         String tenmon,gia,loai= "";
@@ -141,7 +148,7 @@ public class ThemMonAn extends AppCompatActivity {
         return mimeTypeMap.getExtensionFromMimeType(cr.getType(uri));
     }
     private void Fireuploader() {
-        idhinh = removeAccent(tenmonan.getText().toString()).replaceAll("\\s","")+"."+getExtension(imguri);
+        idhinh = "FoodImages/"+removeAccent(tenmonan.getText().toString()).replaceAll("\\s","")+"."+"png";
         StorageReference ref = storage.child(idhinh);
         uploadTask=ref.putFile(imguri)
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
@@ -194,7 +201,7 @@ public class ThemMonAn extends AppCompatActivity {
         adapter    = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,TypeFood);
         loaima.setAdapter(adapter);
 
-        storage    = FirebaseStorage.getInstance().getReference("FoodImages");
+        storage    = FirebaseStorage.getInstance().getReference();
         controller = new FirebaseController(getApplicationContext());
 
     }

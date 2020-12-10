@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/photo_camera/baseline_photo_camera_24.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/add_circle_outline/baseline_add_circle_outline_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,8 +28,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="343434" />
-                            <entry key="outputName" value="ic_baseline_photo_camera_24" />
+                            <entry key="outputName" value="ic_baseline_add_circle_outline_24" />
                             <entry key="sourceFile" value="D:\Project\Android\SourceCode\reservationapp\reservation_manager" />
                           </map>
                         </option>
