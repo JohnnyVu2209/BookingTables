@@ -11,24 +11,32 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="316bad8c-da23-4da2-8543-a2bbd4215f9a" name="Default Changelist" comment="reservation_Manager">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="316bad8c-da23-4da2-8543-a2bbd4215f9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/MonAn/XemDanhSachMonAn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_delete_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_edit_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_local_dining_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/item_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_xem_danh_sach_mon_an.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservationuser/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../reservationuser/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservationuser/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservationuser/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservationuser/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservationuser/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservationuser/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservationuser/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservationuser/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservationuser/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../reservationuser/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/MonAn/MonAn.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/MonAn/MonAn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/MonAn/ThemMonAn.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/MonAn/ThemMonAn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/appbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/appbar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="192.168.202.110:5555" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="192.168.202.112:5555" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -68,8 +76,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -85,24 +95,38 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="192.168.202.112:5555" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-12-08T17:24:00.245Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Prototype/icon/cach-lam-cua-rang-me.jpg" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
+    <key name="android.template.-1187602575">
+      <recent name="com.example.reservation_manager" />
+    </key>
     <key name="android.template.452395587">
       <recent name="com.example.reservation_manager" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\drawable" />
       <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\font" />
       <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\values" />
-      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\drawable" />
+    </key>
+    <key name="android.template.-1443443751">
+      <recent name="com.example.reservation_manager.MonAn" />
+    </key>
+    <key name="android.template.1188003316">
+      <recent name="com.example.reservation_manager" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -207,65 +231,162 @@
       <option name="project" value="LOCAL" />
       <updated>1607067944169</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Done create Food">
+      <created>1607484526771</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607484526771</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Create package for MonAn and Login">
+      <created>1607487981104</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607487981104</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reservation_Manager" />
-    <option name="LAST_COMMIT_MESSAGE" value="reservation_Manager" />
+    <MESSAGE value="Done create Food" />
+    <MESSAGE value="Create package for MonAn and Login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create package for MonAn and Login" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="318" y="187" key="AndroidCreateResourceDirectoryDialog" timestamp="1607056300347">
+    <state x="330" y="91" key="#Notifications" timestamp="1607415184955">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="318" y="187" key="AndroidCreateResourceDirectoryDialog/0.0.1474.864@0.0.1474.864" timestamp="1607056300347" />
-    <state x="318" y="187" key="AndroidCreateResourceFileDialog" timestamp="1607058351685">
+    <state x="330" y="91" key="#Notifications/0.0.1474.864@0.0.1474.864" timestamp="1607415184955" />
+    <state x="255" y="164" key="#PSD" timestamp="1607414881330">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="318" y="187" key="AndroidCreateResourceFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1607058351685" />
-    <state x="299" y="27" key="CommitChangelistDialog2" timestamp="1607067967254">
+    <state x="255" y="164" key="#PSD/0.0.1474.864@0.0.1474.864" timestamp="1607414881330" />
+    <state x="465" y="78" key="#app" timestamp="1607352615455">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="299" y="27" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1607067967254" />
+    <state x="465" y="78" key="#app/0.0.1474.864@0.0.1474.864" timestamp="1607352615455" />
+    <state x="543" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1607594499306">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="543" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1474.864@0.0.1474.864" timestamp="1607594499306" />
+    <state x="522" y="292" width="432" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1607326461179">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="522" y="292" width="432" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1474.864@0.0.1474.864" timestamp="1607326461179" />
+    <state x="468" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607432931983">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="468" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1474.864@0.0.1474.864" timestamp="1607432931983" />
+    <state x="318" y="187" key="AndroidCreateResourceDirectoryDialog" timestamp="1607486504202">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="318" y="187" key="AndroidCreateResourceDirectoryDialog/0.0.1474.864@0.0.1474.864" timestamp="1607486504202" />
+    <state x="318" y="187" key="AndroidCreateResourceFileDialog" timestamp="1607604265854">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="318" y="187" key="AndroidCreateResourceFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1607604265854" />
+    <state x="299" y="27" key="CommitChangelistDialog2" timestamp="1607487980311">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="299" y="27" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1607487980311" />
     <state x="141" y="69" key="DiffContextDialog" timestamp="1607068016784">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="141" y="69" key="DiffContextDialog/0.0.1474.864@0.0.1474.864" timestamp="1607068016784" />
-    <state x="518" y="188" key="FileChooserDialogImpl" timestamp="1607068186580">
+    <state x="518" y="188" key="FileChooserDialogImpl" timestamp="1607587832329">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="518" y="188" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1607068186580" />
-    <state width="1429" height="222" key="GridCell.Tab.0.bottom" timestamp="1607062320184">
+    <state x="518" y="188" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1607587832329" />
+    <state width="1429" height="222" key="GridCell.Tab.0.bottom" timestamp="1607602218679">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1429" height="222" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1607062320184" />
-    <state width="1429" height="222" key="GridCell.Tab.0.center" timestamp="1607062320184">
+    <state width="1429" height="222" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1607602218679" />
+    <state width="1429" height="222" key="GridCell.Tab.0.center" timestamp="1607602218679">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1429" height="222" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1607062320184" />
-    <state width="1429" height="222" key="GridCell.Tab.0.left" timestamp="1607062320183">
+    <state width="1429" height="222" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1607602218679" />
+    <state width="1429" height="222" key="GridCell.Tab.0.left" timestamp="1607602218678">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1429" height="222" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1607062320183" />
-    <state width="1429" height="222" key="GridCell.Tab.0.right" timestamp="1607062320184">
+    <state width="1429" height="222" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1607602218678" />
+    <state width="1429" height="222" key="GridCell.Tab.0.right" timestamp="1607602218679">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1429" height="222" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1607062320184" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1607068032084">
+    <state width="1429" height="222" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1607602218679" />
+    <state width="1429" height="276" key="GridCell.Tab.1.bottom" timestamp="1607597006985">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1607068032084" />
-    <state x="553" y="210" key="chooseDestDirectoryDialog" timestamp="1607056181927">
+    <state width="1429" height="276" key="GridCell.Tab.1.bottom/0.0.1474.864@0.0.1474.864" timestamp="1607597006985" />
+    <state width="1429" height="276" key="GridCell.Tab.1.center" timestamp="1607597006984">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="553" y="210" key="chooseDestDirectoryDialog/0.0.1474.864@0.0.1474.864" timestamp="1607056181927" />
-    <state x="100" y="100" width="1274" height="664" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1607060677082">
+    <state width="1429" height="276" key="GridCell.Tab.1.center/0.0.1474.864@0.0.1474.864" timestamp="1607597006984" />
+    <state width="1429" height="276" key="GridCell.Tab.1.left" timestamp="1607597006984">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="100" y="100" width="1274" height="664" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1474.864@0.0.1474.864" timestamp="1607060677082" />
+    <state width="1429" height="276" key="GridCell.Tab.1.left/0.0.1474.864@0.0.1474.864" timestamp="1607597006984" />
+    <state width="1429" height="276" key="GridCell.Tab.1.right" timestamp="1607597006985">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1429" height="276" key="GridCell.Tab.1.right/0.0.1474.864@0.0.1474.864" timestamp="1607597006985" />
+    <state x="409" y="143" key="RollbackChangesDialog" timestamp="1607432860156">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="409" y="143" key="RollbackChangesDialog/0.0.1474.864@0.0.1474.864" timestamp="1607432860156" />
+    <state x="246" y="75" key="SettingsEditor" timestamp="1607414667001">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="246" y="75" key="SettingsEditor/0.0.1474.864@0.0.1474.864" timestamp="1607414667001" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1607487993681">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1607487993681" />
+    <state x="553" y="210" key="chooseDestDirectoryDialog" timestamp="1607603306200">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="553" y="210" key="chooseDestDirectoryDialog/0.0.1474.864@0.0.1474.864" timestamp="1607603306200" />
+    <state x="100" y="100" width="1274" height="664" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1607442870720">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="100" y="100" width="1274" height="664" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1474.864@0.0.1474.864" timestamp="1607442870720" />
+    <state x="434" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1607582179228">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="434" y="256" key="com.intellij.ide.util.TipDialog/0.0.1474.864@0.0.1474.864" timestamp="1607582179228" />
     <state x="547" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607067984164">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="547" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1474.864@0.0.1474.864" timestamp="1607067984164" />
+    <state x="394" y="197" key="run.anything.popup" timestamp="1607597951678">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="394" y="197" key="run.anything.popup/0.0.1474.864@0.0.1474.864" timestamp="1607597951678" />
+    <state x="400" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1607445351926">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="400" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1474.864@0.0.1474.864" timestamp="1607445351926" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/MonAn/ThemMonAn.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/MonAn/ThemMonAn.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="app">
+        <watch expression="monan" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
