@@ -11,7 +11,18 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9f813f-ce0a-4623-a37c-379db606b814" name="Default Changelist" comment="" />
+    <list default="true" id="5e9f813f-ce0a-4623-a37c-379db606b814" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../reservation_manager/.idea/libraries/Gradle__de_hdodenhof_circleimageview_3_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/drawable/ic_baseline_delete_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/drawable/ic_baseline_edit_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/drawable/item_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/drawable/picture_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/user_item_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -321,21 +332,25 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="600" y="326" key="Github.ShareDialog/0.0.1474.864@0.0.1474.864" timestamp="1607053297026" />
-    <state width="1429" height="221" key="GridCell.Tab.0.bottom" timestamp="1607053316845">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state width="1367" height="186" key="GridCell.Tab.0.bottom" timestamp="1607666666372">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1367" height="186" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607666666372" />
     <state width="1429" height="221" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1607053316845" />
-    <state width="1429" height="221" key="GridCell.Tab.0.center" timestamp="1607053316845">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state width="1367" height="186" key="GridCell.Tab.0.center" timestamp="1607666666372">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1367" height="186" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607666666372" />
     <state width="1429" height="221" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1607053316845" />
-    <state width="1429" height="221" key="GridCell.Tab.0.left" timestamp="1607053316845">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state width="1367" height="186" key="GridCell.Tab.0.left" timestamp="1607666666372">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1367" height="186" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607666666372" />
     <state width="1429" height="221" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1607053316845" />
-    <state width="1429" height="221" key="GridCell.Tab.0.right" timestamp="1607053316845">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state width="1367" height="186" key="GridCell.Tab.0.right" timestamp="1607666666372">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1367" height="186" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607666666372" />
     <state width="1429" height="221" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1607053316845" />
     <state x="228" y="18" key="SettingsEditor" timestamp="1607582608713">
       <screen x="0" y="0" width="1366" height="728" />

@@ -35,4 +35,6 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-database'
 
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
 }

@@ -24,6 +24,15 @@ public class KhachHang {
         this.idavatar = idavatar;
     }
 
+    public KhachHang(String hoten) {
+        this.hoten = hoten;
+    }
+
+    public KhachHang(String hoten, String sdt) {
+        this.hoten = hoten;
+        this.sdt = sdt;
+    }
+
     public String getHoten() {
         return hoten;
     }
