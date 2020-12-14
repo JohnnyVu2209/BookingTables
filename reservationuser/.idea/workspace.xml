@@ -12,16 +12,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9f813f-ce0a-4623-a37c-379db606b814" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../reservation_manager/.idea/libraries/Gradle__de_hdodenhof_circleimageview_3_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/drawable/ic_baseline_delete_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/drawable/ic_baseline_edit_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/drawable/item_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/drawable/picture_bg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/user_item_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/KhachHang/KhachHang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/KhachHang/XemDanhSachKhachHang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_xemdskh.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../reservation_manager/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../reservation_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../reservation_manager/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservation_manager/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/Login/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_login.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
