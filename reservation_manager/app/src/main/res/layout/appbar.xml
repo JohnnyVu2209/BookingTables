@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/actionbar_color"
+    android:id="@+id/appbar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/menu_bar"
+            android:layout_width="68dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_baseline_menu_24" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:maxHeight="180dp"
+            android:maxWidth="180dp"
+            android:scaleType="fitCenter"
+            android:layout_toEndOf="@+id/menu_bar"
+            android:layout_toStartOf="@id/search_bar"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/img_20201013_112812" />
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="749dp"
+            android:layout_height="53dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="95dp"
+            android:layout_marginTop="5dp"
+            android:hint="Tìm kiếm...."
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:background="@drawable/text_input_bg2" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/manager__1_"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"/>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
