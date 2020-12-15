@@ -50,7 +50,8 @@ public class SuaKhachHang extends AppCompatActivity {
     KhachHang khachHang;
     FirebaseController controller;
     Uri imguri;
-    String idavatar;
+    String idavatar = null;
+    String idavatartemp;
     StorageTask uploadTask;
 
     private void AnhXa() {
@@ -62,8 +63,9 @@ public class SuaKhachHang extends AppCompatActivity {
         nam = (RadioButton) findViewById(R.id.rbtnNam);
         nu = (RadioButton) findViewById(R.id.rbtnNu);
         save = (Button) findViewById(R.id.btnS);
-        databaseReference = FirebaseDatabase.getInstance().getReference();
+        databaseReference = FirebaseDatabase.getInstance().getReference("KhachHang");
         storageReference = FirebaseStorage.getInstance().getReference();
+        controller = new FirebaseController(getApplicationContext());
     }
 
     @Override
@@ -74,7 +76,6 @@ public class SuaKhachHang extends AppCompatActivity {
         AnhXa();
 
         uid = getIntent().getStringExtra("position");
-        databaseReference = FirebaseDatabase.getInstance().getReference("KhachHang");
         databaseReference.child(uid).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -103,6 +104,7 @@ public class SuaKhachHang extends AppCompatActivity {
                             Toast.makeText(SuaKhachHang.this, "Không thể load ảnh, vui lòng thử lại", Toast.LENGTH_SHORT).show();
                         }
                     });
+                    idavatartemp = snapshot.getValue(KhachHang.class).idavatar;
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -117,16 +119,7 @@ public class SuaKhachHang extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(uploadTask != null && uploadTask.isInProgress()){
-                    Toast.makeText(SuaKhachHang.this, "Đang tiến hành upload hình ảnh", Toast.LENGTH_SHORT).show();
-                }
-                else {
-                    try {
-                        UpdateKH();
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
+                UpdateKH();
                 controller.UpdateData("KhachHang",uid,khachHang);
                 intentToListKH();
             }
@@ -152,18 +145,25 @@ public class SuaKhachHang extends AppCompatActivity {
     }
 
     private void UpdateKH() {
-        Fireuploader();
-        String name = ht.getText().toString();
-        String phone = sdt.getText().toString();
-        String birthday = ns.getText().toString();
+        String name,phone,birthday;
         Boolean sex = true;
-        if (nam.isSelected() == true) {
+        int amount;
+        name = ht.getText().toString();
+        phone = sdt.getText().toString();
+        birthday = ns.getText().toString();
+        if (nam.isChecked()) {
             sex = true;
         } else {
             sex = false;
         }
-        int amount = Integer.parseInt(sld.getText().toString());
-        khachHang = new KhachHang(name,phone,birthday,sex,amount,idavatar);
+        amount = Integer.parseInt(sld.getText().toString());
+        if (imguri != null) {
+            Fireuploader();
+            khachHang = new KhachHang(name,phone,birthday,sex,amount,idavatar);
+        } else {
+            khachHang = new KhachHang(name,phone,birthday,sex,amount,idavatartemp);
+        }
+
     }
 
     private void Fireuploader() {

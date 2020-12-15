@@ -166,7 +166,7 @@ public class XemDanhSachKhachHang extends AppCompatActivity {
                 e.printStackTrace();
             }
 
-            final String pos = String.valueOf(i+1);
+            final String pos = String.valueOf(i);
             ImageView edit = (ImageView) view.findViewById(R.id.btnEditkhach); //BẮT SỰ KIỆN CHO EDIT
             edit.setOnClickListener(new View.OnClickListener() {
                 @Override
