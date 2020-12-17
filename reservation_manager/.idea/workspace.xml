@@ -5,6 +5,7 @@
       <config>
         <device id="Nexus 9" />
         <device id="pixel_4" />
+        <device id="pixel_3a" />
         <device id="pixel_3a_xl" />
         <device id="pixel_c" />
         <device id="pixel_2_xl" />
@@ -18,7 +19,14 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="316bad8c-da23-4da2-8543-a2bbd4215f9a" name="Default Changelist" comment="" />
+    <list default="true" id="316bad8c-da23-4da2-8543-a2bbd4215f9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/custom_button_dialog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_dialog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/fragA.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/fragA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/fragB.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/fragB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_b.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,8 +72,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -269,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608199014825</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="table detail.! (fragA)">
+      <created>1608199217960</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1608199217960</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -292,15 +308,16 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="318" y="187" key="AndroidCreateResourceDirectoryDialog/0.0.1474.864@0.0.1474.864" timestamp="1607056300347" />
-    <state x="318" y="187" key="AndroidCreateResourceFileDialog" timestamp="1607058351685">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state x="331" y="178" key="AndroidCreateResourceFileDialog" timestamp="1608218522255">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="318" y="187" key="AndroidCreateResourceFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1607058351685" />
-    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1608199012672">
+    <state x="331" y="178" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1608218522255" />
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1608199216763">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="27" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1607067967254" />
-    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608199012672" />
+    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608199216763" />
     <state x="147" y="66" key="DiffContextDialog" timestamp="1608199033729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -331,11 +348,11 @@
     </state>
     <state width="1429" height="222" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1607062320184" />
     <state width="1480" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608198677147" />
-    <state x="344" y="157" key="Vcs.Push.Dialog.v2" timestamp="1608199043087">
+    <state x="344" y="157" key="Vcs.Push.Dialog.v2" timestamp="1608199232405">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1607068032084" />
-    <state x="344" y="157" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608199043087" />
+    <state x="344" y="157" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608199232405" />
     <state x="576" y="200" key="chooseDestDirectoryDialog" timestamp="1607938090510">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
