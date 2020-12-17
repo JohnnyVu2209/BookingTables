@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
+    tools:context=".Login.Login"
     android:background="@drawable/gradien_color">
+
+    <include layout="@layout/appbar"/>
 
     <ImageView
         android:id="@+id/imageView"
@@ -25,7 +27,7 @@
         android:fontFamily="sans-serif-black"
         android:text="RESTAURANT MANAGEMENT"
         android:textColor="@color/white"
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

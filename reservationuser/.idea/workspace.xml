@@ -12,15 +12,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9f813f-ce0a-4623-a37c-379db606b814" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../reservation_manager/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/KhachHang/KhachHang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/KhachHang/XemDanhSachKhachHang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_xemdskh.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../reservation_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/Login/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_login.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="192.168.202.110:5555" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -64,6 +71,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="UPDATE_TYPE" value="MERGE" />
@@ -72,18 +86,18 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ResourceManagerPrefKey.ResourceType" value="DRAWABLE" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="PsdUISettings">
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
@@ -101,7 +115,7 @@
       <recent name="D:\Project\Android\SourceCode\app\src\main\res\font" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.reservationmanager">
+  <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -110,12 +124,13 @@
       </method>
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="app" />
+      <module name="ReservationUser.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -151,22 +166,28 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="reservationmanager" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="reservationmanager" />
+      <module name="ReservationUser.reservationmanager" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -202,11 +223,16 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -247,7 +273,26 @@
       <option name="presentableId" value="Default" />
       <updated>1606785400090</updated>
     </task>
+    <task id="LOCAL-00001" summary="import drawable cho manager va them 1 so ham cho firebasecontroller">
+      <created>1607610218119</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607610218119</updated>
+    </task>
+    <task id="LOCAL-00002" summary="import drawable cho manager va them 1 so ham cho firebasecontroller">
+      <created>1607610246280</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607610246280</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="import drawable cho manager va them 1 so ham cho firebasecontroller" />
+    <option name="LAST_COMMIT_MESSAGE" value="import drawable cho manager va them 1 so ham cho firebasecontroller" />
   </component>
   <component name="WindowStateProjectService">
     <state x="330" y="91" key="#Inspections" timestamp="1606793177291">
@@ -258,6 +303,10 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="165" y="57" key="#PSD/0.0.1474.864@0.0.1474.864" timestamp="1606798558044" />
+    <state x="392" y="0" key="#reservationmanager" timestamp="1607586559517">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="392" y="0" key="#reservationmanager/0.0.1366.728@0.0.1366.728" timestamp="1607586559517" />
     <state x="318" y="187" key="AndroidCreateResourceDirectoryDialog" timestamp="1606788297561">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -266,6 +315,14 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="597" y="263" key="AndroidCreateXmlResourceDialog/0.0.1474.864@0.0.1474.864" timestamp="1606786178684" />
+    <state x="249" y="0" key="CommitChangelistDialog2" timestamp="1607610244568">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="249" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607610244568" />
+    <state x="160" y="97" key="DiffContextDialog" timestamp="1607610291934">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="160" y="97" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1607610291934" />
     <state x="518" y="187" key="FileChooserDialogImpl" timestamp="1607053516074">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -274,29 +331,35 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="600" y="326" key="Github.ShareDialog/0.0.1474.864@0.0.1474.864" timestamp="1607053297026" />
-    <state width="1429" height="221" key="GridCell.Tab.0.bottom" timestamp="1607053316845">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state width="1367" height="186" key="GridCell.Tab.0.bottom" timestamp="1607666666372">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1367" height="186" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607666666372" />
     <state width="1429" height="221" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1607053316845" />
-    <state width="1429" height="221" key="GridCell.Tab.0.center" timestamp="1607053316845">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state width="1367" height="186" key="GridCell.Tab.0.center" timestamp="1607666666372">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1367" height="186" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607666666372" />
     <state width="1429" height="221" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1607053316845" />
-    <state width="1429" height="221" key="GridCell.Tab.0.left" timestamp="1607053316845">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state width="1367" height="186" key="GridCell.Tab.0.left" timestamp="1607666666372">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1367" height="186" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607666666372" />
     <state width="1429" height="221" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1607053316845" />
-    <state width="1429" height="221" key="GridCell.Tab.0.right" timestamp="1607053316845">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state width="1367" height="186" key="GridCell.Tab.0.right" timestamp="1607666666372">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1367" height="186" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607666666372" />
     <state width="1429" height="221" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1607053316845" />
-    <state x="246" y="75" key="SettingsEditor" timestamp="1606792625627">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state x="228" y="18" key="SettingsEditor" timestamp="1607582608713">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="228" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607582608713" />
     <state x="246" y="75" key="SettingsEditor/0.0.1474.864@0.0.1474.864" timestamp="1606792625627" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1607054091215">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state x="306" y="139" key="Vcs.Push.Dialog.v2" timestamp="1607610297985">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="306" y="139" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607610297985" />
     <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1607054091215" />
     <state x="100" y="100" width="1274" height="664" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1606976203937">
       <screen x="0" y="0" width="1474" height="864" />
