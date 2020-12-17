@@ -213,7 +213,7 @@
             android:id="@+id/btnT1"
             android:background="@drawable/custom_button"
             android:gravity="center"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="65dp"
             android:layout_marginRight="50dp"
             android:layout_column="0"
             android:layout_row="0"
@@ -250,7 +250,7 @@
             android:id="@+id/btnT4"
             android:background="@drawable/custom_button"
             android:gravity="center"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="65dp"
             android:layout_marginRight="50dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="10dp"
@@ -284,7 +284,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginRight="50dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button_vip"
             android:gravity="center"
             android:text="table 6" />
 
@@ -306,7 +306,7 @@
             android:layout_height="wrap_content"
             android:layout_column="3"
             android:layout_row="0"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button_vip"
             android:gravity="center"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
@@ -361,7 +361,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginRight="50dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button_vip"
             android:gravity="center"
             android:text="table 12" />
         <Button
@@ -412,7 +412,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginRight="50dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button_vip"
             android:gravity="center"
             android:text="table 16" />
         <Button
@@ -438,7 +438,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginRight="50dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button_vip"
             android:gravity="center"
             android:text="table 18" />
 

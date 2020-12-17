@@ -19,8 +19,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="316bad8c-da23-4da2-8543-a2bbd4215f9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_group_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spoon_fork.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/fragA.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/fragA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/custom_button_vip.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/custom_button_vip.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_a.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608053188526</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="table detail.! (fragA)">
+      <created>1608195708836</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608195708836</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -269,7 +280,8 @@
     <MESSAGE value="fix background TableList.!(fragB)" />
     <MESSAGE value="could not load TableList.!(fragB)" />
     <MESSAGE value="could not load TableList.!(fragB).buonnguquanendingumailamtiep." />
-    <option name="LAST_COMMIT_MESSAGE" value="could not load TableList.!(fragB).buonnguquanendingumailamtiep." />
+    <MESSAGE value="table detail.! (fragA)" />
+    <option name="LAST_COMMIT_MESSAGE" value="table detail.! (fragA)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="527" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1608192782807">
@@ -284,11 +296,11 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="318" y="187" key="AndroidCreateResourceFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1607058351685" />
-    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1608053187650">
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1608195706038">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="27" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1607067967254" />
-    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608053187650" />
+    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608195706038" />
     <state x="141" y="69" key="DiffContextDialog" timestamp="1607068016784">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -298,26 +310,26 @@
     </state>
     <state x="518" y="188" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1607068186580" />
     <state x="540" y="179" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607958776832" />
-    <state width="1480" height="511" key="GridCell.Tab.0.bottom" timestamp="1608194389777">
+    <state width="1480" height="195" key="GridCell.Tab.0.bottom" timestamp="1608198677147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1429" height="222" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1607062320184" />
-    <state width="1480" height="511" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608194389777" />
-    <state width="1480" height="511" key="GridCell.Tab.0.center" timestamp="1608194389777">
+    <state width="1480" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608198677147" />
+    <state width="1480" height="195" key="GridCell.Tab.0.center" timestamp="1608198677147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1429" height="222" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1607062320184" />
-    <state width="1480" height="511" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608194389777" />
-    <state width="1480" height="511" key="GridCell.Tab.0.left" timestamp="1608194389776">
+    <state width="1480" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608198677147" />
+    <state width="1480" height="195" key="GridCell.Tab.0.left" timestamp="1608198677147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1429" height="222" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1607062320183" />
-    <state width="1480" height="511" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608194389776" />
-    <state width="1480" height="511" key="GridCell.Tab.0.right" timestamp="1608194389777">
+    <state width="1480" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608198677147" />
+    <state width="1480" height="195" key="GridCell.Tab.0.right" timestamp="1608198677147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1429" height="222" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1607062320184" />
-    <state width="1480" height="511" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608194389777" />
+    <state width="1480" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608198677147" />
     <state x="344" y="157" key="Vcs.Push.Dialog.v2" timestamp="1608053204952">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

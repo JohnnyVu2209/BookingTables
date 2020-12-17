@@ -29,6 +29,21 @@ public class fragA extends Fragment {
         t1 = (Button) view.findViewById(R.id.btnT1);
         t2 = (Button) view.findViewById(R.id.btnT2);
         t3 = (Button) view.findViewById(R.id.btnT3);
+        t4 = (Button) view.findViewById(R.id.btnT4);
+        t5 = (Button) view.findViewById(R.id.btnT5);
+        t6 = (Button) view.findViewById(R.id.btnT6);
+        t7 = (Button) view.findViewById(R.id.btnT7);
+        t8 = (Button) view.findViewById(R.id.btnT8);
+        t9 = (Button) view.findViewById(R.id.btnT9);
+        t10 = (Button) view.findViewById(R.id.btnT10);
+        t11 = (Button) view.findViewById(R.id.btnT11);
+        t12 = (Button) view.findViewById(R.id.btnT12);
+        t13 = (Button) view.findViewById(R.id.btnT13);
+        t14 = (Button) view.findViewById(R.id.btnT14);
+        t15 = (Button) view.findViewById(R.id.btnT15);
+        t16 = (Button) view.findViewById(R.id.btnT16);
+        t17 = (Button) view.findViewById(R.id.btnT17);
+        t18 = (Button) view.findViewById(R.id.btnT18);
     }
 
 
@@ -44,7 +59,22 @@ public class fragA extends Fragment {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-                builder.setTitle("Thông tin bàn 1");
+                builder.setTitle("Thông tin bàn 1").setIcon(R.drawable.spoon_fork);
+                builder.setMessage("Số lượng người: 4");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.create().show();
+            }
+        });
+        t2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Thông tin bàn 2").setIcon(R.drawable.spoon_fork);
                 builder.setMessage("Số lượng người: 4");
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
@@ -59,7 +89,7 @@ public class fragA extends Fragment {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-                builder.setTitle("Thông tin bàn 3");
+                builder.setTitle("Thông tin bàn 3").setIcon(R.drawable.spoon_fork);
                 builder.setMessage("Số lượng người: 8");
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
@@ -70,6 +100,233 @@ public class fragA extends Fragment {
                 builder.create().show();
             }
         });
+        t4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Thông tin bàn 4").setIcon(R.drawable.spoon_fork);
+                builder.setMessage("Số lượng người: 4");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.create().show();
+            }
+        });
+        t5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Thông tin bàn 5").setIcon(R.drawable.spoon_fork);
+                builder.setMessage("Số lượng người: 4");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.create().show();
+            }
+        });
+        t6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Thông tin bàn 6 -- VIP ").setIcon(R.drawable.spoon_fork);
+                builder.setMessage("Số lượng người: 8");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.create().show();
+            }
+        });
+        t7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Thông tin bàn 7").setIcon(R.drawable.spoon_fork);
+                builder.setMessage("Số lượng người: 4");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.create().show();
+            }
+        });
+        t8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Thông tin bàn 8 -- VIP").setIcon(R.drawable.spoon_fork);
+                builder.setMessage("Số lượng người: 4");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.create().show();
+            }
+        });
+        t9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Thông tin bàn 9").setIcon(R.drawable.spoon_fork);
+                builder.setMessage("Số lượng người: 4");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.create().show();
+            }
+        });
+        t10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Thông tin bàn 10").setIcon(R.drawable.spoon_fork);
+                builder.setMessage("Số lượng người: 4");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.create().show();
+            }
+        });
+        t11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Thông tin bàn 11").setIcon(R.drawable.spoon_fork);
+                builder.setMessage("Số lượng người: 4");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.create().show();
+            }
+        });
+        t12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Thông tin bàn 12 -- VIP").setIcon(R.drawable.spoon_fork);
+                builder.setMessage("Số lượng người: 4");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.create().show();
+            }
+        });
+        t13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Thông tin bàn 13").setIcon(R.drawable.spoon_fork);
+                builder.setMessage("Số lượng người: 4");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.create().show();
+            }
+        });
+        t14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Thông tin bàn 14").setIcon(R.drawable.spoon_fork);
+                builder.setMessage("Số lượng người: 4");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.create().show();
+            }
+        });
+        t15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Thông tin bàn 15").setIcon(R.drawable.spoon_fork);
+                builder.setMessage("Số lượng người: 4");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.create().show();
+            }
+        });
+        t16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Thông tin bàn 16 -- VIP").setIcon(R.drawable.spoon_fork);
+                builder.setMessage("Số lượng người: 4");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.create().show();
+            }
+        });
+        t17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Thông tin bàn 17").setIcon(R.drawable.spoon_fork);
+                builder.setMessage("Số lượng người: 4");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.create().show();
+            }
+        });
+        t18.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle("Thông tin bàn 18 -- VIP").setIcon(R.drawable.spoon_fork);
+                builder.setMessage("Số lượng người: 4");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.create().show();
+            }
+        });
+
+
         return  view;
 
     }
