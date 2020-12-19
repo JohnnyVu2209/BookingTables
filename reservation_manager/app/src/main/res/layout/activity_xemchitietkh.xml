@@ -175,22 +175,6 @@
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/tvSLDAT" />
 
-    <Button
-        android:id="@+id/btnS"
-        android:layout_width="310dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/btn_add_bg"
-        android:text="Lưu thông tin"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        app:layout_constraintVertical_bias="0.0" />
-
     <TextView
         android:id="@+id/tvThayDoiAva"
         android:layout_width="wrap_content"
