@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="250dp"
+    android:background="@drawable/background">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/tvmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn có muốn xóa không?"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <Button
+            android:id="@+id/btnco"
+            android:layout_width="124dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/background_button"
+            android:text="có"/>
+        <Button
+            android:id="@+id/btnkhong"
+            android:layout_width="129dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="230dp"
+            android:background="@drawable/background_button_khong"
+            android:text="Không"/>
+    </LinearLayout>
+
+
+</LinearLayout>

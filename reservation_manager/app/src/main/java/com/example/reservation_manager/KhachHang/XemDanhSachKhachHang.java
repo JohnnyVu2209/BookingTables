@@ -3,9 +3,12 @@ package com.example.reservation_manager.KhachHang;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -22,14 +25,18 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.reservation_manager.MainActivity;
 import com.example.reservation_manager.R;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
@@ -40,11 +47,13 @@ import java.util.ArrayList;
 
 public class XemDanhSachKhachHang extends AppCompatActivity {
     ListView listView;
-    ArrayList<KhachHang> khachhang ;
+    ArrayList khachhang ;
     ImageView btneditKH,btndeleteKH;
     MyAdapter adapter;
     DatabaseReference databaseReference;
     StorageReference storageReference;
+    Context context = this;
+    Button yes, no;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,27 +61,19 @@ public class XemDanhSachKhachHang extends AppCompatActivity {
         setContentView(R.layout.activity_xemdskh);
 
         AnhXa();
-        databaseReference.child("KhachHang").addChildEventListener(new ChildEventListener() {
+        //final KhachHang khachrong = new KhachHang("","","",false,0,"Demo.jpg");
+        databaseReference.child("KhachHang").addValueEventListener(new ValueEventListener() {
+
             @Override
-            public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-                KhachHang khachHang = snapshot.getValue(KhachHang.class);
-                khachhang.add(khachHang);
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                khachhang.clear();
+                for(DataSnapshot dataSnapshot : snapshot.getChildren())
+                {
+                    KhachHang khachHang = dataSnapshot.getValue(KhachHang.class);
+                    khachhang.add(khachHang);
+                }
+                //khachhang.add(khachrong);
                 adapter.notifyDataSetChanged();
-            }
-
-            @Override
-            public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
-            }
-
-            @Override
-            public void onChildRemoved(@NonNull DataSnapshot snapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
             }
 
             @Override
@@ -80,24 +81,27 @@ public class XemDanhSachKhachHang extends AppCompatActivity {
 
             }
         });
-    }
-
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        int pos = parent.getPositionForView(view);
-
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
+                Intent xemchitietintent = new Intent(XemDanhSachKhachHang.this, xemchitietkh.class);
+                xemchitietintent.putExtra("position",String.valueOf(position));
+                startActivity(xemchitietintent);
+            }
+        });
     }
 
     private void AnhXa() {
         databaseReference = FirebaseDatabase.getInstance().getReference();
         storageReference = FirebaseStorage.getInstance().getReference();
         listView = (ListView)findViewById(R.id.lvDSKH);
-        khachhang = new ArrayList<KhachHang>();
+        khachhang = new ArrayList<>();
         adapter = new MyAdapter(getApplicationContext(),R.layout.user_item_list,khachhang);
         listView.setAdapter(adapter);
         btneditKH = (ImageView)findViewById(R.id.btnEditkhach);
         btndeleteKH = (ImageView)findViewById(R.id.btnDeletekhach);
-    }
 
+    }
     class MyAdapter extends BaseAdapter {
         Context context;
         int mlayout;
@@ -126,7 +130,7 @@ public class XemDanhSachKhachHang extends AppCompatActivity {
 
         @RequiresApi(api = Build.VERSION_CODES.O)
         @Override
-        public View getView(int i, View view, ViewGroup viewGroup) {
+        public View getView(int i, View view, final ViewGroup viewGroup) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(mlayout, null);
 
@@ -177,11 +181,63 @@ public class XemDanhSachKhachHang extends AppCompatActivity {
                 }
             });
 
+
             ImageView delete = (ImageView) view.findViewById(R.id.btnDeletekhach); //BẮT SỰ KIỆN CHO DELETE
             delete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    final Dialog mydialog = new Dialog(XemDanhSachKhachHang.this);
+                    mydialog.setContentView(R.layout.dialog);
+                    mydialog.getWindow().setLayout(viewGroup.getLayoutParams().WRAP_CONTENT,viewGroup.getLayoutParams().WRAP_CONTENT);
+                    mydialog.setCancelable(false);
+                    mydialog.show();
 
+                    yes = (Button)mydialog.findViewById(R.id.btnco);
+                    no = (Button)mydialog.findViewById(R.id.btnkhong);
+
+                    yes.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            FirebaseDatabase database =FirebaseDatabase.getInstance();
+                            DatabaseReference referencer = database.getReference("KhachHang");
+                            referencer.child(pos).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    Toast.makeText(XemDanhSachKhachHang.this, "Xóa thành công", Toast.LENGTH_SHORT).show();
+                                }
+                            });
+                          
+                            mydialog.dismiss();
+                        }
+                    });
+                    no.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Toast.makeText(XemDanhSachKhachHang.this,"Không xóa",Toast.LENGTH_LONG).show();
+                            mydialog.dismiss();
+                        }
+                    });
+
+                    /*AlertDialog.Builder mydialog = new AlertDialog.Builder(context);
+                    mydialog.setTitle("Xác nhận");
+                    mydialog.setMessage("Bạn có đồng ý xóa không?");
+                    mydialog.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            FirebaseDatabase database =FirebaseDatabase.getInstance();
+                            DatabaseReference referencer = database.getReference("KhachHang");
+                            referencer.child(pos).removeValue();
+                            finish();
+                        }
+                    });
+                    mydialog.setNegativeButton("Không", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+
+                        }
+                    });
+                    AlertDialog alertDialog = mydialog.create();
+                    alertDialog.show();*/
                 }
             });
 
