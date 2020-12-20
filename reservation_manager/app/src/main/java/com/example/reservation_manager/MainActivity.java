@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         list.setOnClickListener(this);
         fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.container, new fragA(), null);
+        fragmentTransaction.add(R.id.container, new SubActivity_TableMap(), null);
         //fragmentTransaction.replace(R.id.container, new FragmentA(), null);
         fragmentTransaction.commit();
     }
@@ -32,13 +32,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.btn_list:
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.add(R.id.container, new fragB());
+                fragmentTransaction.add(R.id.container, new SubActivity_TableList());
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
                 break;
             case R.id.btn_map:
                 FragmentTransaction fragmentTransaction1 = fragmentManager.beginTransaction();
-                fragmentTransaction1.replace(R.id.container, new fragA());
+                fragmentTransaction1.replace(R.id.container, new SubActivity_TableMap());
                 fragmentTransaction1.addToBackStack(null);
                 fragmentTransaction1.commit();
                 break;
