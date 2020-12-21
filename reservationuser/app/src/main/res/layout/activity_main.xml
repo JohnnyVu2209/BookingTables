@@ -5,15 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.reservationuser.MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+    <include layout="@layout/appbar"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/banner"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvFbname"
-        android:text="hello"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/appbar"
+        app:layout_constraintStart_toStartOf="parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:src="@drawable/banner"/>
+    </androidx.cardview.widget.CardView>
+    <ListView
+        android:id="@+id/listfood"
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        app:layout_constraintTop_toBottomOf="@+id/banner"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

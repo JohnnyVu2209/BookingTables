@@ -47,6 +47,7 @@ public class Login extends AppCompatActivity {
     private ImageButton mGenerateBtn;
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallBack;
     private LoginButton mlogin;
+    String complete_phone;
 
     private void AnhXa(){
         mAuth = FirebaseAuth.getInstance();
@@ -68,7 +69,7 @@ public class Login extends AppCompatActivity {
             public void onClick(View view) {
                 String country_code = mCountryCode.getText().toString();
                 String phone_number = mPhoneNumber.getText().toString();
-                String complete_phone = "+"+country_code + phone_number;
+                complete_phone = "+"+country_code + phone_number;
 
                 if(country_code.isEmpty() || phone_number.isEmpty()){
                     Toast.makeText(Login.this, "please fill in form to continue", Toast.LENGTH_SHORT).show();
@@ -109,6 +110,7 @@ public class Login extends AppCompatActivity {
                             public void run() {
                                 Intent otpIntent = new Intent(Login.this, OTPReceive.class);
                                 otpIntent.putExtra("AuthCredentials", s);
+                                otpIntent.putExtra("CP",complete_phone);
                                 startActivity(otpIntent);
                             }
                         },
@@ -118,8 +120,8 @@ public class Login extends AppCompatActivity {
 
         //fb login
         FacebookSdk.sdkInitialize(getApplicationContext());
-        mlogin = findViewById(R.id.login_button);
-        mlogin.setReadPermissions("email","public_profile");
+        mlogin =(LoginButton) findViewById(R.id.login_button);
+        mlogin.setReadPermissions("email", "public_profile");
         mCallbackManager = CallbackManager.Factory.create();
         mlogin.registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
             @Override
@@ -196,8 +198,6 @@ public class Login extends AppCompatActivity {
             Intent loginintent = new Intent(Login.this,MainActivity.class);
             loginintent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             loginintent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            loginintent.putExtra("fbname",user.getDisplayName());
-            loginintent.putExtra("fbphone",user.getPhoneNumber());
             startActivity(loginintent);
             finish();
         }
