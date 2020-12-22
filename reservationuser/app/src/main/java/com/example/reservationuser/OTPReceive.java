@@ -98,17 +98,6 @@ public class OTPReceive extends AppCompatActivity {
         reference.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-                /*for (DataSnapshot dataSnapshot : snapshot.getChildren()){
-                    String phonemoi = getIntent().getStringExtra("CP");
-                    String khachHang = dataSnapshot.child("sdt").getValue(String.class);
-                    i++;
-                    if(phonemoi.equals(khachHang)){
-                        sendUsertoHome();
-                    }
-                    else if(!phonemoi.equals(khachHang) && i == dataSnapshot.getChildrenCount()){
-                        sendUsertoInsertName();
-                    }
-                }*/
                 khach.add(snapshot.child("sdt").getValue().toString());
                 i++;
                 final String phonemoi = getIntent().getStringExtra("CP");

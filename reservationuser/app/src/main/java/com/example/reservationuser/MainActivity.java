@@ -38,7 +38,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private ListView listfood;
-    private ArrayList<LoaiMonAn> mloai;
+    private ArrayList<String> mloai;
     private ListAdapter adapter;
     DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
     Toolbar toolbar;
@@ -57,15 +57,15 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Anhxa();
-
-        reference.child("LoaiMonAn").addValueEventListener(new ValueEventListener() {
+        reference.child("MonAn").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                    LoaiMonAn loaiMonAn = dataSnapshot.getValue(LoaiMonAn.class);
-                    mloai.add(loaiMonAn);
+                for (DataSnapshot dataSnapshot: snapshot.getChildren()){
+                    mloai.add(dataSnapshot.child("loaimonan").getValue().toString());
                 }
                 adapter.notifyDataSetChanged();
+                Log.d("LLL", "onDataChange: " + sortSame(mloai));
+
             }
 
             @Override
@@ -73,6 +73,16 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+    }
+    private ArrayList sortSame(ArrayList<String> list){
+        ArrayList<String> list1 = new ArrayList<>();
+        for (String element: list) {
+            if(!list1.contains(element)){
+                list1.add(element);
+            }
+        }
+        return list1;
     }
 
     @Override

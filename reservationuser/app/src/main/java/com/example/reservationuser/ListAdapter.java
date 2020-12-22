@@ -9,6 +9,7 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.RectF;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,11 +38,11 @@ import java.util.Locale;
 public class ListAdapter extends BaseAdapter {
     Context context;
     int mlayout;
-    ArrayList<LoaiMonAn> mLoai;
+    ArrayList<String> mLoai;
     ArrayList<MonAn> mMonan;
     GridAdapter adapter;
     DatabaseReference reference;
-    public ListAdapter(Context context,int layout,ArrayList<LoaiMonAn> listloai){
+    public ListAdapter(Context context,int layout,ArrayList<String> listloai){
         this.context = context;
         this.mlayout = layout;
         this.mLoai = listloai;
@@ -66,27 +67,24 @@ public class ListAdapter extends BaseAdapter {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         view = inflater.inflate(mlayout,null);
 
-        TextView tvTypeFood = (TextView)view.findViewById(R.id.tvTypeFood);
-
-        tvTypeFood.setText(mLoai.get(i).TenLoai);
+        final TextView tvTypeFood = (TextView)view.findViewById(R.id.tvTypeFood);
 
         GridView gridviewfood = (GridView)view.findViewById(R.id.gridviewfood);
         mMonan = new ArrayList<>();
         adapter = new GridAdapter(context,R.layout.gridview_row,mMonan);
         gridviewfood.setAdapter(adapter);
 
-        reference = FirebaseDatabase.getInstance().getReference();
-        reference.child("MonAn").addValueEventListener(new ValueEventListener() {
+        reference = FirebaseDatabase.getInstance().getReference("MonAn");
+        tvTypeFood.setText(mLoai.get(i));
+        reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for (DataSnapshot dataSnapshot:
-                     snapshot.getChildren()) {
-                    MonAn monAn = dataSnapshot.getValue(MonAn.class);
-                    if(monAn.loaimonan.equals(mLoai.get(i).TenLoai)){
-                        mMonan.add(monAn);
-                    }
+                MonAn monAn = snapshot.getValue(MonAn.class);
+                if(monAn.loaimonan.contains(mLoai.get(i))){
+                    mMonan.add(monAn);
                 }
-                adapter.filteredList(mMonan);
+                Log.d("MONAN", "onDataChange: " + mMonan);
+        /*        adapter.notifyDataSetChanged();*/
             }
 
             @Override
@@ -95,6 +93,15 @@ public class ListAdapter extends BaseAdapter {
             }
         });
         return view;
+    }
+    private ArrayList sortSame(ArrayList<String> list){
+        ArrayList<String> list1 = new ArrayList<>();
+        for (String element: list) {
+            if(!list1.contains(element)){
+                list1.add(element);
+            }
+        }
+        return list1;
     }
 }
 class GridAdapter extends BaseAdapter{

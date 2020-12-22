@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ReservationUser.iml" filepath="$PROJECT_DIR$/.idea/modules/ReservationUser.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ReservationUser.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ReservationUser.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/reservationmanager/ReservationUser.reservationmanager.iml" filepath="$PROJECT_DIR$/.idea/modules/reservationmanager/ReservationUser.reservationmanager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="ReservationUser/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reservationmanager/reservationmanager.iml" filepath="$PROJECT_DIR$/.idea/modules/reservationmanager/reservationmanager.iml" group="ReservationUser/reservationmanager" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reservationuser-ReservationUser.iml" filepath="$PROJECT_DIR$/.idea/modules/reservationuser-ReservationUser.iml" group="ReservationUser" />
     </modules>
   </component>
 </project>
