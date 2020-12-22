@@ -1,8 +1,6 @@
 package com.example.reservation_manager;
 
 import android.app.Dialog;
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,19 +9,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.StorageTask;
-import com.google.firebase.database.ValueEventListener;
 
 public class SubActivity_TableList extends Fragment {
 
@@ -32,20 +21,15 @@ public class SubActivity_TableList extends Fragment {
     Button addtable, cancel;
     EditText number, amount;
 
-    tables tabless;
+    tables table;
     public View view;
-    StorageReference storage;
-    StorageTask uploadTask;
     SubActivity_TableList context = this;
-    DatabaseReference reff;
     FirebaseController controller;
     private final String TAG = "READ DATABASE";
 
     private void AnhXa() {
         image =(ImageView) view.findViewById(R.id.imageViewAdd);
-        number =(EditText) view.findViewById(R.id.etNumber);
-        amount =(EditText)  view.findViewById(R.id.etAmount);
-        reff = FirebaseDatabase.getInstance().getReference().child("tables");
+        controller = new FirebaseController(getActivity());
     }
 
     @Override
@@ -62,6 +46,8 @@ public class SubActivity_TableList extends Fragment {
 
 //        final String pos = String.valueOf(inflater);
         AnhXa();
+
+
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,21 +55,22 @@ public class SubActivity_TableList extends Fragment {
                 dialog.setContentView(R.layout.custom_dialog);
                 dialog.show();
 
-                addtable =(Button) view.findViewById(R.id.btnAdd);
+                number =(EditText) dialog.findViewById(R.id.etNumber);
+                amount =(EditText)  dialog.findViewById(R.id.etAmount);
+
+                addtable =(Button) dialog.findViewById(R.id.btnAdd);
                 addtable.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        insertDataTable();
+                        int soban, soluongnguoi;
+                        soban = Integer.parseInt(number.getText().toString());
+                        soluongnguoi = Integer.parseInt(amount.getText().toString());
 
+                        table = new tables(soban, soluongnguoi);
+                        controller.WirteWithAutoIncreaseKey("Ban", table);
                     }
                 });
-//                        int SoBan, SoLuongNguoi;
-//                        SoBan = Integer.parseInt(number.getText().toString());
-//                        SoLuongNguoi = Integer.parseInt(amount.getText().toString());
-//                        tabless = new tables(SoBan, SoLuongNguoi);
-//
-//                        controller.WirteWithAutoIncreaseKey("Ban", tabless);
-//                        intentToListTable();
+
             }
         });
         return view;
@@ -101,10 +88,9 @@ public class SubActivity_TableList extends Fragment {
         soban = Integer.parseInt(number.getText().toString());
         soluongnguoi = Integer.parseInt(amount.getText().toString());
 
-        tables table = new tables(soban, soluongnguoi);
-        controller.WirteWithAutoIncreaseKey("Ban", table);
-        reff.push().setValue(table);
-        Toast.makeText(getActivity(), "Lưu thành công", Toast.LENGTH_SHORT).show();
+        table = new tables(soban, soluongnguoi);
+
+        //Toast.makeText(getActivity(), "Lưu thành công", Toast.LENGTH_SHORT).show();
     }
 
 

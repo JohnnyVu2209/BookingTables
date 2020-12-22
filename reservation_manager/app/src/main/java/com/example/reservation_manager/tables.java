@@ -2,12 +2,12 @@ package com.example.reservation_manager;
 
 public class tables {
 
-    private int So_ban;
-    private int Soluong_nguoi;
+    public int SoBan;
+    public int SoLuongNguoi;
 
     public tables(int so_ban, int soluong_nguoi) {
-        So_ban = so_ban;
-        Soluong_nguoi = soluong_nguoi;
+        SoBan = so_ban;
+        SoLuongNguoi = soluong_nguoi;
     }
 //
 //    public int getSo_ban() {
