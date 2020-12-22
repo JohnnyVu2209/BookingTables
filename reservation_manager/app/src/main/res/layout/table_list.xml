@@ -9,6 +9,7 @@
         android:id="@+id/imgBanAn"
         android:layout_width="150dp"
         android:layout_height="138dp"
+
         android:layout_marginStart="16dp"
         android:src="@drawable/icon_table"
         app:layout_constraintBottom_toBottomOf="parent"
