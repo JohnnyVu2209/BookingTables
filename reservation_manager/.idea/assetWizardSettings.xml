@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/E:/AndroidStudio/plugins/android/lib/android.jar!/images/material/icons/materialicons/delete/baseline_delete_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/restaurant/baseline_restaurant_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,8 +28,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_baseline_delete_24" />
-                            <entry key="sourceFile" value="C:\Users\Admin\AndroidStudioProjects\BookingTables\reservation_manager" />
+                            <entry key="outputName" value="spoon_fork" />
+                            <entry key="sourceFile" value="T:\#_MobileProgramming_Android\Booking_II\reservation_manager" />
                           </map>
                         </option>
                       </PersistentState>

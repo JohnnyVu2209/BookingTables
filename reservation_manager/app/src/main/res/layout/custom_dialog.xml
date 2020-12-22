@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    
+    <TextView
+        android:text="Thêm bàn"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="#140E0E"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:hint="Số bàn"
+        android:textSize="20dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+    <TextView
+        android:id="@+id/tvPeople"
+        android:text="Số người tối đa: "
+        android:fontFamily="@font/open_sans_semibold"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:hint="1"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:background="@drawable/custom_button_dialog"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/custom_button_dialog"
+            android:text="Hủy" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
