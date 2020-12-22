@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,9 +34,9 @@ import java.io.File;
 import java.util.ArrayList;
 
 public class DanhSachBan extends AppCompatActivity {
-    //ListView listView;
+    ListView listView;
     ArrayList banan ;
-    ImageView btneditkhach,btndeletekhach;
+    ImageView btnedittable,btndeletetable;
     MyAdapter adapter;
     DatabaseReference databaseReference;
     StorageReference storageReference;
@@ -83,8 +84,8 @@ public class DanhSachBan extends AppCompatActivity {
         banan = new ArrayList<>();
         adapter = new MyAdapter(getApplicationContext(),R.layout.table_list,banan);
         //listView.setAdapter(adapter);
-        btneditkhach = (ImageView)findViewById(R.id.btnEditkhach);
-        btndeletekhach = (ImageView)findViewById(R.id.btnDeletekhach);
+        btnedittable = (ImageView)findViewById(R.id.btnEditTable);
+        btndeletetable = (ImageView)findViewById(R.id.btnDeleteTable);
 
     }
     class MyAdapter extends BaseAdapter {
@@ -121,8 +122,8 @@ public class DanhSachBan extends AppCompatActivity {
 
             final File file;
             try {
-                TextView tvtable = (TextView) view.findViewById(R.id.tvTable);
-                TextView tvamount = (TextView) view.findViewById(R.id.tvAmount);
+                TextView tvtable = (TextView) view.findViewById(R.id.tvTenBan);
+                TextView tvamount = (TextView) view.findViewById(R.id.tvSoLuongNguoi);
                 tvtable.setText("Tên bàn: " + mBanan.get(i).getTenban());
                 tvamount.setText("Số lượng người: " + mBanan.get(i).getSonguoi());
 
@@ -131,7 +132,7 @@ public class DanhSachBan extends AppCompatActivity {
             }
 
             final String pos = String.valueOf(i);
-            ImageView edit = (ImageView) view.findViewById(R.id.btnEditkhach); //BẮT SỰ KIỆN CHO EDIT
+            ImageView edit = (ImageView) view.findViewById(R.id.btnEditTable); //BẮT SỰ KIỆN CHO EDIT
             edit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -142,7 +143,7 @@ public class DanhSachBan extends AppCompatActivity {
             });
 
 
-            ImageView delete = (ImageView) view.findViewById(R.id.btnDeletekhach); //BẮT SỰ KIỆN CHO DELETE
+            ImageView delete = (ImageView) view.findViewById(R.id.btnDeleteTable); //BẮT SỰ KIỆN CHO DELETE
             delete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

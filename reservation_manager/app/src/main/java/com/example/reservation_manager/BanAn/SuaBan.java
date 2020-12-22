@@ -59,7 +59,7 @@ public class SuaBan extends AppCompatActivity {
                 final File file;
                 try {
                     tb.setText(snapshot.getValue(BanAn.class).getTenban());
-                    sln.setText(snapshot.getValue(BanAn.class).getTenban());
+                    sln.setText(snapshot.getValue(BanAn.class).getSonguoi());
 
                 } catch (Exception e) {
                     e.printStackTrace();

@@ -1,6 +1,5 @@
 package com.example.reservation_manager.BanAn;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class BanAn extends AppCompatActivity {
