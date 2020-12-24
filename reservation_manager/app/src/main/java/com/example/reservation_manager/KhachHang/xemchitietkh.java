@@ -9,10 +9,10 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.reservation_manager.FirebaseController;
@@ -30,14 +30,15 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.StorageTask;
 import com.google.firebase.storage.UploadTask;
 
+import org.w3c.dom.Text;
+
 import java.io.File;
 import java.text.Normalizer;
 import java.util.regex.Pattern;
 
 public class xemchitietkh extends AppCompatActivity {
     ImageView avatar;
-    EditText ht,sdt,ns,sld;
-    RadioButton nam,nu;
+    TextView ht,sdt,ns,sld, gt;
     private String uid;
     DatabaseReference databaseReference;
     StorageReference storageReference;
@@ -50,12 +51,11 @@ public class xemchitietkh extends AppCompatActivity {
 
     private void AnhXa() {
         avatar = (ImageView) findViewById(R.id.profile_image);
-        ht = (EditText) findViewById(R.id.edHT);
-        sdt = (EditText) findViewById(R.id.edSDT);
-        ns = (EditText) findViewById(R.id.edNS);
-        sld = (EditText) findViewById(R.id.edSLD);
-        nam = (RadioButton) findViewById(R.id.rbtnNam);
-        nu = (RadioButton) findViewById(R.id.rbtnNu);
+        ht = (TextView) findViewById(R.id.TvHT);
+        sdt = (TextView) findViewById(R.id.TvSDT);
+        ns = (TextView) findViewById(R.id.TvNS);
+        sld = (TextView) findViewById(R.id.TvSLD);
+        gt = (TextView)findViewById(R.id.Tvgt);
         databaseReference = FirebaseDatabase.getInstance().getReference("KhachHang");
         storageReference = FirebaseStorage.getInstance().getReference();
         controller = new FirebaseController(getApplicationContext());
@@ -78,9 +78,9 @@ public class xemchitietkh extends AppCompatActivity {
                     sdt.setText(snapshot.getValue(KhachHang.class).sdt);
                     ns.setText(snapshot.getValue(KhachHang.class).ngaysinh);
                     if (snapshot.getValue(KhachHang.class).gioitinh == true) {
-                        nam.setChecked(true);
+                        gt.setText("Nam");
                     } else {
-                        nu.setChecked(true);
+                        gt.setText("Nữ");
                     }
                     sld.setText(String.valueOf(snapshot.getValue(KhachHang.class).sldat));
 
@@ -124,7 +124,7 @@ public class xemchitietkh extends AppCompatActivity {
         name = ht.getText().toString();
         phone = sdt.getText().toString();
         birthday = ns.getText().toString();
-        if (nam.isChecked()) {
+        if (gt.getText().toString() == "Nam") {
             sex = true;
         } else {
             sex = false;
