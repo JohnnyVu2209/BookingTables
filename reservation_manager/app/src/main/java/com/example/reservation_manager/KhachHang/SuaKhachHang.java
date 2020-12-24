@@ -27,7 +27,6 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ThrowOnExtraProperties;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
@@ -56,10 +55,10 @@ public class SuaKhachHang extends AppCompatActivity {
 
     private void AnhXa() {
         avatar = (ImageView) findViewById(R.id.profile_image);
-        ht = (EditText) findViewById(R.id.edHT);
-        sdt = (EditText) findViewById(R.id.edSDT);
-        ns = (EditText) findViewById(R.id.edNS);
-        sld = (EditText) findViewById(R.id.edSLD);
+        ht = (EditText) findViewById(R.id.TvHT);
+        sdt = (EditText) findViewById(R.id.TvSDT);
+        ns = (EditText) findViewById(R.id.TvNS);
+        sld = (EditText) findViewById(R.id.TvSLD);
         nam = (RadioButton) findViewById(R.id.rbtnNam);
         nu = (RadioButton) findViewById(R.id.rbtnNu);
         save = (Button) findViewById(R.id.btnS);

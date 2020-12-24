@@ -17,7 +17,7 @@
         android:textSize="24sp"
         android:textStyle="italic"
         app:layout_constraintStart_toEndOf="@+id/tvGT"
-        app:layout_constraintTop_toBottomOf="@+id/edNS" />
+        app:layout_constraintTop_toBottomOf="@+id/TvNS" />
 
     <TextView
         android:id="@+id/tvNS"
@@ -30,10 +30,10 @@
         android:textSize="24sp"
         android:textStyle="italic"
         app:layout_constraintStart_toEndOf="@+id/profile_image"
-        app:layout_constraintTop_toBottomOf="@+id/edSDT" />
+        app:layout_constraintTop_toBottomOf="@+id/TvSDT" />
 
     <EditText
-        android:id="@+id/edSDT"
+        android:id="@+id/TvSDT"
         android:layout_width="450dp"
         android:layout_height="57dp"
         android:layout_marginStart="104dp"
@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvSDT" />
 
     <EditText
-        android:id="@+id/edNS"
+        android:id="@+id/TvNS"
         android:layout_width="450dp"
         android:layout_height="57dp"
         android:layout_marginStart="104dp"
@@ -67,7 +67,7 @@
         android:textSize="24sp"
         android:textStyle="italic"
         app:layout_constraintStart_toEndOf="@+id/profile_image"
-        app:layout_constraintTop_toBottomOf="@+id/edHT" />
+        app:layout_constraintTop_toBottomOf="@+id/TvHT" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
@@ -113,7 +113,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvKH" />
 
     <EditText
-        android:id="@+id/edHT"
+        android:id="@+id/TvHT"
         android:layout_width="450dp"
         android:layout_height="57dp"
         android:layout_marginStart="104dp"
@@ -135,7 +135,7 @@
         android:textSize="24sp"
         android:textStyle="italic"
         app:layout_constraintStart_toEndOf="@+id/profile_image"
-        app:layout_constraintTop_toBottomOf="@+id/edNS" />
+        app:layout_constraintTop_toBottomOf="@+id/TvNS" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -164,7 +164,7 @@
     </RadioGroup>
 
     <EditText
-        android:id="@+id/edSLD"
+        android:id="@+id/TvSLD"
         android:layout_width="130dp"
         android:layout_height="49dp"
         android:layout_marginStart="168dp"
