@@ -1,0 +1,18 @@
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules.xml	(revision 4296eef84f250be42b4ab1a586a0ce3a78534619)
++++ .idea/modules.xml	(revision 4296eef84f250be42b4ab1a586a0ce3a78534619)
+@@ -1,9 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reservation_manager.iml" filepath="$PROJECT_DIR$/.idea/modules/reservation_manager.iml" />
+-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/reservation_manager.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/reservation_manager.app.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file

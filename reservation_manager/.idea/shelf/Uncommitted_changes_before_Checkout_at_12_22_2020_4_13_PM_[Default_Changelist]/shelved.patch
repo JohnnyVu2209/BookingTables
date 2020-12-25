@@ -1,0 +1,15 @@
+Index: .idea/modules.xml
+===================================================================
+--- .idea/modules.xml	(revision 1a5f888332c17061139f0b14d12065f79fc80de4)
++++ .idea/modules.xml	(revision 1a5f888332c17061139f0b14d12065f79fc80de4)
+@@ -1,9 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reservation_manager.iml" filepath="$PROJECT_DIR$/.idea/modules/reservation_manager.iml" />
+-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/reservation_manager.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/reservation_manager.app.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
