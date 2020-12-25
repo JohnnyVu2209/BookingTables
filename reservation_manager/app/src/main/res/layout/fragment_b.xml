@@ -8,7 +8,7 @@
     android:background="#fff">
 
     <TextView
-        android:id="@+id/textviewAdd"
+        android:id="@+id/tvAddBan"
         android:layout_width="179dp"
         android:layout_height="51dp"
         android:layout_marginTop="72dp"
@@ -19,11 +19,11 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.179"
-        app:layout_constraintStart_toEndOf="@+id/imageViewAdd"
+        app:layout_constraintStart_toEndOf="@+id/btnAddBan"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageViewAdd"
+        android:id="@+id/btnAddBan"
         android:layout_width="51dp"
         android:layout_height="47dp"
         android:layout_marginStart="100dp"
@@ -41,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textviewAdd"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddBan"
         app:layout_constraintVertical_bias="0.0">
 
         <ListView

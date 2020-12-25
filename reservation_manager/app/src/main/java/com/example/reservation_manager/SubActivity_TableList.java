@@ -9,10 +9,13 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.reservation_manager.BanAn.tables;
 
 public class SubActivity_TableList extends Fragment {
 
@@ -20,6 +23,8 @@ public class SubActivity_TableList extends Fragment {
     // button dialog
     Button addtable, cancel;
     EditText number, amount;
+    // button listview
+    ListView listView;
 
     tables table;
     public View view;
@@ -28,7 +33,7 @@ public class SubActivity_TableList extends Fragment {
     private final String TAG = "READ DATABASE";
 
     private void AnhXa() {
-        image =(ImageView) view.findViewById(R.id.imageViewAdd);
+        image =(ImageView) view.findViewById(R.id.btnAddBan);
         controller = new FirebaseController(getActivity());
     }
 
