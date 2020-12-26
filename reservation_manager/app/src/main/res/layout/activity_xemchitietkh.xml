@@ -6,6 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/edit_sdt"
+        android:layout_width="46dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="205dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toEndOf="@+id/TvHT"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
     <TextView
         android:id="@+id/tvSLDAT"
         android:layout_width="142dp"
@@ -33,10 +44,11 @@
         app:layout_constraintTop_toBottomOf="@+id/tvHT" />
 
     <TextView
-        android:id="@+id/TvSDT"
-        android:layout_width="450dp"
+        android:id="@+id/TvNS"
+        android:layout_width="350dp"
         android:layout_height="57dp"
         android:layout_marginTop="317dp"
+        android:layout_marginRight="107dp"
         android:ems="10"
         android:inputType="textPersonName|phone"
         android:textSize="24sp"
@@ -46,17 +58,18 @@
         app:layout_constraintTop_toBottomOf="@+id/tvKH" />
 
     <TextView
-        android:id="@+id/TvNS"
-        android:layout_width="450dp"
+        android:id="@+id/TvSDT"
+        android:layout_width="350dp"
         android:layout_height="57dp"
         android:ems="10"
         android:layout_marginTop="10dp"
         android:inputType="textPersonName|phone"
         android:textSize="24sp"
+        android:layout_marginRight="107dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.132"
         app:layout_constraintStart_toEndOf="@+id/tvSDT"
-        app:layout_constraintTop_toBottomOf="@+id/TvSDT" />
+        app:layout_constraintTop_toBottomOf="@+id/TvNS" />
 
     <TextView
         android:id="@+id/tvSDT"
@@ -116,14 +129,14 @@
 
     <TextView
         android:id="@+id/TvHT"
-        android:layout_width="450dp"
+        android:layout_width="350dp"
         android:layout_height="57dp"
         android:layout_marginTop="252dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.203"
         app:layout_constraintStart_toEndOf="@+id/tvHT"
         app:layout_constraintTop_toBottomOf="@+id/tvKH" />
 
@@ -162,6 +175,17 @@
         android:inputType="number"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/tvGT"
-        app:layout_constraintTop_toBottomOf="@+id/TvNS" />
+        app:layout_constraintTop_toBottomOf="@+id/TvSDT" />
+
+    <ImageView
+        android:id="@+id/edit_hoten"
+        android:layout_width="46dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toEndOf="@+id/TvHT"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

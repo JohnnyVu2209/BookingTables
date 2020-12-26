@@ -56,8 +56,8 @@ public class SuaKhachHang extends AppCompatActivity {
     private void AnhXa() {
         avatar = (ImageView) findViewById(R.id.profile_image);
         ht = (EditText) findViewById(R.id.TvHT);
-        sdt = (EditText) findViewById(R.id.TvSDT);
-        ns = (EditText) findViewById(R.id.TvNS);
+        sdt = (EditText) findViewById(R.id.TvNS);
+        ns = (EditText) findViewById(R.id.TvSDT);
         sld = (EditText) findViewById(R.id.TvSLD);
         nam = (RadioButton) findViewById(R.id.rbtnNam);
         nu = (RadioButton) findViewById(R.id.rbtnNu);
