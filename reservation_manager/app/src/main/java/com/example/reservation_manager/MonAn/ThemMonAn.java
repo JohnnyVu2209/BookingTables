@@ -2,12 +2,18 @@ package com.example.reservation_manager.MonAn;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.ArrayAdapter;
@@ -23,6 +29,7 @@ import com.example.reservation_manager.FirebaseController;
 import com.example.reservation_manager.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -38,6 +45,7 @@ import java.util.ArrayList;
 import java.util.regex.Pattern;
 
 public class ThemMonAn extends AppCompatActivity {
+    //CAC NUT TRONG GIAO DEIN
     ImageView           hinhdoan;
     EditText            tenmonan,giamonan,mota;
     Spinner             loaima;
@@ -46,15 +54,58 @@ public class ThemMonAn extends AppCompatActivity {
     RadioGroup          group;
     RadioButton         can,not;
     Button              add;
+    //HIEN THI DROP LIST LOAI MON
     ArrayList<String>   TypeFood;
     ArrayAdapter<String>adapter;
-    StorageReference    storage ;
+
     StorageTask         uploadTask;
     MonAn               monAn;
     String              idhinh;
-    FirebaseController controller;
+    FirebaseController  controller;
+    //NAVIGATION VIEW
+    Toolbar             toolbar;
+    NavigationView      navview;
+    DrawerLayout        drawerLayout;
+    ActionBarDrawerToggle toggle;
+    //FIREBASE
+    StorageReference    storage ;
     DatabaseReference   referencer = FirebaseDatabase.getInstance().getReference();
     private final String TAG = "READ DATABASE";
+
+    private void AnhXa() {
+        hinhdoan   = (ImageView)findViewById(R.id.profile_image);
+        tenmonan   = (EditText)findViewById(R.id.etTenDoAn);
+        giamonan   = (EditText)findViewById(R.id.etGiaMonAn);
+        loaima     = (Spinner)findViewById(R.id.ListLoaiMonAn);
+        group      = (RadioGroup)findViewById(R.id.RbtnGoiMon);
+        can        = (RadioButton)findViewById(R.id.RbtnDuoc);
+        not        = (RadioButton)findViewById(R.id.RbtnKhong);
+        add        = (Button)findViewById(R.id.btnThem);
+        TypeFood   = new ArrayList<String>();
+        adapter    = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,TypeFood);
+        loaima.setAdapter(adapter);
+
+        storage    = FirebaseStorage.getInstance().getReference();
+        controller = new FirebaseController(getApplicationContext());
+        //SET UP NAVIGATION VIEW
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        navview = (NavigationView)findViewById(R.id.nav_view);
+        drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
+        navview.bringToFront();
+        toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.open,R.string.close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        //THAY DOI HINH ACTIONBAR
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_baseline_menu_24);
+
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -97,6 +148,7 @@ public class ThemMonAn extends AppCompatActivity {
 
             }
         });
+        //BAT SU KIEN THEM MON AN
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -120,6 +172,29 @@ public class ThemMonAn extends AppCompatActivity {
                 }
             }
         });
+        //BAT SU KIEN NHAN NUT CUA NAVIGATION VIEW
+        navview.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.mnuFood:
+                        intentToListFood();
+                        Toast.makeText(getApplicationContext(), "Food are opening", Toast.LENGTH_SHORT).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.mnuGuest:
+                        Toast.makeText(getApplicationContext(), "Guest are opening", Toast.LENGTH_SHORT).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);break;
+                    case R.id.mnuReservation:
+                        Toast.makeText(getApplicationContext(), "Reservation are opening", Toast.LENGTH_SHORT).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);break;
+                    case R.id.mnuTables:
+                        Toast.makeText(getApplicationContext(), "Tables are opening", Toast.LENGTH_SHORT).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);break;
+                }
+                return true;
+            }
+        });
     }
     private void intentToListFood(){
         Intent ListFood_intent = new Intent(ThemMonAn.this,XemDanhSachMonAn.class);
@@ -128,6 +203,7 @@ public class ThemMonAn extends AppCompatActivity {
         startActivity(ListFood_intent);
         finish();
     }
+
     private void UploadData(String mt){
         String tenmon,gia,loai= "";
         int radioId =0;
@@ -147,6 +223,7 @@ public class ThemMonAn extends AppCompatActivity {
         MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
         return mimeTypeMap.getExtensionFromMimeType(cr.getType(uri));
     }
+    //HAM UPLOAD HINH LEN FIREBASE
     private void Fireuploader() {
         idhinh = "FoodImages/"+removeAccent(tenmonan.getText().toString()).replaceAll("\\s","")+"."+"png";
         StorageReference ref = storage.child(idhinh);
@@ -166,12 +243,14 @@ public class ThemMonAn extends AppCompatActivity {
                     }
                 });
     }
+    //LOAI BO DAU TIENG VIET
     private String removeAccent(String s) {
 
         String temp = Normalizer.normalize(s, Normalizer.Form.NFD);
         Pattern pattern = Pattern.compile("\\p{InCombiningDiacriticalMarks}+");
         return pattern.matcher(temp).replaceAll("");
     }
+    //CHON HINH TU FILE MEDIA TRONG MAY
     private void Filechooser() {
         Intent intent = new Intent();
         intent.setType("image/*");
@@ -188,21 +267,4 @@ public class ThemMonAn extends AppCompatActivity {
         }
     }
 
-    private void AnhXa() {
-        hinhdoan   = (ImageView)findViewById(R.id.profile_image);
-        tenmonan   = (EditText)findViewById(R.id.etTenDoAn);
-        giamonan   = (EditText)findViewById(R.id.etGiaMonAn);
-        loaima     = (Spinner)findViewById(R.id.ListLoaiMonAn);
-        group      = (RadioGroup)findViewById(R.id.RbtnGoiMon);
-        can        = (RadioButton)findViewById(R.id.RbtnDuoc);
-        not        = (RadioButton)findViewById(R.id.RbtnKhong);
-        add        = (Button)findViewById(R.id.btnThem);
-        TypeFood   = new ArrayList<String>();
-        adapter    = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,TypeFood);
-        loaima.setAdapter(adapter);
-
-        storage    = FirebaseStorage.getInstance().getReference();
-        controller = new FirebaseController(getApplicationContext());
-
-    }
 }
