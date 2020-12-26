@@ -38,23 +38,24 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="316bad8c-da23-4da2-8543-a2bbd4215f9a" name="Default Changelist" comment="EDIT DISPLLAY CUSTOMER's DETAIL">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_17_20_12_05_PM_[Default_Changelist]/build_file_checksums.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_17_20_12_05_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_17_20_12_05_PM__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="316bad8c-da23-4da2-8543-a2bbd4215f9a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/SuaKhachHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/SuaKhachHang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/XemDanhSachKhachHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/XemDanhSachKhachHang.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/xemchitietkh.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/xemchitietkh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_edit_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_edit_24.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_suakh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_suakh.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_xemchitietkh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_xemchitietkh.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/user_item_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_item_list.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[emulator-5554]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -127,6 +128,9 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Public\Downloads\BookingTables\reservation_manager\app\src\main\res\drawable-v24" />
+    </key>
     <key name="android.template.452395587">
       <recent name="com.example.reservation_manager" />
     </key>
@@ -256,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608368294736</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="EDIT DISPLLAY CUSTOMER's DETAIL">
+      <created>1608797852134</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608797852134</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -290,18 +301,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="EDIT DISPLLAY CUSTOMER's DETAIL" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1608366925101">
+    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1608976241529">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1608366925101" />
+    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1608976241529" />
     <state x="394" y="209" width="494" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1608213572505">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="394" y="209" width="494" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1608213572505" />
-    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608182300427">
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608890742276">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1608182300427" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1608890742276" />
     <state x="318" y="187" key="AndroidCreateResourceDirectoryDialog" timestamp="1607056300347">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -311,10 +322,10 @@
     </state>
     <state x="276" y="147" key="AndroidCreateResourceFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1608363490840" />
     <state x="318" y="187" key="AndroidCreateResourceFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1607058351685" />
-    <state x="260" y="0" key="CommitChangelistDialog2" timestamp="1608797582904">
+    <state x="260" y="0" key="CommitChangelistDialog2" timestamp="1608797850727">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="260" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1608797582904" />
+    <state x="260" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1608797850727" />
     <state x="299" y="27" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1607067967254" />
     <state x="141" y="69" key="DiffContextDialog" timestamp="1607068016784">
       <screen x="0" y="0" width="1474" height="864" />
@@ -325,50 +336,50 @@
     </state>
     <state x="450" y="148" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1608284229134" />
     <state x="518" y="188" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1607068186580" />
-    <state width="1236" height="163" key="GridCell.Tab.0.bottom" timestamp="1608363388105">
+    <state width="1236" height="163" key="GridCell.Tab.0.bottom" timestamp="1608979657902">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1608363388105" />
+    <state width="1236" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1608979657902" />
     <state width="1429" height="222" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1607062320184" />
-    <state width="1236" height="163" key="GridCell.Tab.0.center" timestamp="1608363388105">
+    <state width="1236" height="163" key="GridCell.Tab.0.center" timestamp="1608979657902">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1608363388105" />
+    <state width="1236" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1608979657902" />
     <state width="1429" height="222" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1607062320184" />
-    <state width="1236" height="163" key="GridCell.Tab.0.left" timestamp="1608363388105">
+    <state width="1236" height="163" key="GridCell.Tab.0.left" timestamp="1608979657902">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1608363388105" />
+    <state width="1236" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1608979657902" />
     <state width="1429" height="222" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1607062320183" />
-    <state width="1236" height="163" key="GridCell.Tab.0.right" timestamp="1608363388105">
+    <state width="1236" height="163" key="GridCell.Tab.0.right" timestamp="1608979657902">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1608363388105" />
+    <state width="1236" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1608979657902" />
     <state width="1429" height="222" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1607062320184" />
-    <state width="1236" height="203" key="GridCell.Tab.1.bottom" timestamp="1608307879671">
+    <state width="1236" height="203" key="GridCell.Tab.1.bottom" timestamp="1608978579132">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="203" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1608307879671" />
-    <state width="1236" height="203" key="GridCell.Tab.1.center" timestamp="1608307879671">
+    <state width="1236" height="203" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1608978579132" />
+    <state width="1236" height="203" key="GridCell.Tab.1.center" timestamp="1608978579132">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="203" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1608307879671" />
-    <state width="1236" height="203" key="GridCell.Tab.1.left" timestamp="1608307879671">
+    <state width="1236" height="203" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1608978579132" />
+    <state width="1236" height="203" key="GridCell.Tab.1.left" timestamp="1608978579132">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="203" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1608307879671" />
-    <state width="1236" height="203" key="GridCell.Tab.1.right" timestamp="1608307879671">
+    <state width="1236" height="203" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1608978579131" />
+    <state width="1236" height="203" key="GridCell.Tab.1.right" timestamp="1608978579132">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="203" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1608307879671" />
+    <state width="1236" height="203" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1608978579132" />
     <state x="121" y="50" key="MergeDialog" timestamp="1608181919799">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="50" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1608181919799" />
-    <state x="287" y="130" key="Vcs.Push.Dialog.v2" timestamp="1608368318231">
+    <state x="287" y="130" key="Vcs.Push.Dialog.v2" timestamp="1608797879634">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="287" y="130" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608368318231" />
+    <state x="287" y="130" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608797879634" />
     <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1607068032084" />
     <state x="553" y="210" key="chooseDestDirectoryDialog" timestamp="1607056181927">
       <screen x="0" y="0" width="1474" height="864" />
@@ -393,8 +404,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/xemchitietkh.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="1" />
+          <line>78</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

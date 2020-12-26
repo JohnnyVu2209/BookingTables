@@ -7,11 +7,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
-import android.widget.EditText;
+import android.view.View;
 import android.widget.ImageView;
-import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,14 +30,12 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.StorageTask;
 import com.google.firebase.storage.UploadTask;
 
-import org.w3c.dom.Text;
-
 import java.io.File;
 import java.text.Normalizer;
 import java.util.regex.Pattern;
 
 public class xemchitietkh extends AppCompatActivity {
-    ImageView avatar;
+    ImageView avatar, ivhoten, ivsdt;
     TextView ht,sdt,ns,sld, gt;
     private String uid;
     DatabaseReference databaseReference;
@@ -59,6 +57,8 @@ public class xemchitietkh extends AppCompatActivity {
         databaseReference = FirebaseDatabase.getInstance().getReference("KhachHang");
         storageReference = FirebaseStorage.getInstance().getReference();
         controller = new FirebaseController(getApplicationContext());
+        ivhoten = (ImageView)findViewById(R.id.edit_hoten);
+        ivsdt = (ImageView)findViewById(R.id.edit_sdt);
     }
 
     @Override
@@ -67,7 +67,6 @@ public class xemchitietkh extends AppCompatActivity {
         setContentView(R.layout.activity_xemchitietkh);
 
         AnhXa();
-
         uid = getIntent().getStringExtra("position");
         databaseReference.child(uid).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -76,7 +75,14 @@ public class xemchitietkh extends AppCompatActivity {
                 try {
                     ht.setText(snapshot.getValue(KhachHang.class).hoten);
                     sdt.setText(snapshot.getValue(KhachHang.class).sdt);
-                    ns.setText(snapshot.getValue(KhachHang.class).ngaysinh);
+
+                    if(snapshot.getValue(KhachHang.class).ngaysinh.isEmpty())
+                    {
+                        ns.setText("Chưa có");
+                        ns.setTextColor(Color.RED);
+                    } else {
+                        ns.setText(snapshot.getValue(KhachHang.class).ngaysinh);
+                    }
                     if (snapshot.getValue(KhachHang.class).gioitinh == true) {
                         gt.setText("Nam");
                     } else {
@@ -108,6 +114,22 @@ public class xemchitietkh extends AppCompatActivity {
 
             }
         });
+        ivhoten.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent edithotenIntent = new Intent(xemchitietkh.this, SuaKhachHang.class);
+                edithotenIntent.putExtra("position",uid);
+                startActivity(edithotenIntent);
+            }
+        });
+        ivsdt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent editsdtIntent = new Intent(xemchitietkh.this, SuaKhachHang.class);
+                editsdtIntent.putExtra("position",uid);
+                startActivity(editsdtIntent);
+            }
+        });
     }
     private void intentToListKH(){
         Intent ListKH_intent = new Intent(xemchitietkh.this,XemDanhSachKhachHang.class);
@@ -116,29 +138,6 @@ public class xemchitietkh extends AppCompatActivity {
         startActivity(ListKH_intent);
         finish();
     }
-
-    private void UpdateKH() {
-        String name,phone,birthday;
-        Boolean sex = true;
-        int amount;
-        name = ht.getText().toString();
-        phone = sdt.getText().toString();
-        birthday = ns.getText().toString();
-        if (gt.getText().toString() == "Nam") {
-            sex = true;
-        } else {
-            sex = false;
-        }
-        amount = Integer.parseInt(sld.getText().toString());
-        if (imguri != null) {
-            Fireuploader();
-            khachHang = new KhachHang(name,phone,birthday,sex,amount,idavatar);
-        } else {
-            khachHang = new KhachHang(name,phone,birthday,sex,amount,idavatartemp);
-        }
-
-    }
-
     private void Fireuploader() {
         idavatar = "KhachImages/"+removeAccent(ht.getText().toString()).replaceAll("\\s","")+"."+"png";
         StorageReference ref = storageReference.child(idavatar);

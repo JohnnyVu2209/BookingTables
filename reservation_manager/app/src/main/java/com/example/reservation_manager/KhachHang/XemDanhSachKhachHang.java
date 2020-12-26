@@ -52,7 +52,6 @@ public class XemDanhSachKhachHang extends AppCompatActivity {
     MyAdapter adapter;
     DatabaseReference databaseReference;
     StorageReference storageReference;
-    Context context = this;
     Button yes, no;
 
     @Override
@@ -139,9 +138,6 @@ public class XemDanhSachKhachHang extends AppCompatActivity {
                 final ImageView imgma = (ImageView) view.findViewById(R.id.imgProfile);
                 TextView tvhoten = (TextView) view.findViewById(R.id.tvHoTen);
                 TextView tvsdt = (TextView) view.findViewById(R.id.tvSdt);
-                TextView tvngaysinh = (TextView) view.findViewById(R.id.tvNgaySinh);
-                TextView tvgioitinh = (TextView) view.findViewById(R.id.tvGioiTinh);
-                TextView tvsldat = (TextView) view.findViewById(R.id.tvSldat);
                 file = File.createTempFile("image", "png");
                 storageReference.child(mKhachhang.get(i).idavatar).getFile(file).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
                     @Override
@@ -157,15 +153,6 @@ public class XemDanhSachKhachHang extends AppCompatActivity {
                 });
                 tvhoten.setText("Họ tên: " + mKhachhang.get(i).hoten);
                 tvsdt.setText("Số điện thoại: " + mKhachhang.get(i).sdt);
-                tvngaysinh.setText("Ngày sinh: " + mKhachhang.get(i).ngaysinh);
-                if (mKhachhang.get(i).gioitinh == true)
-                {
-                    tvgioitinh.setText("Giới tính: Nam");
-                }
-                else {
-                    tvgioitinh.setText("Giới tính: Nữ");
-                }
-                tvsldat.setText("Số lượng đặt: " + mKhachhang.get(i).sldat);
             } catch (IOException e) {
                 e.printStackTrace();
             }

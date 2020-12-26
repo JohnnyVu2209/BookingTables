@@ -17,7 +17,7 @@
         android:textSize="24sp"
         android:textStyle="italic"
         app:layout_constraintStart_toEndOf="@+id/tvGT"
-        app:layout_constraintTop_toBottomOf="@+id/TvNS" />
+        app:layout_constraintTop_toBottomOf="@+id/TvSDT" />
 
     <TextView
         android:id="@+id/tvNS"
@@ -30,10 +30,10 @@
         android:textSize="24sp"
         android:textStyle="italic"
         app:layout_constraintStart_toEndOf="@+id/profile_image"
-        app:layout_constraintTop_toBottomOf="@+id/TvSDT" />
+        app:layout_constraintTop_toBottomOf="@+id/TvNS" />
 
     <EditText
-        android:id="@+id/TvSDT"
+        android:id="@+id/TvNS"
         android:layout_width="450dp"
         android:layout_height="57dp"
         android:layout_marginStart="104dp"
@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvSDT" />
 
     <EditText
-        android:id="@+id/TvNS"
+        android:id="@+id/TvSDT"
         android:layout_width="450dp"
         android:layout_height="57dp"
         android:layout_marginStart="104dp"
@@ -135,7 +135,7 @@
         android:textSize="24sp"
         android:textStyle="italic"
         app:layout_constraintStart_toEndOf="@+id/profile_image"
-        app:layout_constraintTop_toBottomOf="@+id/TvNS" />
+        app:layout_constraintTop_toBottomOf="@+id/TvSDT" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
