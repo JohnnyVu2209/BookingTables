@@ -39,8 +39,7 @@
         <ListView
             android:id="@+id/lvDanhSachMonAn"
             android:layout_width="fill_parent"
-            android:layout_height="593dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:nestedScrollingEnabled="true"
             android:dividerHeight="35.0sp"
             app:layout_constraintStart_toStartOf="parent"

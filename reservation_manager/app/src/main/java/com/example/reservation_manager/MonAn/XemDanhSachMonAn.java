@@ -29,6 +29,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
@@ -56,27 +57,17 @@ public class XemDanhSachMonAn extends AppCompatActivity {
         setContentView(R.layout.activity_xem_danh_sach_mon_an);
 
         AnhXa();
-        databaseReference.child("MonAn").addChildEventListener(new ChildEventListener() {
+        final MonAn monrong = new MonAn("","","",false,"FoodImages/Goicuhudua.png","");
+        databaseReference.child("MonAn").addValueEventListener(new ValueEventListener() {
             @Override
-            public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-                    MonAn monAn = snapshot.getValue(MonAn.class);
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                monan.clear();
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    MonAn monAn = dataSnapshot.getValue(MonAn.class);
                     monan.add(monAn);
-                    adapter.notifyDataSetChanged();
-            }
-
-            @Override
-            public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
-            }
-
-            @Override
-            public void onChildRemoved(@NonNull DataSnapshot snapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
+                }
+                monan.add(monrong);
+                adapter.notifyDataSetChanged();
             }
 
             @Override
@@ -85,8 +76,8 @@ public class XemDanhSachMonAn extends AppCompatActivity {
             }
         });
         AddAction();
-        EditAction();
-        DeleteAction();
+       /* EditAction();
+        DeleteAction();*/
 
     }
     // THÊM SỰ KIỆN CHO NÚT XÓA TẠI ĐÂY
@@ -194,7 +185,10 @@ public class XemDanhSachMonAn extends AppCompatActivity {
                 });
                 Locale localeVN = new Locale("vi", "VN");
                 NumberFormat currencyVN = NumberFormat.getCurrencyInstance(localeVN);
-                String vnd = currencyVN.format(Long.parseLong(mMonan.get(i).gia));
+                String vnd = "";
+                if (mMonan.get(i).gia != ""){
+                    vnd = currencyVN.format(Long.parseLong(mMonan.get(i).gia));
+                }
                 tvten.setText(mMonan.get(i).tenmonan);
                 tvloai.setText(mMonan.get(i).loaimonan);
                 tvgia.setText("Giá: "+ vnd);
