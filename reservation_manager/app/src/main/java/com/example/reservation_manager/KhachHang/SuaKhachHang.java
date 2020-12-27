@@ -74,7 +74,7 @@ public class SuaKhachHang extends AppCompatActivity {
 
         AnhXa();
 
-        uid = getIntent().getStringExtra("position");
+        uid = getIntent().getStringExtra("key");
         databaseReference.child(uid).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
