@@ -106,7 +106,7 @@ public class xemchitietkh extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent edithotenIntent = new Intent(xemchitietkh.this, SuaKhachHang.class);
-                edithotenIntent.putExtra("position",uid);
+                edithotenIntent.putExtra("key",uid);
                 startActivity(edithotenIntent);
             }
         });
@@ -114,7 +114,7 @@ public class xemchitietkh extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent editsdtIntent = new Intent(xemchitietkh.this, SuaKhachHang.class);
-                editsdtIntent.putExtra("position",uid);
+                editsdtIntent.putExtra("key",uid);
                 startActivity(editsdtIntent);
             }
         });
