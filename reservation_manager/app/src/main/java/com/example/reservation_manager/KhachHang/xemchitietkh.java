@@ -30,7 +30,7 @@ import java.io.File;
 
 public class xemchitietkh extends AppCompatActivity {
     ImageView avatar, ivhoten, ivsdt;
-    TextView ht,sdt,ns,sld, gt;
+    TextView ht,sdt,ns,sld,gt,lkh,vip;
     private String uid;
     DatabaseReference databaseReference;
     StorageReference storageReference;
@@ -43,6 +43,8 @@ public class xemchitietkh extends AppCompatActivity {
         ns = (TextView) findViewById(R.id.TvNS);
         sld = (TextView) findViewById(R.id.TvSLD);
         gt = (TextView)findViewById(R.id.Tvgt);
+        lkh = (TextView)findViewById(R.id.TvLoaiKhach);
+        vip = (TextView)findViewById(R.id.tvVIP);
         databaseReference = FirebaseDatabase.getInstance().getReference("KhachHang");
         storageReference = FirebaseStorage.getInstance().getReference();
         controller = new FirebaseController(getApplicationContext());
@@ -92,6 +94,18 @@ public class xemchitietkh extends AppCompatActivity {
                             Toast.makeText(xemchitietkh.this, "Không thể load ảnh, vui lòng thử lại", Toast.LENGTH_SHORT).show();
                         }
                     });
+                    if (snapshot.getValue(KhachHang.class).thanthiet == true) {
+                        lkh.setText("Khách hàng thân thiết");
+                    } else {
+                        lkh.setText("Khách hàng thường");
+                    }
+                    if (snapshot.getValue(KhachHang.class).vip == true) {
+                        vip.setText("VIP MEMBER");
+                        vip.setTextColor(Color.RED);
+                    } else {
+                        vip.setText("NOT VIP");
+                    }
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
