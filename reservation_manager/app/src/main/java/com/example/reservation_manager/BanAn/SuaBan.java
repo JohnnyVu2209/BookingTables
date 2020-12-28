@@ -6,21 +6,15 @@
 //import android.widget.Button;
 //import android.widget.EditText;
 //
-//import androidx.annotation.NonNull;
 //import androidx.appcompat.app.AppCompatActivity;
 //
 //import com.example.reservation_manager.FirebaseController;
 //import com.example.reservation_manager.R;
-//import com.google.firebase.database.DataSnapshot;
-//import com.google.firebase.database.DatabaseError;
 //import com.google.firebase.database.DatabaseReference;
 //import com.google.firebase.database.FirebaseDatabase;
-//import com.google.firebase.database.ValueEventListener;
-//import com.google.firebase.storage.FirebaseStorage;
 //import com.google.firebase.storage.StorageReference;
 //import com.google.firebase.storage.StorageTask;
 //
-//import java.io.File;
 //import java.text.Normalizer;
 //import java.util.regex.Pattern;
 //
@@ -29,11 +23,11 @@
 //    Button sua;
 //    private String uid;
 //    DatabaseReference databaseReference;
-//    StorageReference storageReference;
+//
 //    tables banAn;
 //    FirebaseController controller;
 //
-//    StorageTask uploadTask;
+//
 //
 //    private void AnhXa() {
 //
@@ -41,7 +35,7 @@
 //        sln = (EditText) findViewById(R.id.etAmount);
 //        sua = (Button) findViewById(R.id.btnEdit);
 //        databaseReference = FirebaseDatabase.getInstance().getReference("Ban");
-//        storageReference = FirebaseStorage.getInstance().getReference();
+//
 //        controller = new FirebaseController(getApplicationContext());
 //    }
 //
@@ -52,25 +46,24 @@
 //
 //        AnhXa();
 //
-//        uid = getIntent().getStringExtra("position");
-//        databaseReference.child(uid).addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                final File file;
-//                try {
-//                    tb.setText(snapshot.getValue(tables.class).getSo_ban());
-//                    sln.setText(snapshot.getValue(tables.class).getSoluong_nguoi());
-//
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//
-//            }
-//        });
+////        uid = getIntent().getStringExtra("position");
+////        databaseReference.child(uid).addListenerForSingleValueEvent(new ValueEventListener() {
+////            @Override
+////            public void onDataChange(@NonNull DataSnapshot snapshot) {
+////                try {
+////                    tb.setText(snapshot.getValue(tables.class).SoBan());
+////                    sln.setText(snapshot.getValue(tables.class).SoLuongNguoi());
+////
+////                } catch (Exception e) {
+////                    e.printStackTrace();
+////                }
+////            }
+////
+////            @Override
+////            public void onCancelled(@NonNull DatabaseError error) {
+////
+////            }
+////        });
 //
 //        sua.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -84,7 +77,7 @@
 //    }
 //
 //    private void intentToListBA(){
-//        Intent ListBA_intent = new Intent(SuaBan.this, ViewTableList.class);
+//        Intent ListBA_intent = new Intent(SuaBan.this, DanhSachBan.class);
 //        ListBA_intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 //        ListBA_intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
 //        startActivity(ListBA_intent);

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="139dp"
+        android:layout_height="180dp"
+        android:src="@drawable/kitchen_table"/>
+
+    <LinearLayout
+        android:layout_width="804dp"
+        android:layout_height="224dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvHoTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Bàn"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Số món gọi trước"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvNgaySinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Khách"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btnEditkhach"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:src="@drawable/ic_baseline_edit_24" />
+
+        <ImageView
+            android:id="@+id/btnDeletekhach"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_baseline_delete_24" />
+    </LinearLayout>
+
+
+</LinearLayout>

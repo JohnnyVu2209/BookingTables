@@ -33,8 +33,8 @@
         app:srcCompat="@drawable/add__1_" />
 
     <LinearLayout
-        android:layout_width="999dp"
-        android:layout_height="578dp"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
         android:layout_marginTop="44dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
