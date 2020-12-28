@@ -3,6 +3,8 @@ package com.example.reservationuser;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,8 +17,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ListView;
+import android.widget.QuickContactBadge;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,16 +41,18 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ListView listfood;
-    private ArrayList<String> mloai;
-    private ListAdapter adapter;
+    private GridView gridviewfood;
+    private ArrayList<MonAn> mMonAn;
+    private GridAdapter adapter;
+    Button btnLichSu;
     DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
     Toolbar toolbar;
     private void Anhxa(){
-        listfood = (ListView)findViewById(R.id.listfood);
-        mloai = new ArrayList<>();
-        adapter = new ListAdapter(MainActivity.this,R.layout.item_list,mloai);
-        listfood.setAdapter(adapter);
+        gridviewfood = (GridView)findViewById(R.id.gridviewfood);
+        mMonAn = new ArrayList<>();
+        adapter = new GridAdapter(MainActivity.this,R.layout.gridview_row,mMonAn);
+        gridviewfood.setAdapter(adapter);
+        btnLichSu = (Button)findViewById(R.id.btnLichSu);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,11 +66,12 @@ public class MainActivity extends AppCompatActivity {
         reference.child("MonAn").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                mMonAn.clear();
                 for (DataSnapshot dataSnapshot: snapshot.getChildren()){
-                    mloai.add(dataSnapshot.child("loaimonan").getValue().toString());
+                    MonAn monAn = dataSnapshot.getValue(MonAn.class);
+                    mMonAn.add(monAn);
                 }
                 adapter.notifyDataSetChanged();
-                Log.d("LLL", "onDataChange: " + sortSame(mloai));
 
             }
 
@@ -74,6 +81,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        final XemLichSuFragment fragment = new XemLichSuFragment();
+        final FragmentManager manager = getSupportFragmentManager();
+        //CHUYEN TU TRANG CHU SANG FRAGMENT XEM LICH SU
+        btnLichSu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                manager.beginTransaction().add(R.id.main_container,fragment).addToBackStack(MainActivity.class.getName()).commit();
+
+            }
+        });
     }
     private ArrayList sortSame(ArrayList<String> list){
         ArrayList<String> list1 = new ArrayList<>();

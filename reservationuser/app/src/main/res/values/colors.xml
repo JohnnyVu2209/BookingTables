@@ -9,6 +9,8 @@
     <color name="verify">#D81B60</color>
     <color name="greenPhone">#3BBB95</color>
     <color name="white">#ffffff</color>
+    <color name="orderButton">#CF1E1E</color>
+    <color name="HistoryButton">#51AEDE</color>
 
 
 </resources>

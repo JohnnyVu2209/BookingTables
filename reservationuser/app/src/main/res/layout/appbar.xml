@@ -16,16 +16,13 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:src="@drawable/img_20201013_112812" />
-
-        <EditText
-            android:layout_width="220dp"
-            android:layout_height="53dp"
-            android:background="@drawable/text_input_bg2"
-            android:drawableStart="@drawable/ic_baseline_search_24"
-            android:hint="Tìm kiếm..."
-            android:textSize="20sp"
-            android:layout_marginEnd="15dp"/>
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reservation"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
     </androidx.appcompat.widget.Toolbar>
 
 </RelativeLayout>

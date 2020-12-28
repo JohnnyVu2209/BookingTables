@@ -35,76 +35,7 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class ListAdapter extends BaseAdapter {
-    Context context;
-    int mlayout;
-    ArrayList<String> mLoai;
-    ArrayList<MonAn> mMonan;
-    GridAdapter adapter;
-    DatabaseReference reference;
-    public ListAdapter(Context context,int layout,ArrayList<String> listloai){
-        this.context = context;
-        this.mlayout = layout;
-        this.mLoai = listloai;
-    }
-    @Override
-    public int getCount() {
-        return mLoai.size();
-    }
-
-    @Override
-    public Object getItem(int i) {
-        return null;
-    }
-
-    @Override
-    public long getItemId(int i) {
-        return 0;
-    }
-
-    @Override
-    public View getView(final int i, View view, ViewGroup viewGroup) {
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        view = inflater.inflate(mlayout,null);
-
-        final TextView tvTypeFood = (TextView)view.findViewById(R.id.tvTypeFood);
-
-        GridView gridviewfood = (GridView)view.findViewById(R.id.gridviewfood);
-        mMonan = new ArrayList<>();
-        adapter = new GridAdapter(context,R.layout.gridview_row,mMonan);
-        gridviewfood.setAdapter(adapter);
-
-        reference = FirebaseDatabase.getInstance().getReference("MonAn");
-        tvTypeFood.setText(mLoai.get(i));
-        reference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                MonAn monAn = snapshot.getValue(MonAn.class);
-                if(monAn.loaimonan.contains(mLoai.get(i))){
-                    mMonan.add(monAn);
-                }
-                Log.d("MONAN", "onDataChange: " + mMonan);
-        /*        adapter.notifyDataSetChanged();*/
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-        return view;
-    }
-    private ArrayList sortSame(ArrayList<String> list){
-        ArrayList<String> list1 = new ArrayList<>();
-        for (String element: list) {
-            if(!list1.contains(element)){
-                list1.add(element);
-            }
-        }
-        return list1;
-    }
-}
-class GridAdapter extends BaseAdapter{
+public class GridAdapter extends BaseAdapter{
     Context context;
     int glayout;
     ArrayList<MonAn> mMonan;
@@ -136,11 +67,12 @@ class GridAdapter extends BaseAdapter{
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         convertView = inflater.inflate(glayout,null);
 
-        final ImageView imgfood = (ImageView)convertView.findViewById(R.id.imgFood);
-        TextView tvFoodname = (TextView)convertView.findViewById(R.id.tvFoodname);
-        TextView tvFoodprice = (TextView)convertView.findViewById(R.id.tvFoodprice);
+
 
         try{
+            final ImageView imgfood = (ImageView)convertView.findViewById(R.id.imgFood);
+            TextView tvFoodname = (TextView)convertView.findViewById(R.id.tvFoodname);
+            TextView tvFoodprice = (TextView)convertView.findViewById(R.id.tvFoodprice);
             final File file = File.createTempFile("image","png");
             storageReference = FirebaseStorage.getInstance().getReference();
             storageReference.child(mMonan.get(position).idhinh).getFile(file).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
@@ -188,3 +120,4 @@ class GridAdapter extends BaseAdapter{
         notifyDataSetChanged();
     }
 }
+
