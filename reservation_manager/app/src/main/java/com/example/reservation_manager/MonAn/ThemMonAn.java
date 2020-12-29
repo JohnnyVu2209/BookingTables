@@ -196,7 +196,7 @@ public class ThemMonAn extends AppCompatActivity {
         group      = (RadioGroup)findViewById(R.id.RbtnGoiMon);
         can        = (RadioButton)findViewById(R.id.RbtnDuoc);
         not        = (RadioButton)findViewById(R.id.RbtnKhong);
-        add        = (Button)findViewById(R.id.btnThem);
+        add        = (Button)findViewById(R.id.btnCapnhat);
         TypeFood   = new ArrayList<String>();
         adapter    = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,TypeFood);
         loaima.setAdapter(adapter);
