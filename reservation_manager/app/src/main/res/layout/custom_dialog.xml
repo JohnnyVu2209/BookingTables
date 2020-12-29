@@ -16,7 +16,7 @@
 
     <EditText
         android:id="@+id/etNumber"
-        android:hint="Số bàn"
+        android:hint="Số bàn (vd: 1)"
         android:textSize="20dp"
         android:fontFamily="@font/open_sans_semibold"
         android:layout_width="match_parent"
@@ -41,12 +41,77 @@
             android:layout_height="50dp"
             android:hint="1"
             android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loại bàn:"
+        android:textSize="20dp"
+        android:fontFamily="@font/open_sans_semibold"/>
+
+        <RadioButton
+            android:id="@+id/rbtVip"
+            android:layout_width="130dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="30dp"
+            android:text="Bàn Vip"/>
+        <RadioButton
+            android:id="@+id/rbtNormal"
+            android:layout_width="130dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="25dp"
+            android:text="Bàn Thường"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vị trí muốn thêm"
+            android:textSize="20dp"
+            android:fontFamily="@font/open_sans_semibold"/>
+
+        <EditText
+            android:id="@+id/etRow"
+            android:hint="Vị trí hàng muốn thêm (hàng ngang)"
+            android:textSize="20dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etColumn"
+            android:hint="Vị trí cột muốn thêm (hàng dọc)"
+            android:textSize="20dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="50"/>
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:weightSum="10">
 
         <Button

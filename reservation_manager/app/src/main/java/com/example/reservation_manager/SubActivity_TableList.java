@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,6 +21,7 @@ public class SubActivity_TableList extends Fragment {
     // button dialog
     Button addtable, cancel;
     EditText number, amount;
+    RadioButton vip, nor;
 
     tables table;
     public View view;
@@ -46,31 +48,44 @@ public class SubActivity_TableList extends Fragment {
 
 //        final String pos = String.valueOf(inflater);
         AnhXa();
-
-
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Dialog dialog = new Dialog(getActivity());
+                final Dialog dialog = new Dialog(getActivity());
                 dialog.setContentView(R.layout.custom_dialog);
                 dialog.show();
 
                 number =(EditText) dialog.findViewById(R.id.etNumber);
                 amount =(EditText)  dialog.findViewById(R.id.etAmount);
+                vip =(RadioButton) dialog.findViewById(R.id.rbtVip);
+                nor =(RadioButton) dialog.findViewById(R.id.rbtNormal);
 
                 addtable =(Button) dialog.findViewById(R.id.btnAdd);
                 addtable.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         int soban, soluongnguoi;
+                        boolean loaiban = true;
                         soban = Integer.parseInt(number.getText().toString());
                         soluongnguoi = Integer.parseInt(amount.getText().toString());
+                        if(nor.isChecked()) {
+                            loaiban = true;
+                        } else {
+                            loaiban = false;
+                        }
+                        dialog.dismiss();
 
-                        table = new tables(soban, soluongnguoi);
+                        table = new tables(soban, soluongnguoi, loaiban);
                         controller.WirteWithAutoIncreaseKey("Ban", table);
                     }
                 });
-
+                cancel =(Button) dialog.findViewById(R.id.btnCancel);
+                cancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.cancel();
+                    }
+                });
             }
         });
         return view;
@@ -85,10 +100,16 @@ public class SubActivity_TableList extends Fragment {
 
     private void insertDataTable() {
         int soban, soluongnguoi;
+        boolean loaiban = true;
         soban = Integer.parseInt(number.getText().toString());
         soluongnguoi = Integer.parseInt(amount.getText().toString());
+        if(nor.isChecked()) {
+            loaiban = true;
+        } else {
+            loaiban = false;
+        }
 
-        table = new tables(soban, soluongnguoi);
+        table = new tables(soban, soluongnguoi, loaiban);
 
         //Toast.makeText(getActivity(), "Lưu thành công", Toast.LENGTH_SHORT).show();
     }

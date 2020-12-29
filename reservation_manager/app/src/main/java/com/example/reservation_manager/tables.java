@@ -4,10 +4,12 @@ public class tables {
 
     public int SoBan;
     public int SoLuongNguoi;
+    public boolean LoaiBan;
 
-    public tables(int so_ban, int soluong_nguoi) {
+    public tables(int so_ban, int soluong_nguoi, boolean loai_ban) {
         SoBan = so_ban;
         SoLuongNguoi = soluong_nguoi;
+        LoaiBan = loai_ban;
     }
 //
 //    public int getSo_ban() {
