@@ -29,4 +29,8 @@ public class KhachHang {
     public String getSdt() {
         return sdt;
     }
+
+    public String getHoten() {
+        return hoten;
+    }
 }

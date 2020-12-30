@@ -1,6 +1,7 @@
 package com.example.reservationuser;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentManager;
@@ -33,7 +34,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.database.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -44,15 +44,17 @@ public class MainActivity extends AppCompatActivity {
     private GridView gridviewfood;
     private ArrayList<MonAn> mMonAn;
     private GridAdapter adapter;
-    Button btnLichSu;
+    Button btnLichSu,btnDatBan;
     DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
     Toolbar toolbar;
+    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
     private void Anhxa(){
         gridviewfood = (GridView)findViewById(R.id.gridviewfood);
         mMonAn = new ArrayList<>();
         adapter = new GridAdapter(MainActivity.this,R.layout.gridview_row,mMonAn);
         gridviewfood.setAdapter(adapter);
         btnLichSu = (Button)findViewById(R.id.btnLichSu);
+        btnDatBan = (Button)findViewById(R.id.btnDatBan);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         Anhxa();
+        final MonAn monrong = new MonAn("","","",false,"FoodImages/Goicuhudua.png","");
         reference.child("MonAn").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -91,6 +93,19 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        btnDatBan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intentToDatBan();
+            }
+        });
+
+
+    }
+    private void intentToDatBan(){
+        Intent intent = new Intent(MainActivity.this,DatBan.class);
+        startActivity(intent);
     }
     private ArrayList sortSame(ArrayList<String> list){
         ArrayList<String> list1 = new ArrayList<>();

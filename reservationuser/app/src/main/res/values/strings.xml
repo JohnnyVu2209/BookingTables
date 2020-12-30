@@ -12,4 +12,6 @@
     <string name="facebook_app_id">1216762022031260</string>
     <string name="fb_login_protocol_scheme">fb1216762022031260</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose"><u>chọn</u></string>
+    <string name="tableChoose"><u>chọn bàn</u></string>
 </resources>

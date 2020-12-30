@@ -9,13 +9,15 @@
         android:layout_height="100dp"
         android:background="@drawable/rectangle_image"
         android:scaleType="centerCrop"/>
+
     <TextView
         android:id="@+id/tvFoodname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="tên món"
-        android:textColor="@color/black"
-        android:layout_gravity="center"/>
+        android:textAlignment="center"
+        android:textColor="@color/black" />
     <TextView
         android:id="@+id/tvFoodprice"
         android:layout_width="wrap_content"

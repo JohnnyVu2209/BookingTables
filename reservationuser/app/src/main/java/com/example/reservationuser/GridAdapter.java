@@ -84,7 +84,11 @@ public class GridAdapter extends BaseAdapter{
             });
             Locale localeVN = new Locale("vi", "VN");
             NumberFormat currencyVN = NumberFormat.getCurrencyInstance(localeVN);
-            String vnd = currencyVN.format(Long.parseLong(mMonan.get(position).gia));
+            String vnd = "";
+            if(mMonan.get(position).gia != ""){
+                vnd = currencyVN.format(Long.parseLong(mMonan.get(position).gia));
+            }
+
             tvFoodname.setText(mMonan.get(position).tenmonan);
             tvFoodprice.setText(vnd);
 
