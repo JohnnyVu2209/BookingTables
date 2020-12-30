@@ -12,8 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".KhuyenMai.suaKM"></activity>
-        <activity android:name=".KhuyenMai.XemDanhSachKhuyenMai"></activity>
-        <activity android:name=".KhuyenMai.ThemKM" />
+        <activity android:name=".KhuyenMai.XemDanhSachKhuyenMai">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".KhachHang.xemchitietkh" />
         <activity
             android:name=".Login.Login"
@@ -22,11 +27,6 @@
         <activity
             android:name=".KhachHang.XemDanhSachKhachHang"
             android:screenOrientation="fullUser">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".KhachHang.SuaKhachHang"

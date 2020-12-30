@@ -7,14 +7,14 @@ public class KhuyenMai {
     public String nameKM;
     public String start;
     public String exp;
-    public String percentage;
+    public int percentage;
 
     public KhuyenMai()
     {
 
     }
 
-    public KhuyenMai(String code, String nameKM, String start, String exp, String percentage)
+    public KhuyenMai(String code, String nameKM, String start, String exp, int percentage)
     {
         this.code = code;
         this.nameKM = nameKM;

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="800dp"
-    android:orientation="vertical"
-    android:layout_height="700dp"
+    android:layout_height="520dp"
+    android:layout_gravity="center_horizontal"
     android:background="@drawable/background"
-    android:layout_gravity="center_horizontal">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvTitle"
@@ -46,10 +45,9 @@
         android:textStyle="bold|italic" />
 
     <EditText
-        android:id="@+id/ednamKM"
+        android:id="@+id/ednameKM"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:inputType="number"
         android:textColor="#000"
         android:textSize="23sp" />
 
@@ -66,7 +64,6 @@
         android:id="@+id/edstart"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:inputType="number"
         android:textColor="#000"
         android:textSize="23sp" />
 
@@ -83,7 +80,6 @@
         android:id="@+id/edexp"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:inputType="number"
         android:textColor="#000"
         android:textSize="23sp" />
 
@@ -107,11 +103,11 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="85dp"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnLuu"
+            android:id="@+id/btnL"
             android:layout_width="200dp"
             android:layout_height="60dp"
             android:layout_marginStart="140dp"
@@ -123,12 +119,12 @@
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/btnHuy"
+            android:id="@+id/btnH"
             android:layout_width="200dp"
             android:layout_height="60dp"
             android:layout_marginStart="110dp"
             android:layout_marginTop="14dp"
-            android:layout_toEndOf="@+id/btnLuu"
+            android:layout_toEndOf="@+id/btnL"
             android:background="@drawable/background_button_khong"
             android:text="Hủy"
             android:textAlignment="center"
