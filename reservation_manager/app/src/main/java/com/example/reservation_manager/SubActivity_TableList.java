@@ -46,13 +46,12 @@ public class SubActivity_TableList extends Fragment {
         Log.d("fragmentB", "fragmentB: onCreateView");
         view = inflater.inflate(R.layout.fragment_b, container, false);
 
-//        final String pos = String.valueOf(inflater);
         AnhXa();
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final Dialog dialog = new Dialog(getActivity());
-                dialog.setContentView(R.layout.custom_dialog);
+                dialog.setContentView(R.layout.dialog_them_ban);
                 dialog.show();
 
                 number =(EditText) dialog.findViewById(R.id.etNumber);
@@ -70,7 +69,7 @@ public class SubActivity_TableList extends Fragment {
                         soluongnguoi = Integer.parseInt(amount.getText().toString());
                         if(nor.isChecked()) {
                             loaiban = true;
-                        } else {
+                        } else if (vip.isChecked()) {
                             loaiban = false;
                         }
                         dialog.dismiss();
@@ -91,62 +90,32 @@ public class SubActivity_TableList extends Fragment {
         return view;
     }
 
-//    private void intentToListTable() {
-//        Intent listTable_intent = new Intent(String.valueOf(SubActivity_TableList.this));
-//        listTable_intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//        listTable_intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//        startActivity(listTable_intent);
-//    }
-
-    private void insertDataTable() {
-        int soban, soluongnguoi;
-        boolean loaiban = true;
-        soban = Integer.parseInt(number.getText().toString());
-        soluongnguoi = Integer.parseInt(amount.getText().toString());
-        if(nor.isChecked()) {
-            loaiban = true;
-        } else {
-            loaiban = false;
-        }
-
-        table = new tables(soban, soluongnguoi, loaiban);
-
-        //Toast.makeText(getActivity(), "Lưu thành công", Toast.LENGTH_SHORT).show();
-    }
-
-
     @Override
     public void onStart() {
         Log.d("fragmentB", "fragmentB: onStart");
         super.onStart();
     }
-
     @Override
     public void onResume() {
         Log.d("fragmentB", "fragmentB: onResume");
         super.onResume();
     }
-
     @Override
     public void onPause() {
         Log.d("fragmentB", "fragmentB: onPause");
         super.onPause();
     }
-
     @Override
     public void onStop() {
         Log.d("fragmentB", "fragmentB: onStop");
         super.onStop();
     }
-
-
     @Override
     public void onDestroyView() {
 //        int a = 5;
         Log.d("fragmentB", "fragmentB: onDestroyView");
         super.onDestroyView();
     }
-
     @Override
     public void onDestroy() {
         Log.d("fragmentB", "fragmentB: onDestroy");
