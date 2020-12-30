@@ -39,28 +39,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="316bad8c-da23-4da2-8543-a2bbd4215f9a" name="Default Changelist" comment="Customer Done p2">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/LoaiKhachHang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhuyenMai/KhuyenMai.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_baseline_add_circle_outline_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_themloaikh.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhuyenMai/ThemKM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhuyenMai/XemDanhSachKhuyenMai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhuyenMai/suaKM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sua_k_m.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_them_k_m.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_xem_danh_sach_khuyen_mai.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/km_item_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_27_2020_11_53_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_27_2020_11_53_AM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/KhachHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/KhachHang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/SuaKhachHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/SuaKhachHang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/XemDanhSachKhachHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/XemDanhSachKhachHang.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/xemchitietkh.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/xemchitietkh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_suakh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_suakh.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_xemchitietkh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_xemchitietkh.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_xemdskh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_xemdskh.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/user_item_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_item_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhuyenMai/KhuyenMai.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhuyenMai/KhuyenMai.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[emulator-5554]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -115,16 +114,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1lB00As4e6rp971Zd32UQaC9FuX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Properties" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
     <property name="project.structure.last.edited" value="SDK Location" />
@@ -133,12 +136,12 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\AndroidProj\BookingTables\reservation_manager\app\src\main\res\drawable-v24" />
-      <recent name="D:\AndroidProj\BookingTables\reservation_manager\app\src\main\res\layout" />
-      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\font" />
-      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\values" />
-      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\drawable" />
+    <key name="android.template.-1174713892">
+      <recent name="com.example.reservation_manager" />
+      <recent name="com.example.reservation_manager.KhuyenMai" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Public\Downloads\BookingTables\reservation_manager\app\src\main\res\drawable-v24" />
     </key>
     <key name="android.template.452395587">
       <recent name="com.example.reservation_manager" />
@@ -147,8 +150,12 @@
       <recent name="com.example.reservation_manager" />
       <recent name="com.example.reservation_manager.KhachHang" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Public\Downloads\BookingTables\reservation_manager\app\src\main\res\drawable-v24" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AndroidProj\BookingTables\reservation_manager\app\src\main\res\drawable-v24" />
+      <recent name="D:\AndroidProj\BookingTables\reservation_manager\app\src\main\res\layout" />
+      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\font" />
+      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\values" />
+      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -324,26 +331,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="Customer Done p2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1608976241529">
+    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1609336140188">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1608976241529" />
-    <state x="394" y="209" width="494" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1608213572505">
+    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1609336140188" />
+    <state x="394" y="209" width="519" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1609336963347">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="394" y="209" width="494" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1608213572505" />
-    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608890742276">
+    <state x="394" y="209" width="519" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1609336963347" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609333003931">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1608890742276" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1609333003931" />
     <state x="318" y="187" key="AndroidCreateResourceDirectoryDialog" timestamp="1607056300347">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="318" y="187" key="AndroidCreateResourceDirectoryDialog/0.0.1474.864@0.0.1474.864" timestamp="1607056300347" />
-    <state x="295" y="157" key="AndroidCreateResourceFileDialog" timestamp="1609142518391">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="276" y="147" key="AndroidCreateResourceFileDialog" timestamp="1609334508478">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="276" y="147" key="AndroidCreateResourceFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1608363490840" />
+    <state x="276" y="147" key="AndroidCreateResourceFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1609334508478" />
     <state x="295" y="157" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1609142518391" />
     <state x="318" y="187" key="AndroidCreateResourceFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1607058351685" />
     <state x="277" y="0" key="CommitChangelistDialog2" timestamp="1609177112344">
@@ -407,6 +414,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="50" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1608181919799" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1609331374321">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1609331374321" />
     <state x="306" y="139" key="Vcs.Push.Dialog.v2" timestamp="1609052569237">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -421,10 +432,10 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="100" y="100" width="1274" height="664" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1474.864@0.0.1474.864" timestamp="1607060677082" />
-    <state x="475" y="275" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608182172631">
+    <state x="475" y="275" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609331463498">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="475" y="275" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1608182172631" />
+    <state x="475" y="275" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1609331463498" />
     <state x="547" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1474.864@0.0.1474.864" timestamp="1607067984164" />
     <state x="318" y="162" key="run.anything.popup" timestamp="1609044898200">
       <screen x="0" y="0" width="1366" height="728" />
