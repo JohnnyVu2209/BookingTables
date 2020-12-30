@@ -104,6 +104,7 @@ public class xemchitietkh extends AppCompatActivity {
                         vip.setTextColor(Color.RED);
                     } else {
                         vip.setText("NOT VIP");
+                        vip.setTextColor(Color.GRAY);
                     }
 
                 } catch (Exception e) {

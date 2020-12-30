@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="800dp"
+    android:orientation="vertical"
+    android:layout_height="700dp"
+    android:background="@drawable/background"
+    android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông Tin Khuyến Mãi"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã KM:"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/edcode"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="text"
+        android:textColor="#000"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/tvnamKM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên chương trình:"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/ednamKM"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="number"
+        android:textColor="#000"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/tvstart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngày bắt đầu:"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/edstart"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="number"
+        android:textColor="#000"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/tvexp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngày kết thúc:"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/edexp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="number"
+        android:textColor="#000"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/tvpercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phằn trăm chiết khấu"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/edpercentage"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="number"
+        android:textColor="#000"
+        android:textSize="23sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnLuu"
+            android:layout_width="528dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="140dp"
+            android:background="@drawable/background_button"
+            android:text="Lưu Thông Tin"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>
