@@ -1,14 +1,12 @@
 package com.example.reservation_manager.KhachHang;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -27,25 +25,16 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.StorageTask;
-import com.google.firebase.storage.UploadTask;
 
 import java.io.File;
-import java.text.Normalizer;
-import java.util.regex.Pattern;
 
 public class xemchitietkh extends AppCompatActivity {
     ImageView avatar, ivhoten, ivsdt;
-    TextView ht,sdt,ns,sld, gt;
+    TextView ht,sdt,ns,sld,gt,lkh,vip;
     private String uid;
     DatabaseReference databaseReference;
     StorageReference storageReference;
-    KhachHang khachHang;
     FirebaseController controller;
-    Uri imguri;
-    String idavatar = null;
-    String idavatartemp;
-    StorageTask uploadTask;
 
     private void AnhXa() {
         avatar = (ImageView) findViewById(R.id.profile_image);
@@ -54,6 +43,8 @@ public class xemchitietkh extends AppCompatActivity {
         ns = (TextView) findViewById(R.id.TvNS);
         sld = (TextView) findViewById(R.id.TvSLD);
         gt = (TextView)findViewById(R.id.Tvgt);
+        lkh = (TextView)findViewById(R.id.TvLoaiKhach);
+        vip = (TextView)findViewById(R.id.tvVIP);
         databaseReference = FirebaseDatabase.getInstance().getReference("KhachHang");
         storageReference = FirebaseStorage.getInstance().getReference();
         controller = new FirebaseController(getApplicationContext());
@@ -67,7 +58,7 @@ public class xemchitietkh extends AppCompatActivity {
         setContentView(R.layout.activity_xemchitietkh);
 
         AnhXa();
-        uid = getIntent().getStringExtra("position");
+        uid = getIntent().getStringExtra("key");
         databaseReference.child(uid).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -103,7 +94,18 @@ public class xemchitietkh extends AppCompatActivity {
                             Toast.makeText(xemchitietkh.this, "Không thể load ảnh, vui lòng thử lại", Toast.LENGTH_SHORT).show();
                         }
                     });
-                    idavatartemp = snapshot.getValue(KhachHang.class).idavatar;
+                    if (snapshot.getValue(KhachHang.class).thanthiet == true) {
+                        lkh.setText("Khách hàng thân thiết");
+                    } else {
+                        lkh.setText("Khách hàng thường");
+                    }
+                    if (snapshot.getValue(KhachHang.class).vip == true) {
+                        vip.setText("VIP MEMBER");
+                        vip.setTextColor(Color.RED);
+                    } else {
+                        vip.setText("NOT VIP");
+                    }
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -118,7 +120,7 @@ public class xemchitietkh extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent edithotenIntent = new Intent(xemchitietkh.this, SuaKhachHang.class);
-                edithotenIntent.putExtra("position",uid);
+                edithotenIntent.putExtra("key",uid);
                 startActivity(edithotenIntent);
             }
         });
@@ -126,56 +128,9 @@ public class xemchitietkh extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent editsdtIntent = new Intent(xemchitietkh.this, SuaKhachHang.class);
-                editsdtIntent.putExtra("position",uid);
+                editsdtIntent.putExtra("key",uid);
                 startActivity(editsdtIntent);
             }
         });
-    }
-    private void intentToListKH(){
-        Intent ListKH_intent = new Intent(xemchitietkh.this,XemDanhSachKhachHang.class);
-        ListKH_intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        ListKH_intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(ListKH_intent);
-        finish();
-    }
-    private void Fireuploader() {
-        idavatar = "KhachImages/"+removeAccent(ht.getText().toString()).replaceAll("\\s","")+"."+"png";
-        StorageReference ref = storageReference.child(idavatar);
-        uploadTask=ref.putFile(imguri)
-                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                    @Override
-                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                        // Get a URL to the uploaded content
-                        Uri downloadUrl = taskSnapshot.getUploadSessionUri();
-                    }
-                })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception exception) {
-                        // Handle unsuccessful uploads
-                        // ...
-                    }
-                });
-    }
-    private String removeAccent(String s) {
-        String temp = Normalizer.normalize(s, Normalizer.Form.NFD);
-        Pattern pattern = Pattern.compile("\\p{InCombiningDiacriticalMarks}+");
-        return pattern.matcher(temp).replaceAll("");
-    }
-
-    private void Filechooser() {
-        Intent intent = new Intent();
-        intent.setType("image/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(intent,1);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == 1 && resultCode == RESULT_OK && data!=null && data.getData()!=null){
-            imguri = data.getData();
-            avatar.setImageURI(imguri);
-        }
     }
 }

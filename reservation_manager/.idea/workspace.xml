@@ -38,16 +38,21 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="316bad8c-da23-4da2-8543-a2bbd4215f9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+    <list default="true" id="316bad8c-da23-4da2-8543-a2bbd4215f9a" name="Default Changelist" comment="Customer Done p2">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/LoaiKhachHang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhuyenMai/KhuyenMai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_baseline_add_circle_outline_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_themloaikh.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/KhachHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/KhachHang.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/SuaKhachHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/SuaKhachHang.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/XemDanhSachKhachHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/XemDanhSachKhachHang.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/xemchitietkh.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/xemchitietkh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_edit_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_edit_24.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_suakh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_suakh.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_xemchitietkh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_xemchitietkh.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_xemdskh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_xemdskh.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/user_item_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_item_list.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +60,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[emulator-5554]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -95,9 +100,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="resourceFile" />
         <option value="Class" />
         <option value="layoutResourceFile" />
-        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -121,15 +126,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../187PM06610.Home07/Dialog_nhap2soxuatthuong" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Public\Downloads\BookingTables\reservation_manager\app\src\main\res\drawable-v24" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AndroidProj\BookingTables\reservation_manager\app\src\main\res\drawable-v24" />
+      <recent name="D:\AndroidProj\BookingTables\reservation_manager\app\src\main\res\layout" />
+      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\font" />
+      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\values" />
+      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\drawable" />
     </key>
     <key name="android.template.452395587">
       <recent name="com.example.reservation_manager" />
@@ -138,10 +147,8 @@
       <recent name="com.example.reservation_manager" />
       <recent name="com.example.reservation_manager.KhachHang" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\font" />
-      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\values" />
-      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\drawable" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Public\Downloads\BookingTables\reservation_manager\app\src\main\res\drawable-v24" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -267,7 +274,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608797852134</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Customer Done">
+      <created>1609052446045</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609052446045</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Customer Done p2">
+      <created>1609052521090</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609052521091</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,7 +319,9 @@
     <MESSAGE value="reservation_Manager" />
     <MESSAGE value="Display customer detail view and remove customer" />
     <MESSAGE value="EDIT DISPLLAY CUSTOMER's DETAIL" />
-    <option name="LAST_COMMIT_MESSAGE" value="EDIT DISPLLAY CUSTOMER's DETAIL" />
+    <MESSAGE value="Customer Done" />
+    <MESSAGE value="Customer Done p2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Customer Done p2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1608976241529">
@@ -317,44 +340,52 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="318" y="187" key="AndroidCreateResourceDirectoryDialog/0.0.1474.864@0.0.1474.864" timestamp="1607056300347" />
-    <state x="276" y="147" key="AndroidCreateResourceFileDialog" timestamp="1608363490840">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="295" y="157" key="AndroidCreateResourceFileDialog" timestamp="1609142518391">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="276" y="147" key="AndroidCreateResourceFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1608363490840" />
+    <state x="295" y="157" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1609142518391" />
     <state x="318" y="187" key="AndroidCreateResourceFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1607058351685" />
-    <state x="260" y="0" key="CommitChangelistDialog2" timestamp="1608797850727">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="277" y="0" key="CommitChangelistDialog2" timestamp="1609177112344">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="260" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1608797850727" />
+    <state x="277" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1609177112344" />
     <state x="299" y="27" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1607067967254" />
-    <state x="141" y="69" key="DiffContextDialog" timestamp="1607068016784">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state x="131" y="58" key="DiffContextDialog" timestamp="1609052548329">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="131" y="58" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1609052548329" />
     <state x="141" y="69" key="DiffContextDialog/0.0.1474.864@0.0.1474.864" timestamp="1607068016784" />
-    <state x="450" y="148" key="FileChooserDialogImpl" timestamp="1608284229134">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="480" y="158" key="FileChooserDialogImpl" timestamp="1609141877625">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="450" y="148" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1608284229134" />
+    <state x="480" y="158" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609141877625" />
     <state x="518" y="188" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1607068186580" />
-    <state width="1236" height="163" key="GridCell.Tab.0.bottom" timestamp="1608979657902">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1367" height="186" key="GridCell.Tab.0.bottom" timestamp="1609176852375">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1236" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1608979657902" />
+    <state width="1367" height="186" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609176852375" />
     <state width="1429" height="222" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1607062320184" />
-    <state width="1236" height="163" key="GridCell.Tab.0.center" timestamp="1608979657902">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1367" height="186" key="GridCell.Tab.0.center" timestamp="1609176852374">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1236" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1608979657902" />
+    <state width="1367" height="186" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1609176852374" />
     <state width="1429" height="222" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1607062320184" />
-    <state width="1236" height="163" key="GridCell.Tab.0.left" timestamp="1608979657902">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1367" height="186" key="GridCell.Tab.0.left" timestamp="1609176852374">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1236" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1608979657902" />
+    <state width="1367" height="186" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1609176852374" />
     <state width="1429" height="222" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1607062320183" />
-    <state width="1236" height="163" key="GridCell.Tab.0.right" timestamp="1608979657902">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1367" height="186" key="GridCell.Tab.0.right" timestamp="1609176852375">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1236" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1608979657902" />
+    <state width="1367" height="186" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1609176852375" />
     <state width="1429" height="222" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1607062320184" />
     <state width="1236" height="203" key="GridCell.Tab.1.bottom" timestamp="1608978579132">
       <screen x="0" y="0" width="1280" height="680" />
@@ -376,10 +407,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="50" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1608181919799" />
-    <state x="287" y="130" key="Vcs.Push.Dialog.v2" timestamp="1608797879634">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="306" y="139" key="Vcs.Push.Dialog.v2" timestamp="1609052569237">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="287" y="130" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608797879634" />
+    <state x="306" y="139" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1609052569237" />
     <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1607068032084" />
     <state x="553" y="210" key="chooseDestDirectoryDialog" timestamp="1607056181927">
       <screen x="0" y="0" width="1474" height="864" />
@@ -394,20 +426,10 @@
     </state>
     <state x="475" y="275" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1608182172631" />
     <state x="547" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1474.864@0.0.1474.864" timestamp="1607067984164" />
-    <state x="298" y="151" key="run.anything.popup" timestamp="1608362373097">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="318" y="162" key="run.anything.popup" timestamp="1609044898200">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="298" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1608362373097" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/KhachHang/xemchitietkh.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="318" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1609044898200" />
   </component>
 </project>
