@@ -88,7 +88,8 @@ public class FirebaseController {
         });
 
     }
-
+    
+    //Lấy số bị thiếu trong danh sách
     private ArrayList<Integer> getMissingNumber(ArrayList<Integer> key, int lenght) {
         int missingCount = lenght - key.size();
         BitSet bitSet = new BitSet(lenght);
@@ -103,6 +104,7 @@ public class FirebaseController {
         }
         return missingarray;
     }
+    //kiểm tra xem danh sách có bị thiếu số không 
     private Boolean isMissing(ArrayList<Integer> key, int lenght){
         Boolean missing = false;
         int missingCount = lenght - key.size();
