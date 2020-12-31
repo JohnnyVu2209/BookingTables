@@ -16,17 +16,35 @@
         app:layout_constraintTop_toBottomOf="@+id/appbar"
         android:orientation="horizontal"
         android:padding="10dp">
+        <ImageView
+            android:id="@+id/btnAddKM"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="95dp"
+            android:src="@drawable/ic_baseline_add_circle_outline_24" />
+
+        <TextView
+            android:id="@+id/tvAddKM"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="25dp"
+            android:text="Thêm khuyến mãi"
+            android:textAlignment="textStart"
+            android:textColor="#000"
+            android:textSize="35sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/llAddFoodBtn">
+        app:layout_constraintTop_toBottomOf="@+id/llAddFoodBtn"
+        android:baselineAligned="false">
 
         <ListView
             android:id="@+id/lvDSKM"
             android:layout_width="fill_parent"
-            android:layout_height="593dp"
+            android:layout_height="wrap_content"
             android:dividerHeight="15sp"
             android:layout_weight="1"
             app:layout_constraintStart_toStartOf="parent"

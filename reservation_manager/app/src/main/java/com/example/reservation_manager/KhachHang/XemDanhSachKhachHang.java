@@ -228,7 +228,7 @@ public class XemDanhSachKhachHang extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     final Dialog mydialog = new Dialog(XemDanhSachKhachHang.this);
-                    mydialog.setContentView(R.layout.dialog);
+                    mydialog.setContentView(R.layout.delete_kh);
                     mydialog.show();
 
                     yes = (Button)mydialog.findViewById(R.id.btnCo);
