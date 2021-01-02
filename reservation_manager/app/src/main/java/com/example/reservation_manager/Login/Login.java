@@ -14,8 +14,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.reservation_manager.KhachHang.KhachHang;
-import com.example.reservation_manager.KhachHang.XemDanhSachKhachHang;
 import com.example.reservation_manager.MainActivity;
 import com.example.reservation_manager.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -85,7 +83,7 @@ public class Login extends AppCompatActivity {
         etPassword = (EditText)findViewById(R.id.password_text);
     }
     private void updateUI(FirebaseUser user){
-        Intent goHome = new Intent(Login.this, XemDanhSachKhachHang.class);
+        Intent goHome = new Intent(Login.this, MainActivity.class);
         goHome.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         goHome.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(goHome);

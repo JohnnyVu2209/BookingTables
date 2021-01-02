@@ -22,7 +22,7 @@ public class FirebaseController {
     private DatabaseReference referencer;
     private Context context;
     private final String TAG = "READ DATABASE";
-    long maxid =0;
+    long maxid = 0;
     public FirebaseController(Context context){
         database = FirebaseDatabase.getInstance();
         referencer = database.getReference();
@@ -68,10 +68,8 @@ public class FirebaseController {
                     UpdateData(child,String.valueOf(1),inputData);
                 }
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         });
 
