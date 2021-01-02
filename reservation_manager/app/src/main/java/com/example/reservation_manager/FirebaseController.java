@@ -1,13 +1,14 @@
 package com.example.reservation_manager;
 
+import android.app.DatePickerDialog;
 import android.content.Context;
 import android.util.Log;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -15,12 +16,13 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.BitSet;
 
 public class FirebaseController {
     private FirebaseDatabase database;
     private DatabaseReference referencer;
     private Context context;
+    ArrayList<Integer> key = new ArrayList();
     private final String TAG = "READ DATABASE";
     long maxid =0;
     public FirebaseController(Context context){
@@ -61,8 +63,18 @@ public class FirebaseController {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists()){
+                    for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                        Log.d(TAG, "onDataChange: " + dataSnapshot.getKey());
+                        key.add(Integer.valueOf(dataSnapshot.getKey()));
+                    }
                     maxid = snapshot.getChildrenCount();
-                    UpdateData(child,String.valueOf(maxid+1),inputData);
+                    int lenght =Integer.parseInt(key.get(key.size() - 1).toString());
+                    if (isMissing(key,lenght)){
+                        UpdateData(child, String.valueOf(getMissingNumber(key,lenght).get(0)),inputData);
+                    }
+                    else {
+                        UpdateData(child, String.valueOf(maxid + 1),inputData);
+                    }
                 }
                 else {
                     UpdateData(child,String.valueOf(1),inputData);
@@ -75,6 +87,41 @@ public class FirebaseController {
             }
         });
 
+    }
+
+    //Lấy số bị thiếu trong danh sách
+    private ArrayList<Integer> getMissingNumber(ArrayList<Integer> key, int lenght) {
+        int missingCount = lenght - key.size();
+        BitSet bitSet = new BitSet(lenght);
+        for (Integer number : key){
+            bitSet.set(number - 1);
+        }
+        ArrayList<Integer> missingarray = new ArrayList();
+        int lastMissingIndex = 0;
+        for (int i = 0;i < missingCount; i++){
+            lastMissingIndex = bitSet.nextClearBit(lastMissingIndex);
+            missingarray.add(++lastMissingIndex);
+        }
+        return missingarray;
+    }
+    //kiểm tra xem danh sách có bị thiếu số không
+    private Boolean isMissing(ArrayList<Integer> key, int lenght){
+        Boolean missing = false;
+        int missingCount = lenght - key.size();
+        BitSet bitSet = new BitSet(lenght);
+        for (Integer number : key){
+            bitSet.set(number - 1);
+        }
+        int lastMissingIndex = 0;
+        ArrayList missingarray = new ArrayList();
+        for (int i = 0;i < missingCount; i++){
+            lastMissingIndex = bitSet.nextClearBit(lastMissingIndex);
+            missingarray.add(++lastMissingIndex);
+        }
+        if (lastMissingIndex != 0){
+            missing = true;
+        }
+        return missing;
     }
 
     public<T> void UpdateData(String child, String child1, T inputData){

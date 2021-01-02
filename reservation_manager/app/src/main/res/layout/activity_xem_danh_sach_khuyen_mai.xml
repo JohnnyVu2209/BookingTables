@@ -10,7 +10,7 @@
         layout="@layout/appbar" />
 
     <LinearLayout
-        android:id="@+id/llAddFoodBtn"
+        android:id="@+id/llAddKMBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/appbar"
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginTop="25dp"
-            android:text="Thêm khuyến mãi"
+            android:text="Thêm"
             android:textAlignment="textStart"
             android:textColor="#000"
             android:textSize="35sp" />
@@ -38,7 +38,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/llAddFoodBtn"
+        app:layout_constraintTop_toBottomOf="@+id/llAddKMBtn"
         android:baselineAligned="false">
 
         <ListView
@@ -48,7 +48,7 @@
             android:dividerHeight="15sp"
             android:layout_weight="1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/llAddFoodBtn" />
+            app:layout_constraintTop_toBottomOf="@+id/llAddKMBtn" />
 
     </LinearLayout>
 

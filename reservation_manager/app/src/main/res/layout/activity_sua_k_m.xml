@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="800dp"
     android:orientation="vertical"
-    android:layout_height="700dp"
+    android:layout_height="500dp"
     android:background="@drawable/background"
-    android:layout_gravity="center_horizontal">
+    >
 
     <TextView
         android:id="@+id/tvTitle"
@@ -29,7 +29,7 @@
         android:textStyle="bold|italic" />
 
     <EditText
-        android:id="@+id/edcode"
+        android:id="@+id/ecode"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:inputType="text"
@@ -46,10 +46,10 @@
         android:textStyle="bold|italic" />
 
     <EditText
-        android:id="@+id/ednamKM"
+        android:id="@+id/enameKM"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:inputType="number"
+        android:inputType="text"
         android:textColor="#000"
         android:textSize="23sp" />
 
@@ -63,10 +63,10 @@
         android:textStyle="bold|italic" />
 
     <EditText
-        android:id="@+id/edstart"
+        android:id="@+id/estart"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:inputType="number"
+        android:inputType="text"
         android:textColor="#000"
         android:textSize="23sp" />
 
@@ -80,10 +80,10 @@
         android:textStyle="bold|italic" />
 
     <EditText
-        android:id="@+id/edexp"
+        android:id="@+id/eexp"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:inputType="number"
+        android:inputType="text"
         android:textColor="#000"
         android:textSize="23sp" />
 
@@ -91,16 +91,16 @@
         android:id="@+id/tvpercentage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Phằn trăm chiết khấu"
+        android:text="Phần trăm chiết khấu:"
         android:textColor="#000"
         android:textSize="24sp"
         android:textStyle="bold|italic" />
 
     <EditText
-        android:id="@+id/edpercentage"
+        android:id="@+id/epercentage"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:inputType="number"
+        android:inputType="text"
         android:textColor="#000"
         android:textSize="23sp" />
 
@@ -112,9 +112,9 @@
 
         <Button
             android:id="@+id/btnLuu"
-            android:layout_width="528dp"
+            android:layout_width="527dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="140dp"
+            android:layout_marginStart="10dp"
             android:background="@drawable/background_button"
             android:text="Lưu Thông Tin"
             android:textAlignment="center"

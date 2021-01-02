@@ -44,7 +44,7 @@ import java.util.ArrayList;
 public class XemDanhSachKhachHang extends AppCompatActivity {
     ListView listView;
     ArrayList khachhang, keys ;
-    ImageView btneditKH,btndeleteKH,btnaddtypekh;
+    ImageView btnaddtypekh;
     MyAdapter adapter;
     DatabaseReference databaseReference;
     StorageReference storageReference;
@@ -136,8 +136,6 @@ public class XemDanhSachKhachHang extends AppCompatActivity {
         keys = new ArrayList<>();
         adapter = new MyAdapter(getApplicationContext(),R.layout.user_item_list,khachhang);
         listView.setAdapter(adapter);
-        btneditKH = (ImageView)findViewById(R.id.btnEditkhach);
-        btndeleteKH = (ImageView)findViewById(R.id.btnDeletekhach);
         btnaddtypekh = (ImageView)findViewById(R.id.btnAddTypeKH);
         addtypekh = (TextView)findViewById(R.id.tvAddTypeKH);
     }
@@ -228,7 +226,9 @@ public class XemDanhSachKhachHang extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     final Dialog mydialog = new Dialog(XemDanhSachKhachHang.this);
-                    mydialog.setContentView(R.layout.delete_kh);
+                    LayoutInflater inflater1 = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                    View row = inflater1.inflate(R.layout.delete_kh,null);
+                    mydialog.setContentView(row);
                     mydialog.show();
 
                     yes = (Button)mydialog.findViewById(R.id.btnCo);
