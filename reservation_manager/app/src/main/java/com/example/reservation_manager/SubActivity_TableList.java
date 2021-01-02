@@ -131,7 +131,7 @@ public class SubActivity_TableList extends Fragment {
                     }
                 });
 
-                cancel =(Button) dialog.findViewById(R.id.btnCancel);
+                cancel =(Button) dialog.findViewById(R.id.btnDat);
                 cancel.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -293,7 +293,7 @@ public class SubActivity_TableList extends Fragment {
                 dialog.show();
 
                 delete = (Button) dialog.findViewById(R.id.btnDelete);
-                cancel = (Button) dialog.findViewById(R.id.btnCancel);
+                cancel = (Button) dialog.findViewById(R.id.btnDat);
                 tenban = (EditText) dialog.findViewById(R.id.etTenban);
                 tenban.setText("Số bàn:" + String.valueOf(mBanan.get(i).SoBan));
                 delete.setOnClickListener(new View.OnClickListener() {

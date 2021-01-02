@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.345"
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName5"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
 
     <TextView
         android:id="@+id/tvSLDAT2"
@@ -46,7 +46,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
 
     <TextView
         android:id="@+id/tvSLDAT"
@@ -74,7 +74,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.292"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
 
     <include
         android:id="@+id/include"
@@ -96,7 +96,7 @@
         app:layout_constraintTop_toBottomOf="@+id/include" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/etName"
         android:layout_width="449dp"
         android:layout_height="57dp"
         android:layout_marginTop="12dp"
@@ -108,7 +108,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvKH" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/etPhone"
         android:layout_width="450dp"
         android:layout_height="53dp"
         android:ems="10"
@@ -116,10 +116,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/etBan"
         android:layout_width="52dp"
         android:layout_height="31dp"
         android:layout_marginTop="16dp"
@@ -128,10 +128,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.031"
         app:layout_constraintStart_toEndOf="@+id/tvSDT"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/etNgay"
         android:layout_width="52dp"
         android:layout_height="31dp"
         android:layout_marginTop="16dp"
@@ -141,7 +141,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.012"
         app:layout_constraintStart_toEndOf="@+id/tvSLDAT"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/etBan" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
@@ -153,11 +153,11 @@
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.039"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintStart_toEndOf="@+id/etNgay"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/etTime"
         android:layout_width="52dp"
         android:layout_height="31dp"
         android:layout_marginTop="60dp"
@@ -167,10 +167,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.029"
         app:layout_constraintStart_toEndOf="@+id/tvSLDAT2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
 
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/rdbo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -181,14 +181,14 @@
         app:layout_constraintTop_toBottomOf="@+id/tvSLDAT2" />
 
     <RadioButton
-        android:id="@+id/radioButton2"
+        android:id="@+id/rbtKhong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Không"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toEndOf="@+id/radioButton"
+        app:layout_constraintStart_toEndOf="@+id/rdbo"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
 
     <ListView
@@ -198,10 +198,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+        app:layout_constraintTop_toBottomOf="@+id/rdbo" />
 
     <Button
-        android:id="@+id/btnCancel"
+        android:id="@+id/btnDat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="212dp"
@@ -210,6 +210,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+        app:layout_constraintTop_toBottomOf="@+id/rdbo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,8 +10,7 @@
         android:textSize="30dp"
         android:gravity="center"
         android:padding="15dp"
-        android:textColor="#140E0E"
-        android:layout_width="match_parent"
+        android:textColor="#140E0E"        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <EditText
@@ -123,7 +122,7 @@
             android:text="Thêm" />
 
         <Button
-            android:id="@+id/btnCancel"
+            android:id="@+id/btnDat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
