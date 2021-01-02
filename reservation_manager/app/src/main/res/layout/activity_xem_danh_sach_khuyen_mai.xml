@@ -10,14 +10,14 @@
         layout="@layout/appbar" />
 
     <LinearLayout
-        android:id="@+id/llAddFoodBtn"
+        android:id="@+id/llAddKMBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/appbar"
         android:orientation="horizontal"
         android:padding="10dp">
         <ImageView
-            android:id="@+id/btnAddTypeKH"
+            android:id="@+id/btnAddKM"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_marginTop="15dp"
@@ -25,11 +25,11 @@
             android:src="@drawable/ic_baseline_add_circle_outline_24" />
 
         <TextView
-            android:id="@+id/tvAddTypeKH"
+            android:id="@+id/tvAddKM"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginTop="25dp"
-            android:text="Thêm loại khách hàng"
+            android:text="Thêm"
             android:textAlignment="textStart"
             android:textColor="#000"
             android:textSize="35sp" />
@@ -38,17 +38,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/llAddFoodBtn"
+        app:layout_constraintTop_toBottomOf="@+id/llAddKMBtn"
         android:baselineAligned="false">
 
         <ListView
-            android:id="@+id/lvDSKH"
+            android:id="@+id/lvDSKM"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:dividerHeight="15sp"
             android:layout_weight="1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/llAddFoodBtn" />
+            app:layout_constraintTop_toBottomOf="@+id/llAddKMBtn" />
 
     </LinearLayout>
 

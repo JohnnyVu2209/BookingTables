@@ -1,6 +1,5 @@
 package com.example.reservation_manager.KhachHang;
 
-import android.Manifest;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -9,9 +8,11 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -41,7 +42,9 @@ import java.util.regex.Pattern;
 public class SuaKhachHang extends AppCompatActivity {
     ImageView avatar;
     EditText ht,sdt,ns,sld;
+    TextView tt;
     RadioButton nam,nu;
+    CheckBox vip;
     Button save;
     private String uid;
     DatabaseReference databaseReference;
@@ -59,9 +62,11 @@ public class SuaKhachHang extends AppCompatActivity {
         sdt = (EditText) findViewById(R.id.TvNS);
         ns = (EditText) findViewById(R.id.TvSDT);
         sld = (EditText) findViewById(R.id.TvSLD);
+        tt = (TextView) findViewById(R.id.tvThanThiet);
         nam = (RadioButton) findViewById(R.id.rbtnNam);
         nu = (RadioButton) findViewById(R.id.rbtnNu);
         save = (Button) findViewById(R.id.btnS);
+        vip = (CheckBox) findViewById(R.id.cbVip);
         databaseReference = FirebaseDatabase.getInstance().getReference("KhachHang");
         storageReference = FirebaseStorage.getInstance().getReference();
         controller = new FirebaseController(getApplicationContext());
@@ -89,7 +94,12 @@ public class SuaKhachHang extends AppCompatActivity {
                         nu.setChecked(true);
                     }
                     sld.setText(String.valueOf(snapshot.getValue(KhachHang.class).sldat));
-
+                    if (snapshot.getValue(KhachHang.class).vip == true) {
+                        vip.setChecked(true);
+                    }
+                    if (snapshot.getValue(KhachHang.class).thanthiet == true) {
+                        tt.setText("Khách hàng thân thiết");
+                    }
                     file = File.createTempFile("image", "png");
                     storageReference.child(snapshot.getValue(KhachHang.class).idavatar).getFile(file).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
                         @Override
@@ -128,8 +138,6 @@ public class SuaKhachHang extends AppCompatActivity {
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View v) {
-                String[] permissions = {Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE};
-                requestPermissions(permissions, 1);
                 Filechooser();
             }
         });
@@ -144,8 +152,8 @@ public class SuaKhachHang extends AppCompatActivity {
     }
 
     private void UpdateKH() {
-        String name,phone,birthday;
-        Boolean sex = true;
+        String name,phone,birthday,type;
+        Boolean sex,thanthiet = null,vipp;
         int amount;
         name = ht.getText().toString();
         phone = sdt.getText().toString();
@@ -156,11 +164,27 @@ public class SuaKhachHang extends AppCompatActivity {
             sex = false;
         }
         amount = Integer.parseInt(sld.getText().toString());
+        if (tt.getText().toString() == "Khách hàng thân thiết" && amount >= 30) {
+            thanthiet = true;
+        } else if (amount < 30) {
+            tt.setText(null);
+            thanthiet = false;
+        } else if (amount >= 30) {
+            tt.setText("Khách hàng thân thiết");
+            thanthiet = true;
+        } else {
+            thanthiet = false;
+        }
+        if (vip.isChecked()) {
+            vipp = true;
+        } else {
+            vipp = false;
+        }
         if (imguri != null) {
             Fireuploader();
-            khachHang = new KhachHang(name,phone,birthday,sex,amount,idavatar);
+            khachHang = new KhachHang(name,phone,birthday,sex,amount,idavatar,thanthiet,vipp);
         } else {
-            khachHang = new KhachHang(name,phone,birthday,sex,amount,idavatartemp);
+            khachHang = new KhachHang(name,phone,birthday,sex,amount,idavatartemp,thanthiet,vipp);
         }
 
     }

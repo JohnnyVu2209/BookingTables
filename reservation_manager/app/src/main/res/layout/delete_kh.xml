@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="770dp"
+    android:orientation="vertical"
+    android:layout_height="170dp"
+    android:background="@drawable/background"
+    android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Bạn thật sự muốn xóa khách hàng này?"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnCo"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/background_button"
+            android:text="Có"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnKhong"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@+id/btnCo"
+            android:background="@drawable/background_button_khong"
+            android:text="Không"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

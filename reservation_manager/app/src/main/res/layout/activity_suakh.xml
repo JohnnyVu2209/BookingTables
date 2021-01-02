@@ -7,6 +7,19 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/tvVip"
+        android:layout_width="116dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:text="VIP status"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvThayDoiAva" />
+
+    <TextView
         android:id="@+id/tvSLDAT"
         android:layout_width="142dp"
         android:layout_height="30dp"
@@ -20,10 +33,22 @@
         app:layout_constraintTop_toBottomOf="@+id/TvSDT" />
 
     <TextView
+        android:id="@+id/tvThanThiet"
+        android:layout_width="264dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVip" />
+
+    <TextView
         android:id="@+id/tvNS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
+        android:layout_marginStart="150dp"
         android:layout_marginTop="20dp"
         android:text="Ngày sinh"
         android:textColor="@android:color/black"
@@ -36,7 +61,7 @@
         android:id="@+id/TvNS"
         android:layout_width="450dp"
         android:layout_height="57dp"
-        android:layout_marginStart="104dp"
+        android:layout_marginStart="150dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName|phone"
@@ -48,7 +73,7 @@
         android:id="@+id/TvSDT"
         android:layout_width="450dp"
         android:layout_height="57dp"
-        android:layout_marginStart="104dp"
+        android:layout_marginStart="150dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName|phone"
@@ -60,7 +85,7 @@
         android:id="@+id/tvSDT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
+        android:layout_marginStart="150dp"
         android:layout_marginTop="20dp"
         android:text="Số điện thoại"
         android:textColor="@android:color/black"
@@ -74,7 +99,7 @@
         android:layout_width="164dp"
         android:layout_height="163dp"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="49dp"
         android:src="@drawable/blank_profile_picture_png"
         app:civ_border_color="#000"
         app:civ_border_width="2dp"
@@ -103,7 +128,7 @@
         android:id="@+id/tvHT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
+        android:layout_marginStart="150dp"
         android:layout_marginTop="32dp"
         android:text="Họ và tên"
         android:textColor="@android:color/black"
@@ -116,7 +141,7 @@
         android:id="@+id/TvHT"
         android:layout_width="450dp"
         android:layout_height="57dp"
-        android:layout_marginStart="104dp"
+        android:layout_marginStart="150dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -128,7 +153,7 @@
         android:id="@+id/tvGT"
         android:layout_width="94dp"
         android:layout_height="32dp"
-        android:layout_marginStart="104dp"
+        android:layout_marginStart="150dp"
         android:layout_marginTop="20dp"
         android:text="Giới tính"
         android:textColor="@android:color/black"
@@ -141,7 +166,7 @@
         android:id="@+id/radioGroup"
         android:layout_width="184dp"
         android:layout_height="56dp"
-        android:layout_marginStart="104dp"
+        android:layout_marginStart="150dp"
         android:layout_marginTop="20dp"
         android:orientation='horizontal'
         app:layout_constraintStart_toEndOf="@+id/profile_image"
@@ -179,7 +204,7 @@
         android:id="@+id/btnS"
         android:layout_width="310dp"
         android:layout_height="52dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/btn_add_bg"
         android:text="Lưu thông tin"
         android:textAlignment="center"
@@ -187,6 +212,7 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.649"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup"
         app:layout_constraintVertical_bias="0.0" />
@@ -202,5 +228,16 @@
         android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <CheckBox
+        android:id="@+id/cbVip"
+        android:layout_width="30dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvVip"
+        app:layout_constraintTop_toBottomOf="@+id/tvThayDoiAva" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
