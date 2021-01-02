@@ -25,7 +25,6 @@ public class FirebaseController {
     ArrayList<Integer> key = new ArrayList();
     long maxid = 0;
     private final String TAG = "READ DATABASE";
-    long maxid =0;
     public FirebaseController(Context context){
         database = FirebaseDatabase.getInstance();
         referencer = database.getReference();
@@ -138,41 +137,6 @@ public class FirebaseController {
         });
     }
 
-    //Tạo key theo thứ tự tăng dần
-    public<T> void WirteWithAutoIncreaseKey(final String child, final T inputData){
-        referencer.child(child).addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.exists()){
-                    maxid = snapshot.getChildrenCount();
-                    UpdateData(child,String.valueOf(maxid+1),inputData);
-                }
-                else {
-                    UpdateData(child,String.valueOf(1),inputData);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
-    }
-
-    public<T> void UpdateData(String child, String child1, T inputData){
-        referencer.child(child).child(child1).setValue(inputData, new DatabaseReference.CompletionListener() {
-            @Override
-            public void onComplete(@Nullable DatabaseError error, @NonNull DatabaseReference ref) {
-                if(error == null){
-                    Toast.makeText(context, "Lưu thành công", Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(context, "Lưu thất bại", Toast.LENGTH_SHORT).show();
-                    Log.d("THONG BAO LOI:", error.getMessage());
-                }
-            }
-        });
-    }
 
        /* // Read from the database
        do việc đọc không lấy trực tiếp giá trị ra được nên chỉ có thể để vậy cho bây copy

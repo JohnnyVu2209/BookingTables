@@ -13,25 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9f813f-ce0a-4623-a37c-379db606b814" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_SanojPunchihewa_GlowButton_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/DonDatBan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_remove_circle_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/mon_da_chon_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservation_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/DatBan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/DatBan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/FirebaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/FirebaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/SoDoBan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/SoDoBan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/custom_button_vip.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/custom_button_vip.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/custom_button_vip_click.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/custom_button_vip_click.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dat_ban.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_dat_ban.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_so_do_ban.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_so_do_ban.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -393,11 +375,11 @@
     </state>
     <state x="228" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607582608713" />
     <state x="246" y="75" key="SettingsEditor/0.0.1474.864@0.0.1474.864" timestamp="1606792625627" />
-    <state x="306" y="139" key="Vcs.Push.Dialog.v2" timestamp="1607610297985">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1609625755983">
+      <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="306" y="139" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607610297985" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1607054091215" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1609625755983" />
     <state x="100" y="100" width="1274" height="664" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1606976203937">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -414,10 +396,18 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="845" y="145" key="git4idea.branch.GitSmartOperationDialog/0.0.1474.864@0.0.1474.864" timestamp="1609591565602" />
+    <state x="439" y="221" key="git4idea.merge.GitPullDialog" timestamp="1609625744101">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="439" y="221" key="git4idea.merge.GitPullDialog/0.0.1474.864@0.0.1474.864" timestamp="1609625744101" />
     <state x="275" y="68" key="psd.add.library.dependency.panel.dimension" timestamp="1606796764902">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="275" y="68" key="psd.add.library.dependency.panel.dimension/0.0.1474.864@0.0.1474.864" timestamp="1606796764902" />
+    <state x="394" y="197" key="run.anything.popup" timestamp="1609625767055">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="394" y="197" key="run.anything.popup/0.0.1474.864@0.0.1474.864" timestamp="1609625767055" />
     <state x="400" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1609599833957">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
