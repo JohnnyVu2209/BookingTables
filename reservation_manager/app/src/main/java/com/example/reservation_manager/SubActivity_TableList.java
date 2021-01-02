@@ -77,7 +77,7 @@ public class SubActivity_TableList extends Fragment {
 
 //        final String pos = String.valueOf(inflater);
         AnhXa(view);
-        final tables banrong = new tables( 0,0);
+        final tables banrong = new tables( 0,0, true);
         databaseReference.child("Ban").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -86,7 +86,7 @@ public class SubActivity_TableList extends Fragment {
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()){
                     tables banAn = dataSnapshot.getValue(tables.class);
                     banan.add(banAn);
-                    keyss.add(snapshot.getKey());
+                    keyss.add(dataSnapshot.getKey());
                 }
                 banan.add(banrong);
 
@@ -200,12 +200,12 @@ public class SubActivity_TableList extends Fragment {
 }
     class MyAdapter extends BaseAdapter {
     Context context;
-    Button edit,cancel;
+    Button edit,cancel,delete;
     int mlayout;
     ImageView editBan,deleteBan;
-    TextView tenban;
     ArrayList<tables> mBanan;
-    EditText number,amount;
+    EditText number,amount,tenban;
+    RadioButton vip, nor;
     tables updatetable;
     FirebaseController controller;
     ArrayList keys;
@@ -256,19 +256,29 @@ public class SubActivity_TableList extends Fragment {
                 Dialog dialog = new Dialog(context);
                 dialog.setContentView(R.layout.activity_sua_ban);
                 dialog.show();
+                Log.d("CHECK", "onClick: " + keys.get(i).toString());
 
                 number = (EditText) dialog.findViewById(R.id.etNumber);
                 amount = (EditText) dialog.findViewById(R.id.etAmount);
                 number.setText(String.valueOf(mBanan.get(i).SoBan));
                 amount.setText(String.valueOf(mBanan.get(i).SoLuongNguoi));
+                vip =(RadioButton) dialog.findViewById(R.id.rbtVip);
+                nor =(RadioButton) dialog.findViewById(R.id.rbtNormal);
                 edit = (Button) dialog.findViewById(R.id.btnEdit);
                 edit.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         int soban, slnguoi;
+                        boolean loaiban = true;
                         soban = Integer.parseInt(number.getText().toString());
                         slnguoi = Integer.parseInt(amount.getText().toString());
-                        updatetable = new tables(soban,slnguoi);
+                        if(nor.isChecked()) {
+                            loaiban = true;
+                        } else {
+                            loaiban = false;
+                        }
+                        updatetable = new tables(soban,slnguoi,loaiban);
+
                         controller.UpdateData("Ban", keys.get(i).toString(), updatetable);
 
                     }
@@ -282,11 +292,11 @@ public class SubActivity_TableList extends Fragment {
                 dialog.setContentView(R.layout.activity_xoa_ban);
                 dialog.show();
 
-                edit = (Button) dialog.findViewById(R.id.btnEdit);
+                delete = (Button) dialog.findViewById(R.id.btnDelete);
                 cancel = (Button) dialog.findViewById(R.id.btnCancel);
-                tenban = (TextView) dialog.findViewById(R.id.tvTenBan);
-                //tenban.setText(String.valueOf(mBanan.get(i).SoBan));
-                edit.setOnClickListener(new View.OnClickListener() {
+                tenban = (EditText) dialog.findViewById(R.id.etTenban);
+                tenban.setText("Số bàn:" + String.valueOf(mBanan.get(i).SoBan));
+                delete.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         FirebaseDatabase database = FirebaseDatabase.getInstance();

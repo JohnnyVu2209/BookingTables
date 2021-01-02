@@ -15,8 +15,8 @@ public class tables {
         LoaiBan = loai_ban;
     }
 
-    public tables(int soBan, int soLuongNguoi) {
-        SoBan = soBan;
-        SoLuongNguoi = soLuongNguoi;
-    }
+//    public tables(int soBan, int soLuongNguoi) {
+//        SoBan = soBan;
+//        SoLuongNguoi = soLuongNguoi;
+//    }
 }
