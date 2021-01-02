@@ -1,7 +1,5 @@
 package com.example.reservation_manager.KhuyenMai;
 
-import com.example.reservation_manager.KhachHang.KhachHang;
-
 public class KhuyenMai {
     public String code;
     public String nameKM;
