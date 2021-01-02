@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -13,15 +14,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.reservation_manager.CapNhatMonAn;
+import com.example.reservation_manager.KhachHang.XemDanhSachKhachHang;
 import com.example.reservation_manager.R;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -165,6 +170,7 @@ public class XemDanhSachMonAn extends AppCompatActivity {
 
         @Override
         public View getView(final int i, View view, ViewGroup viewGroup) {
+            final String KEY = (String) keyArr.get(i);
             Holder holder = null;
             if (view == null) {
                 holder = new Holder();
@@ -213,8 +219,46 @@ public class XemDanhSachMonAn extends AppCompatActivity {
                 e.printStackTrace();
             }
 
+            ImageView de_food = (ImageView) view.findViewById(R.id.btnDeleteFood); //BẮT SỰ KIỆN CHO DELETE
+            de_food.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    final Dialog mydialog = new Dialog(XemDanhSachMonAn.this);
+                    LayoutInflater inflater1 = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                    View row = inflater1.inflate(R.layout.delete_ma,null);
+                    mydialog.setContentView(row);
+                    mydialog.show();
 
-            holder.btndeleteFood.setOnClickListener(new View.OnClickListener() {
+                    Button food_Co = (Button) mydialog.findViewById(R.id.monan_btnco);
+                    Button food_khong = (Button)mydialog.findViewById(R.id.monan_btnKhong);
+
+                    food_Co.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            FirebaseDatabase database =FirebaseDatabase.getInstance();
+                            DatabaseReference referencer = database.getReference("MonAn");
+                            referencer.child(KEY).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    Toast.makeText(XemDanhSachMonAn.this, "Xóa thành công", Toast.LENGTH_SHORT).show();
+                                }
+                            });
+
+                            mydialog.dismiss();
+                        }
+                    });
+                    food_khong.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Toast.makeText(XemDanhSachMonAn.this,"Không xóa",Toast.LENGTH_LONG).show();
+                            mydialog.dismiss();
+                        }
+                    });
+                }
+            });
+
+
+            /*holder.btndeleteFood.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -222,7 +266,7 @@ public class XemDanhSachMonAn extends AppCompatActivity {
                     myRef.child(keyArr.get(i).toString()).removeValue();
                     Toast.makeText(getApplicationContext(), keyArr.get(i).toString(), Toast.LENGTH_LONG).show();
                 }
-            });
+            });*/
 
             holder.btneditFood.setOnClickListener(new View.OnClickListener() {
                 @Override
