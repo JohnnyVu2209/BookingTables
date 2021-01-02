@@ -11,7 +11,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="316bad8c-da23-4da2-8543-a2bbd4215f9a" name="Default Changelist" comment="">
+    <list default="true" id="316bad8c-da23-4da2-8543-a2bbd4215f9a" name="Default Changelist" comment="Delete and Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -243,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609234100226</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Delete and Update">
+      <created>1609592484681</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609592484681</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -294,11 +301,11 @@
     </state>
     <state x="318" y="187" key="AndroidCreateResourceFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1607604265854" />
     <state x="531" y="98" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1608974683259" />
-    <state x="312" y="0" key="CommitChangelistDialog2" timestamp="1609234066701">
+    <state x="224" y="0" key="CommitChangelistDialog2" timestamp="1609592711492">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="27" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1607487980311" />
-    <state x="312" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1609234066701" />
+    <state x="224" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1609592711492" />
     <state x="141" y="69" key="DiffContextDialog" timestamp="1607068016784">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
