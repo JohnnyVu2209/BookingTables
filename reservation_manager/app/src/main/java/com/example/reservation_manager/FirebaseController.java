@@ -22,6 +22,8 @@ public class FirebaseController {
     private DatabaseReference referencer;
     private Context context;
     private final String TAG = "READ DATABASE";
+    ArrayList key = new ArrayList();
+    long maxid = 0;
     public FirebaseController(Context context){
         database = FirebaseDatabase.getInstance();
         referencer = database.getReference();

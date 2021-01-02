@@ -38,9 +38,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bf732d1-a3b3-4997-b778-3f05cbf1122e" name="Default Changelist" comment="Re-Create navigation view">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_27_2020_11_53_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_27_2020_11_53_AM__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="3bf732d1-a3b3-4997-b778-3f05cbf1122e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/FirebaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/FirebaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/Login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/Login/Login.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609052521091</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit before merge Thao to Khanh">
+      <created>1609589915781</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609589915781</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -316,7 +324,8 @@
     <MESSAGE value="EDIT DISPLLAY CUSTOMER's DETAIL" />
     <MESSAGE value="Customer Done" />
     <MESSAGE value="Customer Done p2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Customer Done p2" />
+    <MESSAGE value="commit before merge Thao to Khanh" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit before merge Thao to Khanh" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1609347148246">
@@ -346,12 +355,12 @@
     <state x="276" y="147" key="AndroidCreateResourceFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1609334508478" />
     <state x="295" y="157" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1609343169173" />
     <state x="318" y="187" key="AndroidCreateResourceFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1607058351685" />
-    <state x="260" y="0" key="CommitChangelistDialog2" timestamp="1609507728573">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="299" y="3" key="CommitChangelistDialog2" timestamp="1609589914500">
+      <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="260" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1609507728573" />
     <state x="277" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1609177112344" />
-    <state x="299" y="27" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1607067967254" />
+    <state x="299" y="3" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1609589914500" />
     <state x="131" y="58" key="DiffContextDialog" timestamp="1609052548329">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -403,10 +412,15 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1236" height="203" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1609559806779" />
-    <state x="121" y="50" key="MergeDialog" timestamp="1608181919799">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="139" y="64" key="MergeDialog" timestamp="1609590589989">
+      <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="121" y="50" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1608181919799" />
+    <state x="139" y="64" key="MergeDialog/0.0.1474.864@0.0.1474.864" timestamp="1609590589989" />
+    <state x="376" y="194" key="MultipleFileMergeDialog" timestamp="1609590589999">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="376" y="194" key="MultipleFileMergeDialog/0.0.1474.864@0.0.1474.864" timestamp="1609590589999" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1609331374321">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -434,6 +448,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="185" y="69" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680@0.0.1280.680" timestamp="1609429529257" />
+    <state x="510" y="221" key="git4idea.merge.GitMergeDialog" timestamp="1609589938403">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="510" y="221" key="git4idea.merge.GitMergeDialog/0.0.1474.864@0.0.1474.864" timestamp="1609589938403" />
     <state x="318" y="162" key="run.anything.popup" timestamp="1609044898200">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
