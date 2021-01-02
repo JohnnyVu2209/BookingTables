@@ -52,13 +52,10 @@ public class XemDanhSachKhuyenMai extends AppCompatActivity {
     TextView addKM;
     Button L,H, luutt, de_co, de_khong;
     EditText code,program,start,end,percent, ed_code, ed_nameKM, ed_start, ed_exp, ed_percentage;
-    KhuyenMai km;
-    String c,p,s,e;
-    int pe;
-    String co,na,st,en;
-    int perrrr;
+    KhuyenMai km,KM;
+    String c,p,s,e,co,na,st,en;
+    int pe,perrrr;
     FirebaseController controller;
-    KhuyenMai KM;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -183,7 +180,6 @@ public class XemDanhSachKhuyenMai extends AppCompatActivity {
         km = new KhuyenMai(c,p,s,e,pe);
         controller.WirteWithAutoIncreaseKey("KhuyenMai",km);
     }
-
 
 
     class myAdapter extends BaseAdapter

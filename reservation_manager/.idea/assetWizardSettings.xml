@@ -327,7 +327,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/edit/baseline_edit_24.xml" />
+                                      <entry key="url" value="jar:file:/D:/Android/AndroidStudio/plugins/android/lib/android.jar!/images/material/icons/materialicons/menu_book/baseline_menu_book_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -337,7 +337,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="edit_jpg" />
+                            <entry key="outputName" value="ic_baseline_menu_book_18" />
                             <entry key="sourceFile" value="C:\Users\Public\Downloads\BookingTables\reservation_manager" />
                           </map>
                         </option>
