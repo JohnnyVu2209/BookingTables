@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
     private String phone = null;
     private TextView name;
     private String fbphone = null;
+    FirebaseController controller;
+    KhachHang khachHang;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,9 +26,15 @@ public class MainActivity extends AppCompatActivity {
         phone = getIntent().getStringExtra("phone");
         if(fbname != null){
             name.setText(fbname + "\n" + fbphone);
+            khachHang.setHoten(fbname);
         }
+
         if(phone != null && phonename != null){
             name.setText(phonename + "\n" + phone);
+            khachHang.setHoten(phonename);
+            khachHang.setSdt(phone);
         }
+
+        controller.WirteWithAutoIncreaseKey("KhachHang", khachHang);
     }
 }
