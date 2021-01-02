@@ -143,23 +143,6 @@ public class SubActivity_TableList extends Fragment {
         });
         return view;
     }
-//    private void intentToListTable() {
-//        Intent listTable_intent = new Intent(String.valueOf(SubActivity_TableList.this));
-//        listTable_intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//        listTable_intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//        startActivity(listTable_intent);
-//    }
-//
-//        private void insertDataTable () {
-//            int soban, soluongnguoi;
-//            soban = Integer.parseInt(number.getText().toString());
-//            soluongnguoi = Integer.parseInt(amount.getText().toString());
-//
-//            table = new tables(soban, soluongnguoi);
-//
-//
-//        }
-
 
     @Override
     public void onStart() {
@@ -254,7 +237,7 @@ public class SubActivity_TableList extends Fragment {
         editBan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Dialog dialog = new Dialog(context);
+                final Dialog dialog = new Dialog(context);
                 dialog.setContentView(R.layout.activity_sua_ban);
                 dialog.show();
                 Log.d("CHECK", "onClick: " + keys.get(i).toString());
@@ -278,10 +261,9 @@ public class SubActivity_TableList extends Fragment {
                         } else {
                             loaiban = false;
                         }
+                        dialog.dismiss();
                         updatetable = new tables(soban,slnguoi,loaiban);
-
                         controller.UpdateData("Ban", keys.get(i).toString(), updatetable);
-
                     }
                 });
             }
