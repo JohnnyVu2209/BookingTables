@@ -1,4 +1,4 @@
-package com.example.reservation_manager;
+package com.example.reservation_manager.BanAn;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -12,6 +12,8 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.reservation_manager.R;
 
 public class SubActivity_TableMap extends Fragment {
 //        implements View.OnClickListener {

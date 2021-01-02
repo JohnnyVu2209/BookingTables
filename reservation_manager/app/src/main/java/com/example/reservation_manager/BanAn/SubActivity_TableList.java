@@ -1,4 +1,4 @@
-package com.example.reservation_manager;
+package com.example.reservation_manager.BanAn;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -20,7 +20,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.reservation_manager.BanAn.tables;
+import com.example.reservation_manager.FirebaseController;
+import com.example.reservation_manager.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
