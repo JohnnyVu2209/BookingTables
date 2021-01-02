@@ -1,14 +1,13 @@
 package com.example.reservation_manager;
 
-import android.app.DatePickerDialog;
 import android.content.Context;
 import android.util.Log;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -22,9 +21,7 @@ public class FirebaseController {
     private FirebaseDatabase database;
     private DatabaseReference referencer;
     private Context context;
-    ArrayList<Integer> key = new ArrayList();
     private final String TAG = "READ DATABASE";
-    long maxid =0;
     public FirebaseController(Context context){
         database = FirebaseDatabase.getInstance();
         referencer = database.getReference();
