@@ -15,12 +15,15 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.BitSet;
 import java.util.List;
 
 public class FirebaseController {
     private FirebaseDatabase database;
     private DatabaseReference referencer;
     private Context context;
+    ArrayList<Integer> key = new ArrayList();
+    long maxid = 0;
     private final String TAG = "READ DATABASE";
     long maxid =0;
     public FirebaseController(Context context){
@@ -43,6 +46,86 @@ public class FirebaseController {
     }
     public<T> void WritePush(String child,T inputData){
         referencer.child(child).push().setValue(inputData, new DatabaseReference.CompletionListener() {
+            @Override
+            public void onComplete(@Nullable DatabaseError error, @NonNull DatabaseReference ref) {
+                if(error == null){
+                    Toast.makeText(context, "Lưu thành công", Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(context, "Lưu thất bại", Toast.LENGTH_SHORT).show();
+                    Log.d("THONG BAO LOI:", error.getMessage());
+                }
+            }
+        });
+    }
+    //Tạo key theo thứ tự tăng dần
+    public<T> void WirteWithAutoIncreaseKey(final String child, final T inputData){
+        referencer.child(child).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists()){
+                    for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                        Log.d(TAG, "onDataChange: " + dataSnapshot.getKey());
+                        key.add(Integer.valueOf(dataSnapshot.getKey()));
+                    }
+                    maxid = snapshot.getChildrenCount();
+                    int lenght =Integer.parseInt(key.get(key.size() - 1).toString());
+                    if (isMissing(key,lenght)){
+                        UpdateData(child, String.valueOf(getMissingNumber(key,lenght).get(0)),inputData);
+                    }
+                    else {
+                        UpdateData(child, String.valueOf(maxid + 1),inputData);
+                    }
+                }
+                else {
+                    UpdateData(child,String.valueOf(1),inputData);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+    }
+
+    //Lấy số bị thiếu trong danh sách
+    private ArrayList<Integer> getMissingNumber(ArrayList<Integer> key, int lenght) {
+        int missingCount = lenght - key.size();
+        BitSet bitSet = new BitSet(lenght);
+        for (Integer number : key){
+            bitSet.set(number - 1);
+        }
+        ArrayList<Integer> missingarray = new ArrayList();
+        int lastMissingIndex = 0;
+        for (int i = 0;i < missingCount; i++){
+            lastMissingIndex = bitSet.nextClearBit(lastMissingIndex);
+            missingarray.add(++lastMissingIndex);
+        }
+        return missingarray;
+    }
+    //kiểm tra xem danh sách có bị thiếu số không
+    private Boolean isMissing(ArrayList<Integer> key, int lenght){
+        Boolean missing = false;
+        int missingCount = lenght - key.size();
+        BitSet bitSet = new BitSet(lenght);
+        for (Integer number : key){
+            bitSet.set(number - 1);
+        }
+        int lastMissingIndex = 0;
+        ArrayList missingarray = new ArrayList();
+        for (int i = 0;i < missingCount; i++){
+            lastMissingIndex = bitSet.nextClearBit(lastMissingIndex);
+            missingarray.add(++lastMissingIndex);
+        }
+        if (lastMissingIndex != 0){
+            missing = true;
+        }
+        return missing;
+    }
+
+    public<T> void UpdateData(String child, String child1, T inputData){
+        referencer.child(child).child(child1).setValue(inputData, new DatabaseReference.CompletionListener() {
             @Override
             public void onComplete(@Nullable DatabaseError error, @NonNull DatabaseReference ref) {
                 if(error == null){

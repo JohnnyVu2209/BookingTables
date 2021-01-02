@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:text="Danh sách món được phép gọi trước"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+        <ListView
+            android:id="@+id/listMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|bottom">
+            <Button
+                android:id="@+id/btnChon"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="chọn"
+                android:background="@drawable/btn_add_bg"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,19 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.reservationuser.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvFbname"
-        android:text="hello"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+            <include layout="@layout/appbar" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/banner" />
+
+            <TextView
+            android:id="@+id/tvTypeFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danh sách món ăn"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+            <GridView
+            android:id="@+id/gridviewfood"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:baselineAligned="false"
+            android:numColumns="3"
+            android:layout_weight="1"/>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center|bottom">
+
+            <Button
+            android:id="@+id/btnDatBan"
+            android:layout_width="197dp"
+            android:layout_height="fill_parent"
+            android:background="@color/orderButton"
+            android:drawableTop="@drawable/list__1_"
+            android:text="ĐẶT BÀN"
+            android:textColor="@color/white" />
+
+            <Button
+            android:id="@+id/btnLichSu"
+            android:layout_width="196dp"
+            android:layout_height="fill_parent"
+            android:background="@color/HistoryButton"
+            android:drawableTop="@drawable/history"
+            android:text="LỊCH SỬ"
+            android:textColor="@color/white" />
+            </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -4,13 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login.Login"
+    tools:context=".Login"
     android:background="@drawable/gradien_color">
 
-    <include layout="@layout/appbar"/>
-
     <ImageView
-        android:id="@+id/imgBanAn"
+        android:id="@+id/imageView"
         android:layout_width="413dp"
         android:layout_height="358dp"
         android:layout_marginTop="28dp"
@@ -27,12 +25,12 @@
         android:fontFamily="sans-serif-black"
         android:text="RESTAURANT MANAGEMENT"
         android:textColor="@color/white"
-        android:textSize="35sp"
+        android:textSize="35dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgBanAn" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/email_text"
