@@ -29,10 +29,8 @@
             </intent-filter></activity>
         <activity
             android:name=".MonAn.ThemMonAn"
-            android:screenOrientation="fullUser"></activity>
-        <activity
-            android:name=".Login.Login"
-            android:screenOrientation="fullUser"></activity>
+            android:screenOrientation="fullUser">
+        </activity>
         <activity
             android:name=".KhachHang.SuaKhachHang"
             android:screenOrientation="fullUser" />

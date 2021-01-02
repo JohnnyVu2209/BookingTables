@@ -84,9 +84,6 @@ public class XemDanhSachMonAn extends AppCompatActivity {
 
             }
         });
-        AddAction();
-        EditAction();
-        DeleteAction();
 
     }
     // THÊM SỰ KIỆN CHO NÚT XÓA TẠI ĐÂY
@@ -133,12 +130,12 @@ public class XemDanhSachMonAn extends AppCompatActivity {
     private void AnhXa() {
         databaseReference = FirebaseDatabase.getInstance().getReference();
         storageReference = FirebaseStorage.getInstance().getReference();
-        listView = (ListView)findViewById(R.id.lvDanhSachMonAn);
+        listView = (ListView)findViewById(R.id.lvDSMA);
         monan = new ArrayList<MonAn>();
         adapter = new MyAdapter(getApplicationContext(),R.layout.item_list,monan);
         listView.setAdapter(adapter);
-        btnaddfood = (ImageView) findViewById(R.id.btnAddFood);
-        tvaddfood = (TextView)findViewById(R.id.tvAddFood);
+        btnaddfood = (ImageView) findViewById(R.id.btnAddMA);
+        tvaddfood = (TextView)findViewById(R.id.tvAddMA);
         btneditFood = (ImageView)findViewById(R.id.btnEditFood);
         btndeleteFood = (ImageView)findViewById(R.id.btnDeleteFood);
 
