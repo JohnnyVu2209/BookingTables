@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         list.setOnClickListener(this);
         fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.container, new SubActivity_TableMap(), null);
+        fragmentTransaction.add(R.id.container, new SubActivity_TableList(), null);
         //fragmentTransaction.replace(R.id.container, new FragmentA(), null);
         fragmentTransaction.commit();
     }
