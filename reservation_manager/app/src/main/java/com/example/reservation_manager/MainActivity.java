@@ -8,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.reservation_manager.BanAn.SubActivity_TableList;
+import com.example.reservation_manager.BanAn.SubActivity_TableMap;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button map, list;
     FragmentManager fragmentManager;
@@ -22,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         list.setOnClickListener(this);
         fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.container, new SubActivity_TableMap(), null);
+        fragmentTransaction.add(R.id.container, new SubActivity_TableList(), null);
         //fragmentTransaction.replace(R.id.container, new FragmentA(), null);
         fragmentTransaction.commit();
     }

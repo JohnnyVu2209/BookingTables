@@ -14,13 +14,12 @@
         android:textSize="30dp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/etTenban"
+    <TextView
+        android:id="@+id/tvTenban"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="10dp"
-        android:hint="hiển thị thông tin bàn muốn xóa"
+        android:hint="hiển thị thông tin đơn muốn xóa"
         android:textSize="30sp"
         android:weightSum="10" />
 
@@ -31,18 +30,18 @@
         android:weightSum="10">
 
         <Button
-            android:id="@+id/btnDelete"
+            android:id="@+id/btnEdit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
-            android:background="@drawable/custom_button_dialog"
+            android:background="@drawable/custom_button"
             android:text="Có" />
 
         <Button
             android:id="@+id/btnDat"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
             android:background="@drawable/custom_button_dialog"
             android:text="Không" />
 

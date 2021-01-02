@@ -6,198 +6,6 @@
     android:layout_height="match_parent"
     android:background="#fff" >
 
-<!--    <Button-->
-<!--        android:id="@+id/btnT1"-->
-<!--        android:layout_width="110dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_marginStart="96dp"-->
-<!--        android:layout_marginTop="104dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 1"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-<!--    <Button-->
-<!--        android:id="@+id/btnT2"-->
-<!--        android:layout_width="110dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_gravity="top|left"-->
-<!--        android:layout_marginStart="52dp"-->
-<!--        android:layout_marginTop="104dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 2"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/btnT1"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-<!--    <Button-->
-<!--        android:id="@+id/btnT3"-->
-<!--        android:layout_width="264dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_gravity="top|left"-->
-<!--        android:layout_marginStart="96dp"-->
-<!--        android:layout_marginTop="52dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 3"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btnT1" />-->
-<!--    <Button-->
-<!--        android:id="@+id/btnT4"-->
-<!--        android:layout_width="110dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_gravity="top|left"-->
-<!--        android:layout_marginStart="96dp"-->
-<!--        android:layout_marginTop="52dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 4"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btnT3" />-->
-<!--    <Button-->
-<!--        android:id="@+id/btnT5"-->
-<!--        android:layout_width="110dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_gravity="top|left"-->
-<!--        android:layout_marginStart="52dp"-->
-<!--        android:layout_marginTop="52dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 5"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/btnT4"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btnT3" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnT6"-->
-<!--        android:layout_width="264dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_gravity="top|left"-->
-<!--        android:layout_marginStart="96dp"-->
-<!--        android:layout_marginTop="52dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 6"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btnT5" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnT7"-->
-<!--        android:layout_width="110dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_marginStart="120dp"-->
-<!--        android:layout_marginTop="104dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 7"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/btnT2"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnT8"-->
-<!--        android:layout_width="110dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_marginStart="52dp"-->
-<!--        android:layout_marginTop="104dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 8"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/btnT7"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-<!--    <Button-->
-<!--        android:id="@+id/btnT9"-->
-<!--        android:layout_width="110dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_marginStart="128dp"-->
-<!--        android:layout_marginTop="52dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 9"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/btnT3"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btnT7" />-->
-<!--    <Button-->
-<!--        android:id="@+id/btn10"-->
-<!--        android:layout_width="110dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_marginStart="52dp"-->
-<!--        android:layout_marginTop="52dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 10"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/btnT9"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btnT8" />-->
-<!--    <Button-->
-<!--        android:id="@+id/btn11"-->
-<!--        android:layout_width="110dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_marginStart="120dp"-->
-<!--        android:layout_marginTop="52dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 11"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/btnT5"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btnT9" />-->
-<!--    <Button-->
-<!--        android:id="@+id/btn12"-->
-<!--        android:layout_width="110dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_marginStart="52dp"-->
-<!--        android:layout_marginTop="52dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 12"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/btn11"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btn10" />-->
-<!--    <Button-->
-<!--        android:id="@+id/btn13"-->
-<!--        android:layout_width="110dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_marginStart="128dp"-->
-<!--        android:layout_marginTop="52dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 13"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/btnT6"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btn11" />-->
-<!--    <Button-->
-<!--        android:id="@+id/btn14"-->
-<!--        android:layout_width="110dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_marginStart="52dp"-->
-<!--        android:layout_marginTop="52dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 14"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/btn13"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btn12" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnT15"-->
-<!--        android:layout_width="110dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_marginStart="120dp"-->
-<!--        android:layout_marginTop="104dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 15"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/btnT8"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnT16"-->
-<!--        android:layout_width="110dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_marginStart="120dp"-->
-<!--        android:layout_marginTop="52dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 16"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/btn10"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btnT15" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnT17"-->
-<!--        android:layout_width="110dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_marginStart="120dp"-->
-<!--        android:layout_marginTop="52dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 17"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/btn12"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btnT16" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnT18"-->
-<!--        android:layout_width="110dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_marginStart="120dp"-->
-<!--        android:layout_marginTop="52dp"-->
-<!--        android:background="@drawable/custom_button"-->
-<!--        android:text="table 18"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/btn14"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btnT17" />-->
 
     <GridLayout
         android:layout_width="match_parent"
@@ -219,7 +27,7 @@
             android:layout_row="0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="table 1" />
+            android:text="Bàn 1" />
         <Button
             android:id="@+id/btnT2"
             android:background="@drawable/custom_button"
@@ -230,10 +38,11 @@
             android:layout_row="0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="table 2" />
+            android:text="Bàn 2" />
 
         <Button
             android:id="@+id/btnT3"
+            android:background="@drawable/custom_button_vip"
             android:layout_width="318dp"
             android:layout_height="wrap_content"
             android:layout_row="1"
@@ -243,9 +52,9 @@
             android:layout_marginTop="30dp"
             android:layout_marginRight="50dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/custom_button"
             android:gravity="center"
-            android:text="table 3" />
+            android:text="Bàn 3"/>
+
         <Button
             android:id="@+id/btnT4"
             android:background="@drawable/custom_button"
@@ -258,7 +67,7 @@
             android:layout_row="2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="table 4"/>
+            android:text="Bàn 4"/>
         <Button
             android:id="@+id/btnT5"
             android:background="@drawable/custom_button"
@@ -271,7 +80,7 @@
             android:layout_row="2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="table 5"/>
+            android:text="Bàn 5"/>
 
         <Button
             android:id="@+id/btnT6"
@@ -286,7 +95,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/custom_button_vip"
             android:gravity="center"
-            android:text="table 6" />
+            android:text="Bàn 6" />
 
         <Button
             android:id="@+id/btnT7"
@@ -298,7 +107,7 @@
             android:gravity="center"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
-            android:text="table 7" />
+            android:text="Bàn 7" />
 
         <Button
             android:id="@+id/btnT8"
@@ -310,7 +119,7 @@
             android:gravity="center"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
-            android:text="table 8" />
+            android:text="Bàn 8" />
 
         <Button
             android:id="@+id/btnT9"
@@ -324,7 +133,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/custom_button"
             android:gravity="center"
-            android:text="table 9" />
+            android:text="Bàn 9" />
         <Button
             android:id="@+id/btnT10"
             android:layout_width="wrap_content"
@@ -337,7 +146,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/custom_button"
             android:gravity="center"
-            android:text="table 10" />
+            android:text="Bàn 10" />
         <Button
             android:id="@+id/btnT11"
             android:layout_width="wrap_content"
@@ -350,7 +159,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/custom_button"
             android:gravity="center"
-            android:text="table 11" />
+            android:text="Bàn 11" />
         <Button
             android:id="@+id/btnT12"
             android:layout_width="wrap_content"
@@ -363,7 +172,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/custom_button_vip"
             android:gravity="center"
-            android:text="table 12" />
+            android:text="Bàn 12" />
         <Button
             android:id="@+id/btnT13"
             android:layout_width="wrap_content"
@@ -376,7 +185,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/custom_button"
             android:gravity="center"
-            android:text="table 13" />
+            android:text="Bàn 13" />
         <Button
             android:id="@+id/btnT14"
             android:layout_width="wrap_content"
@@ -389,7 +198,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/custom_button"
             android:gravity="center"
-            android:text="table 14" />
+            android:text="Bàn 14" />
 
         <Button
             android:id="@+id/btnT15"
@@ -401,7 +210,7 @@
             android:layout_marginRight="50dp"
             android:layout_column="4"
             android:layout_row="0"
-            android:text="Table 15" />
+            android:text="Bàn 15" />
         <Button
             android:id="@+id/btnT16"
             android:layout_width="wrap_content"
@@ -414,7 +223,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/custom_button_vip"
             android:gravity="center"
-            android:text="table 16" />
+            android:text="Bàn 16" />
         <Button
             android:id="@+id/btnT17"
             android:layout_width="wrap_content"
@@ -427,7 +236,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/custom_button"
             android:gravity="center"
-            android:text="table 17" />
+            android:text="Bàn 17" />
         <Button
             android:id="@+id/btnT18"
             android:layout_width="wrap_content"
@@ -440,7 +249,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/custom_button_vip"
             android:gravity="center"
-            android:text="table 18" />
+            android:text="Bàn 18" />
 
     </GridLayout>
 
