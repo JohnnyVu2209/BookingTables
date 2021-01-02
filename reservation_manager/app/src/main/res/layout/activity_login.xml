@@ -7,6 +7,8 @@
     tools:context=".Login.Login"
     android:background="@drawable/gradien_color">
 
+    <include layout="@layout/appbar"/>
+
     <ImageView
         android:id="@+id/imgBanAn"
         android:layout_width="413dp"
@@ -25,7 +27,7 @@
         android:fontFamily="sans-serif-black"
         android:text="RESTAURANT MANAGEMENT"
         android:textColor="@color/white"
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

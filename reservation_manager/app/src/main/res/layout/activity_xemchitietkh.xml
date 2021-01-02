@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/edit_sdt"
+        android:layout_width="46dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="220dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toEndOf="@+id/TvHT"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <TextView
+        android:id="@+id/tvSLDAT"
+        android:layout_width="142dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="24dp"
+        android:text="Số lượng đặt"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGT" />
+
+    <TextView
+        android:id="@+id/tvNS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="36dp"
+        android:text="Ngày sinh"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHT" />
+
+    <TextView
+        android:id="@+id/TvNS"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="317dp"
+        android:ems="10"
+        android:layout_marginRight="107dp"
+        android:inputType="textPersonName|phone"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/tvNS"
+        app:layout_constraintTop_toBottomOf="@+id/tvKH" />
+
+    <TextView
+        android:id="@+id/TvSDT"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName|phone"
+        android:textSize="24sp"
+        android:layout_marginRight="107dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toEndOf="@+id/tvSDT"
+        app:layout_constraintTop_toBottomOf="@+id/TvNS" />
+
+    <TextView
+        android:id="@+id/tvSDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="76dp"
+        android:text="Số điện thoại"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvHT" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="164dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="428dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/blank_profile_picture_png"
+        app:civ_border_color="#000"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKH" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/appbar" />
+
+    <TextView
+        android:id="@+id/tvKH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="THÔNG TIN KHÁCH HÀNG"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/tvHT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="252dp"
+        android:text="Họ và tên"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKH" />
+
+    <TextView
+        android:id="@+id/TvHT"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="252dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toEndOf="@+id/tvHT"
+        app:layout_constraintTop_toBottomOf="@+id/tvKH" />
+
+    <TextView
+        android:id="@+id/tvGT"
+        android:layout_width="94dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="32dp"
+        android:text="Giới tính"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSDT" />
+
+    <TextView
+        android:id="@+id/TvSLD"
+        android:layout_width="133dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvSLDAT"
+        app:layout_constraintTop_toBottomOf="@+id/Tvgt" />
+
+    <TextView
+        android:id="@+id/Tvgt"
+        android:layout_width="133dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvGT"
+        app:layout_constraintTop_toBottomOf="@+id/TvSDT" />
+
+    <ImageView
+        android:id="@+id/edit_hoten"
+        android:layout_width="46dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toEndOf="@+id/TvHT"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
