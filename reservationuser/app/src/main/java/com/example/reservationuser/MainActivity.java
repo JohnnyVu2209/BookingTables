@@ -107,15 +107,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this,DatBan.class);
         startActivity(intent);
     }
-    private ArrayList sortSame(ArrayList<String> list){
-        ArrayList<String> list1 = new ArrayList<>();
-        for (String element: list) {
-            if(!list1.contains(element)){
-                list1.add(element);
-            }
-        }
-        return list1;
-    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

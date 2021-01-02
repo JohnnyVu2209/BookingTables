@@ -53,24 +53,24 @@ public class SoDoBan
     Button[] listVip;
 
     private void AnhXa(View view) {
-        btn1 = (Button)view.findViewById(R.id.btnT1);
-        btn2 = (Button)view.findViewById(R.id.btnT2);
-        btn3 = (Button)view.findViewById(R.id.btnT3);
-        btn4 = (Button)view.findViewById(R.id.btnT4);
-        btn5 = (Button)view.findViewById(R.id.btnT5);
-        btn6 = (Button)view.findViewById(R.id.btnT6);
-        btn7 = (Button)view.findViewById(R.id.btnT7);
-        btn8 = (Button)view.findViewById(R.id.btnT8);
-        btn9 = (Button)view.findViewById(R.id.btnT9);
-        btn10 = (Button)view.findViewById(R.id.btnT10);
-        btn11 = (Button)view.findViewById(R.id.btnT11);
-        btn12 = (Button)view.findViewById(R.id.btnT12);
-        btn13 = (Button)view.findViewById(R.id.btnT13);
-        btn14 = (Button)view.findViewById(R.id.btnT14);
-        btn15 = (Button)view.findViewById(R.id.btnT15);
-        btn16 = (Button)view.findViewById(R.id.btnT16);
-        btn17 = (Button)view.findViewById(R.id.btnT17);
-        btn18 = (Button)view.findViewById(R.id.btnT18);
+        btn1 = (Button)view.findViewById(R.id.btnT1);btn1.setOnClickListener(this);
+        btn2 = (Button)view.findViewById(R.id.btnT2);btn2.setOnClickListener(this);
+        btn3 = (Button)view.findViewById(R.id.btnT3);btn3.setOnClickListener(this);
+        btn4 = (Button)view.findViewById(R.id.btnT4);btn4.setOnClickListener(this);
+        btn5 = (Button)view.findViewById(R.id.btnT5);btn5.setOnClickListener(this);
+        btn6 = (Button)view.findViewById(R.id.btnT6);btn6.setOnClickListener(this);
+        btn7 = (Button)view.findViewById(R.id.btnT7);btn7.setOnClickListener(this);
+        btn8 = (Button)view.findViewById(R.id.btnT8);btn8.setOnClickListener(this);
+        btn9 = (Button)view.findViewById(R.id.btnT9);btn9.setOnClickListener(this);
+        btn10 = (Button)view.findViewById(R.id.btnT10);btn10.setOnClickListener(this);
+        btn11 = (Button)view.findViewById(R.id.btnT11);btn11.setOnClickListener(this);
+        btn12 = (Button)view.findViewById(R.id.btnT12);btn12.setOnClickListener(this);
+        btn13 = (Button)view.findViewById(R.id.btnT13);btn13.setOnClickListener(this);
+        btn14 = (Button)view.findViewById(R.id.btnT14);btn14.setOnClickListener(this);
+        btn15 = (Button)view.findViewById(R.id.btnT15);btn15.setOnClickListener(this);
+        btn16 = (Button)view.findViewById(R.id.btnT16);btn16.setOnClickListener(this);
+        btn17 = (Button)view.findViewById(R.id.btnT17);btn17.setOnClickListener(this);
+        btn18 = (Button)view.findViewById(R.id.btnT18);btn18.setOnClickListener(this);
         listNormal = new Button[]{this.btn1, this.btn2, this.btn4, this.btn5, this.btn7, this.btn9, this.btn10, this.btn11, this.btn13, this.btn14, this.btn15, this.btn17};
 
         listVip= new Button[]{this.btn3, this.btn6, this.btn8, this.btn12, this.btn16, this.btn18};
@@ -88,7 +88,9 @@ public class SoDoBan
 
             public void onClick(View view) {
                 SoDoBan soDoBan = SoDoBan.this;
-                soDoBan.intentToDatBan(btnfinal.getHint().toString());
+                DatBan datBan = (DatBan) getActivity();
+                datBan.getTableNum(btnfinal.getHint().toString());
+                getFragmentManager().popBackStack();
             }
         });
         return view;
@@ -97,33 +99,33 @@ public class SoDoBan
         this.fab.setVisibility(View.VISIBLE);
         this.clearDraw();
         this.btnfinal = button;
-        for (int i = 0; i < listNormal.length; ++i) {
-            if (listNormal[i] != button) continue;
-            listNormal[i].setBackground(this.getResources().getDrawable(R.drawable.custom_button_click));
+        for (int i = 0; i < listNormal.length; i++) {
+            if (listNormal[i] == button){
+                listNormal[i].setBackground(getResources().getDrawable(R.drawable.custom_button_click));
+            }
         }
-        for (int i = 0; i < listVip.length; ++i) {
-            if (listVip[i] != button) continue;
-            listVip[i].setBackground(this.getResources().getDrawable(R.drawable.custom_button_vip_click));
+        for (int i = 0; i < listVip.length; i++) {
+            if (listVip[i].equals(button)) {
+                listVip[i].setBackground(getResources().getDrawable(R.drawable.custom_button_vip_click));
+            }
         }
     }
 
     private void clearDraw() {
-        for (int i = 0; i < listNormal.length; ++i) {
+        for (int i = 0; i < listNormal.length; i++) {
             listNormal[i].setBackground(this.getResources().getDrawable(R.drawable.custom_button));
         }
-        for (int i = 0; i < listVip.length; ++i) {
+        for (int i = 0; i < listVip.length; i++) {
             listVip[i].setBackground(this.getResources().getDrawable(R.drawable.custom_button_vip));
         }
     }
 
-    private void intentToDatBan(String string2) {
-        Intent intent = new Intent((Context) this.getActivity(), DatBan.class);
-        intent.putExtra("NUMBER", string2);
-        this.startActivity(intent);
-    }
 
-    public void onClick(View view) {
-        switch (view.getId()) {
+
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
             case R.id.btnT1: {
                 buttonClick(btn1);
                 break;
@@ -198,7 +200,6 @@ public class SoDoBan
             }
         }
     }
-
 }
 
 

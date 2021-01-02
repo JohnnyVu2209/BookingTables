@@ -20,6 +20,7 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -42,6 +43,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.sanojpunchihewa.glowbutton.GlowButton;
 
 import java.io.File;
 import java.io.IOException;
@@ -60,9 +62,14 @@ public class DatBan extends AppCompatActivity implements DatePickerDialog.OnDate
     StorageReference storageReference;
     DatabaseReference reference;
     ChonMonAdapter adapter;
-    ListView dsMonAn;
-    ArrayList<MonAn> listmonan;
+    monDaChonAdapter monDaChonAdapter;
+    ListView dsMonAn,dsMonAnDaChon;
+    ArrayList<MonAn> listmonan,ChoosedFood;
     Button btnChon;
+    GlowButton glowButton;
+    FirebaseController controller;
+    int nam = 0;
+
     private void AnhXa(){
         tvTenNgDat = (TextView)findViewById(R.id.tvTenNgDat);
         tvSDTNgDat = (TextView)findViewById(R.id.tvSDTNgDat);
@@ -79,6 +86,10 @@ public class DatBan extends AppCompatActivity implements DatePickerDialog.OnDate
         llGoiMon   = (LinearLayout)findViewById(R.id.llGoiMon);
         storageReference = FirebaseStorage.getInstance().getReference();
         reference  = FirebaseDatabase.getInstance().getReference("KhachHang");
+        dsMonAnDaChon = (ListView)findViewById(R.id.listMonGoiTruoc);
+        ChoosedFood = new ArrayList<>();
+        glowButton = (GlowButton)findViewById(R.id.gbDatBan);
+        controller = new FirebaseController(this);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,29 +128,67 @@ public class DatBan extends AppCompatActivity implements DatePickerDialog.OnDate
                 fragmentManager.beginTransaction().add(R.id.customDatBan,soDoBan).addToBackStack(DatBan.class.getName()).commit();
             }
         });
-        String soBan = getIntent().getStringExtra("NUMBER");
-        etSoBan.setText(soBan);
-        this.rgGoiMon.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+
+        rgGoiMon.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == R.id.rbCo){
+                    glowButton.setVisibility(View.INVISIBLE);
                     llGoiMon.setVisibility(View.VISIBLE);
                 }
                 else {
-                    llGoiMon.setVisibility(View.GONE);
+                    llGoiMon.setVisibility(View.INVISIBLE);
+                    glowButton.setVisibility(View.VISIBLE);
                 }
 
             }
         });
-
-
+        tvThemMon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDialog(v);
+            }
+        });
+        Log.d("Food", "onCreate: " + ChoosedFood.size());
+        glowButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getData();
+            }
+        });
+    }
+    public void getTableNum(String num){
+        etSoBan.setText(num);
+    }
+    private void getData(){
+        DonDatBan donDatBan;
+        String tennguoidat = tvTenNgDat.getText().toString();
+        String sdtngdat = tvSDTNgDat.getText().toString();
+        String ngayden = etNgay.getText().toString() + "/" + etThang.getText().toString() + "/" + nam;
+        String gioden = etGio.getText().toString() + " PM";
+        int soban = Integer.parseInt(etSoBan.getText().toString());
+        int goimon = rgGoiMon.getCheckedRadioButtonId();
+        boolean goimontruoc = false;
+        if (goimon == R.id.rbCo){
+            goimontruoc = true;
+        }
+        if(goimontruoc){
+            ArrayList<MonAn> mongoitruoc = monDaChonAdapter.getmMonAn();
+            Log.d("TAG", "getData: "+ mongoitruoc.size());
+            donDatBan = new DonDatBan(tennguoidat,sdtngdat,ngayden,gioden,soban,goimontruoc,mongoitruoc);
+            controller.WirteWithAutoIncreaseKey("DonDatBan",donDatBan);
+        }
+        else {
+            donDatBan = new DonDatBan(tennguoidat,sdtngdat,ngayden,gioden,soban,goimontruoc);
+            controller.WirteWithAutoIncreaseKey("DonDatBan",donDatBan);
+        }
     }
     public void openDialog(View view){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View row = inflater.inflate(R.layout.chon_monan,null);
         builder.setView(row);
-        AlertDialog dialog = builder.create();
+        final AlertDialog dialog = builder.create();
         dialog.show();
         btnChon = (Button)row.findViewById(R.id.btnChon);
         dsMonAn = (ListView)row.findViewById(R.id.listMonAn);
@@ -153,6 +202,16 @@ public class DatBan extends AppCompatActivity implements DatePickerDialog.OnDate
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()){
                     MonAn monAn = dataSnapshot.getValue(MonAn.class);
                     listmonan.add(monAn);
+                }
+                Log.d("CHECK SIZE", "onDataChange: " + ChoosedFood.size());
+                if(ChoosedFood.size() != 0){
+                    for (int i = 0; i < listmonan.size(); i++) {
+                        for (int j = 0; j < ChoosedFood.size(); j++) {
+                            if (listmonan.get(i).tenmonan.contains(ChoosedFood.get(j).tenmonan)){
+                                listmonan.get(i).setSelected(true);
+                            }
+                        }
+                    }
                 }
                 adapter.notifyDataSetChanged();
             }
@@ -170,6 +229,7 @@ public class DatBan extends AppCompatActivity implements DatePickerDialog.OnDate
                     monAn.setSelected(false);
                 }
                 else {
+                    Log.d("FOOD", "onItemClick: " + monAn.tenmonan);
                     monAn.setSelected(true);
                 }
                 listmonan.set(position,monAn);
@@ -177,7 +237,20 @@ public class DatBan extends AppCompatActivity implements DatePickerDialog.OnDate
             }
         });
 
+        btnChon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                ChoosedFood = adapter.getmLayMon();
+                monDaChonAdapter = new monDaChonAdapter(getApplicationContext(),R.layout.mon_da_chon_list,ChoosedFood);
+                dsMonAnDaChon.setAdapter(monDaChonAdapter);
+                monDaChonAdapter.notifyDataSetChanged();
 
+                if (ChoosedFood.size() != 0){
+                    glowButton.setVisibility(View.VISIBLE);
+                }
+            }
+        });
     }
 
     @Override
@@ -186,7 +259,7 @@ public class DatBan extends AppCompatActivity implements DatePickerDialog.OnDate
         c.set(Calendar.YEAR, year);
         c.set(Calendar.MONTH , month+1);
         c.set(Calendar.DAY_OF_MONTH,dayOfMonth);
-
+        nam = c.getTime().getYear();
         etNgay.setText(String.valueOf(c.getTime().getDate()));
         int m =c.getTime().getMonth();
         if(m == 0){
@@ -205,11 +278,19 @@ public class DatBan extends AppCompatActivity implements DatePickerDialog.OnDate
         Context context;
         int mlayout;
         ArrayList<MonAn> mMonAn;
+        ArrayList<MonAn> mLayMon;
 
         public ChonMonAdapter(Context context, int mlayout, ArrayList<MonAn> mMonAn) {
             this.context = context;
             this.mlayout = mlayout;
             this.mMonAn = mMonAn;
+            mLayMon  = new ArrayList<>();
+            for (int i = 0; i <mMonAn.size() ; i++) {
+                if (mMonAn.get(i).getSelected()){
+                    mLayMon.add(mMonAn.get(i));
+                }
+            }
+
         }
 
         @Override
@@ -227,11 +308,14 @@ public class DatBan extends AppCompatActivity implements DatePickerDialog.OnDate
             return 0;
         }
 
+        public ArrayList<MonAn> getmLayMon() {
+            return sortSame(mLayMon);
+        }
+
         @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
+        public View getView(final int position, View convertView, ViewGroup parent) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(mlayout,null);
-
             final File file;
             try {
                 final ImageView imgma = (ImageView)convertView.findViewById(R.id.imageMONAN);
@@ -251,12 +335,26 @@ public class DatBan extends AppCompatActivity implements DatePickerDialog.OnDate
                     }
                 });
                 tvten.setText(mMonAn.get(position).tenmonan);
+
                 if (mMonAn.get(position).getSelected()){
                     checkBox.setChecked(true);
+                    mLayMon.add(mMonAn.get(position));
                 }
                 else {
                     checkBox.setChecked(false);
                 }
+                checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        Log.d("CHECK", "onCheckedChanged: " + position+ " " + isChecked);
+                        if(isChecked == true){
+                            mLayMon.add(mMonAn.get(position));
+                        }
+                        else{
+                            mLayMon.remove(mMonAn.get(position));
+                        }
+                    }
+                });
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -266,6 +364,63 @@ public class DatBan extends AppCompatActivity implements DatePickerDialog.OnDate
         public void updateRecords(ArrayList<MonAn> listmonan) {
             this.mMonAn = listmonan;
             notifyDataSetChanged();
+        }
+        private ArrayList sortSame(ArrayList<MonAn> list){
+            ArrayList<MonAn> list1 = new ArrayList<>();
+            for (MonAn element: list) {
+                if(!list1.contains(element)){
+                    list1.add(element);
+                }
+            }
+            return list1;
+        }
+    }
+    class monDaChonAdapter extends BaseAdapter{
+        Context context;
+        int mlayout;
+        ArrayList<MonAn> mMonAn;
+
+        public monDaChonAdapter(Context context, int mlayout, ArrayList<MonAn> mMonAn) {
+            this.context = context;
+            this.mlayout = mlayout;
+            this.mMonAn = mMonAn;
+        }
+
+        @Override
+        public int getCount() {
+            Log.d("SIZE", "getCount: " + mMonAn.size());
+            return mMonAn.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return null;
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return 0;
+        }
+
+        @Override
+        public View getView(final int position, View convertView, ViewGroup parent) {
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView = inflater.inflate(mlayout,null);
+            TextView tvTenMon = (TextView)convertView.findViewById(R.id.tvTenMonDaChon);
+            ImageView imgRemove = (ImageView)convertView.findViewById(R.id.imgRemove);
+            tvTenMon.setText(mMonAn.get(position).tenmonan);
+            imgRemove.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mMonAn.remove(position);
+                    notifyDataSetChanged();
+                }
+            });
+            return convertView;
+        }
+
+        public ArrayList<MonAn> getmMonAn() {
+            return mMonAn;
         }
     }
 }
