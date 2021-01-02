@@ -4,104 +4,22 @@
     <shared>
       <config>
         <device id="Nexus 9" />
-        <device id="pixel_3a" />
-        <device id="pixel_3" />
-        <device id="pixel" />
       </config>
     </shared>
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:tankhanh" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="316bad8c-da23-4da2-8543-a2bbd4215f9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_2_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_2_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_3_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_3_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_3_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_3_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_3_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_3_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_3_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_3_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_3_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_3_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_3_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_3_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_27_2020_11_53_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_27_2020_11_53_AM__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="316bad8c-da23-4da2-8543-a2bbd4215f9a" name="Default Changelist" comment="Delete and Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/MonAn/XemDanhSachMonAn.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/MonAn/XemDanhSachMonAn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_xem_danh_sach_mon_an.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_xem_danh_sach_mon_an.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservationuser/.idea/libraries/Gradle__com_android_installreferrer_installreferrer_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservationuser/.idea/libraries/Gradle__com_android_installreferrer_installreferrer_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservationuser/.idea/libraries/Gradle__com_facebook_android_facebook_applinks_8_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservationuser/.idea/libraries/Gradle__com_facebook_android_facebook_common_8_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservationuser/.idea/libraries/Gradle__com_facebook_android_facebook_core_8_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservationuser/.idea/libraries/Gradle__com_facebook_android_facebook_login_8_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservationuser/.idea/libraries/Gradle__com_facebook_android_facebook_messenger_8_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservationuser/.idea/libraries/Gradle__com_facebook_android_facebook_share_8_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservationuser/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservationuser/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[emulator-5554]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -141,6 +59,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="layoutResourceFile_vertical" />
         <option value="resourceFile" />
         <option value="Class" />
         <option value="layoutResourceFile" />
@@ -148,56 +67,51 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$/.." value="Vu" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1lB00As4e6rp971Zd32UQaC9FuX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="192.168.142.103:5555" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-12-29T08:34:13.299Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Properties" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDK Location" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BookingTables/reservation_manager" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\AndroidProj\BookingTables\reservation_manager\app\src\main\res\drawable-v24" />
-      <recent name="D:\AndroidProj\BookingTables\reservation_manager\app\src\main\res\layout" />
-      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\font" />
-      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\values" />
-      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\drawable" />
-    </key>
-    <key name="android.template.-1371228081">
+    <key name="android.template.-1187602575">
       <recent name="com.example.reservation_manager" />
-      <recent name="com.example.reservation_manager.KhachHang" />
+    </key>
+    <key name="android.template.-1443443751">
+      <recent name="com.example.reservation_manager.MonAn" />
     </key>
     <key name="android.template.452395587">
       <recent name="com.example.reservation_manager" />
     </key>
-    <key name="android.template.-1174713892">
-      <recent name="com.example.reservation_manager" />
-      <recent name="com.example.reservation_manager.KhuyenMai" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\drawable" />
+      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\font" />
+      <recent name="D:\Project\Android\SourceCode\reservationapp\reservation_manager\app\src\main\res\values" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Public\Downloads\BookingTables\reservation_manager\app\src\main\res\drawable-v24" />
+    <key name="android.template.1188003316">
+      <recent name="com.example.reservation_manager" />
+    </key>
+    <key name="android.template.1283700654">
+      <recent name="com.example.reservation_manager" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -287,7 +201,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.reservation_manager [signingReport]" />
-        <item itemvalue="Gradle.reservation_manager [signingReport]" />
       </list>
     </recent_temporary>
   </component>
@@ -309,211 +222,185 @@
       <option name="project" value="LOCAL" />
       <updated>1607067944169</updated>
     </task>
-    <task id="LOCAL-00002" summary="Display customer detail view and remove customer">
-      <created>1608368294736</created>
+    <task id="LOCAL-00002" summary="Done create Food">
+      <created>1607484526771</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1608368294736</updated>
+      <updated>1607484526771</updated>
     </task>
-    <task id="LOCAL-00003" summary="EDIT DISPLLAY CUSTOMER's DETAIL">
-      <created>1608797852134</created>
+    <task id="LOCAL-00003" summary="Create package for MonAn and Login">
+      <created>1607487981104</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1608797852134</updated>
+      <updated>1607487981104</updated>
     </task>
-    <task id="LOCAL-00004" summary="Customer Done">
-      <created>1609052446045</created>
+    <task id="LOCAL-00004" summary="Delete and Update">
+      <created>1609234100222</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1609052446045</updated>
+      <updated>1609234100226</updated>
     </task>
-    <task id="LOCAL-00005" summary="Customer Done p2">
-      <created>1609052521090</created>
+    <task id="LOCAL-00005" summary="Delete and Update">
+      <created>1609592484681</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1609052521091</updated>
+      <updated>1609592484681</updated>
     </task>
-    <task id="LOCAL-00006" summary="commit before merge Thao to Khanh">
-      <created>1609589915781</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1609589915781</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="6" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="tankhanh" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reservation_Manager" />
-    <MESSAGE value="Display customer detail view and remove customer" />
-    <MESSAGE value="EDIT DISPLLAY CUSTOMER's DETAIL" />
-    <MESSAGE value="Customer Done" />
-    <MESSAGE value="Customer Done p2" />
-    <MESSAGE value="commit before merge Thao to Khanh" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit before merge Thao to Khanh" />
+    <MESSAGE value="Done create Food" />
+    <MESSAGE value="Create package for MonAn and Login" />
+    <MESSAGE value="Delete and Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete and Update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1609347148246">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1609347148246" />
-    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1609336140188">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1609336140188" />
-    <state x="394" y="209" width="519" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1609336963347">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="394" y="209" width="519" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1609336963347" />
-    <state x="396" y="93" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609347355381">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1609333003931" />
-    <state x="396" y="93" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1609347355381" />
-    <state x="318" y="187" key="AndroidCreateResourceDirectoryDialog" timestamp="1607056300347">
+    <state x="330" y="91" key="#Notifications" timestamp="1607415184955">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="318" y="187" key="AndroidCreateResourceDirectoryDialog/0.0.1474.864@0.0.1474.864" timestamp="1607056300347" />
-    <state x="295" y="157" key="AndroidCreateResourceFileDialog" timestamp="1609343169173">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="330" y="91" key="#Notifications/0.0.1474.864@0.0.1474.864" timestamp="1607415184955" />
+    <state x="266" y="156" key="#PSD" timestamp="1608971943882">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="276" y="147" key="AndroidCreateResourceFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1609334508478" />
-    <state x="295" y="157" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1609343169173" />
-    <state x="318" y="187" key="AndroidCreateResourceFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1607058351685" />
-    <state x="299" y="3" key="CommitChangelistDialog2" timestamp="1609589914500">
+    <state x="255" y="164" key="#PSD/0.0.1474.864@0.0.1474.864" timestamp="1607414881330" />
+    <state x="266" y="156" key="#PSD/0.0.1536.824@0.0.1536.824" timestamp="1608971943882" />
+    <state x="485" y="74" key="#app" timestamp="1608971869858">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="78" key="#app/0.0.1474.864@0.0.1474.864" timestamp="1607352615455" />
+    <state x="485" y="74" key="#app/0.0.1536.824@0.0.1536.824" timestamp="1608971869858" />
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1609221747182">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1609221747182" />
+    <state x="543" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1607594499306">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="260" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1609507728573" />
-    <state x="277" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1609177112344" />
-    <state x="299" y="3" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1609589914500" />
-    <state x="131" y="58" key="DiffContextDialog" timestamp="1609052548329">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="543" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1474.864@0.0.1474.864" timestamp="1607594499306" />
+    <state x="522" y="292" width="432" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1607326461179">
+      <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="131" y="58" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1609052548329" />
+    <state x="522" y="292" width="432" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1474.864@0.0.1474.864" timestamp="1607326461179" />
+    <state x="488" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608977058732">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="468" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1474.864@0.0.1474.864" timestamp="1607432931983" />
+    <state x="488" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608977058732" />
+    <state x="318" y="187" key="AndroidCreateResourceDirectoryDialog" timestamp="1607486504202">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="318" y="187" key="AndroidCreateResourceDirectoryDialog/0.0.1474.864@0.0.1474.864" timestamp="1607486504202" />
+    <state x="531" y="98" key="AndroidCreateResourceFileDialog" timestamp="1608974683259">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="318" y="187" key="AndroidCreateResourceFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1607604265854" />
+    <state x="531" y="98" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1608974683259" />
+    <state x="224" y="0" key="CommitChangelistDialog2" timestamp="1609592711492">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="27" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1607487980311" />
+    <state x="224" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1609592711492" />
+    <state x="141" y="69" key="DiffContextDialog" timestamp="1607068016784">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
     <state x="141" y="69" key="DiffContextDialog/0.0.1474.864@0.0.1474.864" timestamp="1607068016784" />
-    <state x="480" y="158" key="FileChooserDialogImpl" timestamp="1609141877625">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="540" y="179" key="FileChooserDialogImpl" timestamp="1608976681595">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="450" y="148" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1608284229134" />
-    <state x="480" y="158" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609141877625" />
-    <state x="518" y="188" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1607068186580" />
-    <state width="1236" height="112" key="GridCell.Tab.0.bottom" timestamp="1609597673411">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="518" y="188" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1607587832329" />
+    <state x="540" y="179" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608976681595" />
+    <state width="1491" height="210" key="GridCell.Tab.0.bottom" timestamp="1609240612776">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1236" height="112" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1609597673411" />
-    <state width="1367" height="186" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609346919956" />
-    <state width="1429" height="222" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1607062320184" />
-    <state width="1236" height="112" key="GridCell.Tab.0.center" timestamp="1609597673411">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1429" height="222" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1607602218679" />
+    <state width="1491" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609240612776" />
+    <state width="1491" height="210" key="GridCell.Tab.0.center" timestamp="1609240612776">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1236" height="112" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1609597673411" />
-    <state width="1367" height="186" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1609346919955" />
-    <state width="1429" height="222" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1607062320184" />
-    <state width="1236" height="112" key="GridCell.Tab.0.left" timestamp="1609597673410">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1429" height="222" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1607602218679" />
+    <state width="1491" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609240612776" />
+    <state width="1491" height="210" key="GridCell.Tab.0.left" timestamp="1609240612776">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1236" height="112" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1609597673410" />
-    <state width="1367" height="186" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1609346919954" />
-    <state width="1429" height="222" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1607062320183" />
-    <state width="1236" height="112" key="GridCell.Tab.0.right" timestamp="1609597673411">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1429" height="222" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1607602218678" />
+    <state width="1491" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609240612776" />
+    <state width="1491" height="210" key="GridCell.Tab.0.right" timestamp="1609240612776">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1236" height="112" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1609597673411" />
-    <state width="1367" height="186" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1609346919955" />
-    <state width="1429" height="222" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1607062320184" />
-    <state width="1236" height="203" key="GridCell.Tab.1.bottom" timestamp="1609559806779">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1429" height="222" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1607602218679" />
+    <state width="1491" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609240612776" />
+    <state width="1491" height="260" key="GridCell.Tab.1.bottom" timestamp="1609229729738">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1236" height="203" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1609559806779" />
-    <state width="1236" height="203" key="GridCell.Tab.1.center" timestamp="1609559806779">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1429" height="276" key="GridCell.Tab.1.bottom/0.0.1474.864@0.0.1474.864" timestamp="1607597006985" />
+    <state width="1491" height="260" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609229729738" />
+    <state width="1491" height="260" key="GridCell.Tab.1.center" timestamp="1609229729737">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1236" height="203" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1609559806779" />
-    <state width="1236" height="203" key="GridCell.Tab.1.left" timestamp="1609559806779">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1429" height="276" key="GridCell.Tab.1.center/0.0.1474.864@0.0.1474.864" timestamp="1607597006984" />
+    <state width="1491" height="260" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1609229729737" />
+    <state width="1491" height="260" key="GridCell.Tab.1.left" timestamp="1609229729737">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1236" height="203" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1609559806779" />
-    <state width="1236" height="203" key="GridCell.Tab.1.right" timestamp="1609559806779">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1429" height="276" key="GridCell.Tab.1.left/0.0.1474.864@0.0.1474.864" timestamp="1607597006984" />
+    <state width="1491" height="260" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1609229729737" />
+    <state width="1491" height="260" key="GridCell.Tab.1.right" timestamp="1609229729738">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1236" height="203" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1609559806779" />
-    <state x="139" y="64" key="MergeDialog" timestamp="1609590589989">
+    <state width="1429" height="276" key="GridCell.Tab.1.right/0.0.1474.864@0.0.1474.864" timestamp="1607597006985" />
+    <state width="1491" height="260" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1609229729738" />
+    <state x="409" y="143" key="RollbackChangesDialog" timestamp="1607432860156">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="121" y="50" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1608181919799" />
-    <state x="139" y="64" key="MergeDialog/0.0.1474.864@0.0.1474.864" timestamp="1609590589989" />
-    <state x="376" y="194" key="MultipleFileMergeDialog" timestamp="1609590589999">
+    <state x="409" y="143" key="RollbackChangesDialog/0.0.1474.864@0.0.1474.864" timestamp="1607432860156" />
+    <state x="246" y="75" key="SettingsEditor" timestamp="1607414667001">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="376" y="194" key="MultipleFileMergeDialog/0.0.1474.864@0.0.1474.864" timestamp="1609590589999" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1609331374321">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1609331374321" />
-    <state x="306" y="139" key="Vcs.Push.Dialog.v2" timestamp="1609052569237">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="287" y="130" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608797879634" />
-    <state x="306" y="139" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1609052569237" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1607068032084" />
-    <state x="553" y="210" key="chooseDestDirectoryDialog" timestamp="1607056181927">
+    <state x="246" y="75" key="SettingsEditor/0.0.1474.864@0.0.1474.864" timestamp="1607414667001" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1607487993681">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="553" y="210" key="chooseDestDirectoryDialog/0.0.1474.864@0.0.1474.864" timestamp="1607056181927" />
-    <state x="100" y="100" width="1274" height="664" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1607060677082">
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1607487993681" />
+    <state x="576" y="200" key="chooseDestDirectoryDialog" timestamp="1608974359276">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="553" y="210" key="chooseDestDirectoryDialog/0.0.1474.864@0.0.1474.864" timestamp="1607603306200" />
+    <state x="576" y="200" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1608974359276" />
+    <state x="100" y="100" width="1274" height="664" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1607442870720">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="100" y="100" width="1274" height="664" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1474.864@0.0.1474.864" timestamp="1607060677082" />
-    <state x="475" y="275" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609331463498">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="100" y="100" width="1274" height="664" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1474.864@0.0.1474.864" timestamp="1607442870720" />
+    <state x="452" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1608971801195">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="475" y="275" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1609331463498" />
+    <state x="434" y="256" key="com.intellij.ide.util.TipDialog/0.0.1474.864@0.0.1474.864" timestamp="1607582179228" />
+    <state x="452" y="244" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1608971801195" />
+    <state x="570" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609233953838">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
     <state x="547" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1474.864@0.0.1474.864" timestamp="1607067984164" />
-    <state x="185" y="69" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1609429529257">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="570" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1609233953838" />
+    <state x="411" y="188" key="run.anything.popup" timestamp="1609220566095">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="185" y="69" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680@0.0.1280.680" timestamp="1609429529257" />
-    <state x="443" y="174" key="git4idea.merge.GitMergeDialog" timestamp="1609598008910">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="394" y="197" key="run.anything.popup/0.0.1474.864@0.0.1474.864" timestamp="1607597951678" />
+    <state x="411" y="188" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1609220566095" />
+    <state x="400" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1607445351926">
+      <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="443" y="174" key="git4idea.merge.GitMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1609598008910" />
-    <state x="510" y="221" key="git4idea.merge.GitMergeDialog/0.0.1474.864@0.0.1474.864" timestamp="1609589938403" />
-    <state x="318" y="162" key="run.anything.popup" timestamp="1609044898200">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="298" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1608362373097" />
-    <state x="318" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1609044898200" />
-    <state x="475" y="222" key="scopes" timestamp="1609341997617">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="475" y="222" key="scopes/0.0.1366.728@0.0.1366.728" timestamp="1609341997617" />
+    <state x="400" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1474.864@0.0.1474.864" timestamp="1607445351926" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="app">
+        <watch expression="monan" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
