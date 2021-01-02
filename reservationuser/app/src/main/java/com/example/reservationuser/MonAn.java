@@ -9,6 +9,15 @@ public class MonAn {
     public Boolean goimon;
     public String idhinh;
     public  @Nullable String mota;
+    public Boolean isSelected = false;
+
+    public Boolean getSelected() {
+        return isSelected;
+    }
+
+    public void setSelected(Boolean selected) {
+        isSelected = selected;
+    }
 
     public MonAn(String tenmonan, String gia, String loaimonan, Boolean goimon, String idhinh, @Nullable String mota) {
         this.tenmonan = tenmonan;
