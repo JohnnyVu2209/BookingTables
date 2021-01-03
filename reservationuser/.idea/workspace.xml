@@ -12,13 +12,48 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9f813f-ce0a-4623-a37c-379db606b814" name="Default Changelist" comment="" />
+    <list default="true" id="5e9f813f-ce0a-4623-a37c-379db606b814" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../reservation_manager/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/DonDatBan/DanhSachDonDat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/DonDatBan/DonDatBan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/.idea/libraries/Gradle__androidx_transition_transition_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/.idea/libraries/Gradle__androidx_transition_transition_1_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/KhachHang/XemDanhSachKhachHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/KhachHang/XemDanhSachKhachHang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/KhuyenMai/XemDanhSachKhuyenMai.java" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/KhuyenMai/XemDanhSachKhuyenMai.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/Login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/Login/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/MonAn/XemDanhSachMonAn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/MonAn/XemDanhSachMonAn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/drawable/ic_baseline_delete_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/drawable/ic_baseline_delete_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/drawable/ic_baseline_edit_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/drawable/ic_baseline_edit_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_danh_sach_don.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_danh_sach_don.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_sua_don.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_sua_don.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_xem_danh_sach_khuyen_mai.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_xem_danh_sach_khuyen_mai.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_xem_danh_sach_mon_an.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_xem_danh_sach_mon_an.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_xemdskh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/activity_xemdskh.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/delete_kh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/delete_kh.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/don_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/don_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/header.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/layout/header.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/menu/main_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/menu/main_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reservation_manager/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_so_do_ban.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_so_do_ban.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[ce12160c2de4ea3a01]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[192.168.202.112:5555]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
