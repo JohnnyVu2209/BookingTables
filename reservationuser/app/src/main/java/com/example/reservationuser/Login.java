@@ -132,7 +132,7 @@ public class Login extends AppCompatActivity {
 
             @Override
             public void onCancel() {
-                Log.d("FacebookAuthentication", "onCancle");
+                Log.d("FacebookAuthentication", "onCancel");
             }
 
             @Override

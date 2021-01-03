@@ -14,8 +14,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.reservation_manager.MainActivity;
-import com.example.reservation_manager.MonAn.MonAn;
 import com.example.reservation_manager.MonAn.ThemMonAn;
 import com.example.reservation_manager.R;
 import com.google.android.gms.tasks.OnCompleteListener;
