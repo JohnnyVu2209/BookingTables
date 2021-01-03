@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mnuProfileSetting"
+        android:title="Quản lý tài khoản"
+        android:icon="@drawable/user"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/mnuSignOut"
+        android:title="Đăng Xuất"
+        android:icon="@drawable/ic_baseline_login_24"
+        app:showAsAction="always"
+        />
+
+</menu>

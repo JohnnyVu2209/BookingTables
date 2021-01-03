@@ -4,10 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login.Login"
-    android:background="@drawable/gradien_color">
-
-    <include layout="@layout/appbar"/>
+    tools:context="com.example.reservation_manager.Login.Login"
+    android:background = "@drawable/gradien_color">
 
     <ImageView
         android:id="@+id/imgBanAn"
@@ -27,7 +25,7 @@
         android:fontFamily="sans-serif-black"
         android:text="RESTAURANT MANAGEMENT"
         android:textColor="@color/white"
-        android:textSize="35sp"
+        android:textSize="35dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

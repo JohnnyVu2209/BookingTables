@@ -3,6 +3,7 @@
     package="com.example.reservationuser">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InsertName"></activity>
+        <activity android:name=".succsessful_reservation"></activity>
+        <activity android:name=".DatBan" />
+        <activity android:name=".InsertName" />
         <activity android:name=".OTPReceive" />
         <activity android:name=".Login">
             <intent-filter>
