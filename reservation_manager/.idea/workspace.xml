@@ -21,9 +21,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="316bad8c-da23-4da2-8543-a2bbd4215f9a" name="Default Changelist" comment="">
+    <list default="true" id="316bad8c-da23-4da2-8543-a2bbd4215f9a" name="Default Changelist" comment="complete code.!">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_27_2020_11_53_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_27_2020_11_53_AM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/BanAn/SubActivity_TableList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/BanAn/SubActivity_TableList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +33,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Nexus_9_API_26]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -103,7 +103,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reservationuser" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -347,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609576179084</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="complete code.!">
+      <created>1609577095989</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1609577095989</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -392,25 +399,29 @@
     </state>
     <state x="318" y="187" key="AndroidCreateResourceFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1607058351685" />
     <state x="331" y="178" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1609341791634" />
+    <state x="578" y="155" key="AndroidCreateXmlResourceDialog" timestamp="1609634563869">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="155" key="AndroidCreateXmlResourceDialog/0.0.1536.824@0.0.1536.824" timestamp="1609634563869" />
     <state x="464" y="138" key="AndroidProcessChooserDialog" timestamp="1609572229402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="464" y="138" key="AndroidProcessChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1609572229402" />
-    <state x="7" y="0" key="CommitChangelistDialog2" timestamp="1609576175025">
+    <state x="7" y="0" key="CommitChangelistDialog2" timestamp="1609577880379">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="27" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1607067967254" />
-    <state x="7" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1609576175025" />
+    <state x="7" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1609577880379" />
     <state x="147" y="66" key="DiffContextDialog" timestamp="1608199033729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="141" y="69" key="DiffContextDialog/0.0.1474.864@0.0.1474.864" timestamp="1607068016784" />
     <state x="147" y="66" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1608199033729" />
-    <state x="540" y="179" key="FileChooserDialogImpl" timestamp="1607958776832">
+    <state x="540" y="179" key="FileChooserDialogImpl" timestamp="1609634726184">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="518" y="188" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1607068186580" />
-    <state x="540" y="179" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607958776832" />
+    <state x="540" y="179" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609634726184" />
     <state width="1480" height="416" key="GridCell.Tab.0.bottom" timestamp="1609571771217">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -439,11 +450,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608870819140" />
-    <state x="344" y="157" key="Vcs.Push.Dialog.v2" timestamp="1609428208972">
+    <state x="344" y="157" key="Vcs.Push.Dialog.v2" timestamp="1609577105698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1607068032084" />
-    <state x="344" y="157" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609428208972" />
+    <state x="344" y="157" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609577105698" />
     <state x="576" y="200" key="chooseDestDirectoryDialog" timestamp="1608302336369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -457,11 +468,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="10" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1607847026662" />
-    <state x="570" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609572016117">
+    <state x="570" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609634482117">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="547" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1474.864@0.0.1474.864" timestamp="1607067984164" />
-    <state x="570" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1609572016117" />
+    <state x="570" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1609634482117" />
     <state x="511" y="238" key="scopes" timestamp="1608304918835">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

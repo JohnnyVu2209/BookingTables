@@ -238,8 +238,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            >
+            android:gravity="center">
+
             <com.sanojpunchihewa.glowbutton.GlowButton
                 android:id="@+id/gbDatBan"
                 android:layout_height="80dp"
@@ -251,6 +251,7 @@
                 app:cornerRadius="50dp"
                 android:text="Đặt bàn" tools:targetApi="n"
                 android:visibility="invisible"/>
+
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

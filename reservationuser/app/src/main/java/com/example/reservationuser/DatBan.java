@@ -1,10 +1,5 @@
 package com.example.reservationuser;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.FragmentManager;
-
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.Context;
@@ -31,6 +26,11 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.FragmentManager;
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -47,10 +47,8 @@ import com.sanojpunchihewa.glowbutton.GlowButton;
 
 import java.io.File;
 import java.io.IOException;
-import java.security.interfaces.DSAKey;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Locale;
 
 public class DatBan extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
     TextView tvTenNgDat, tvSDTNgDat, tvChonNgay, tvChonBan, tvThemMon;

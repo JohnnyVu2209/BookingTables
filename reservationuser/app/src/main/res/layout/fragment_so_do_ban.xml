@@ -7,9 +7,11 @@
     android:background="#fff" >
 
     <include layout="@layout/appbar"/>
+
     <HorizontalScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="393dp"
+        android:layout_height="512dp"
         android:layout_marginTop="67dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -35,8 +37,8 @@
                 android:layout_marginRight="50dp"
                 android:background="@drawable/custom_button"
                 android:gravity="center"
-                android:text="Bàn 1"
-                android:hint="1"/>
+                android:hint="1"
+                android:text="Bàn 1" />
 
             <Button
                 android:id="@+id/btnT2"
@@ -48,8 +50,8 @@
                 android:layout_marginRight="50dp"
                 android:background="@drawable/custom_button"
                 android:gravity="center"
-                android:text="Bàn 2"
-                android:hint="2" />
+                android:hint="2"
+                android:text="Bàn 2" />
 
             <Button
                 android:id="@+id/btnT3"
@@ -64,8 +66,8 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_button_vip"
                 android:gravity="center"
-                android:text="Bàn 3"
-                android:hint="3" />
+                android:hint="3"
+                android:text="Bàn 3" />
 
             <Button
                 android:id="@+id/btnT4"
@@ -79,8 +81,8 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_button"
                 android:gravity="center"
-                android:text="Bàn 4"
-                android:hint="4"/>
+                android:hint="4"
+                android:text="Bàn 4" />
 
             <Button
                 android:id="@+id/btnT5"
@@ -94,8 +96,8 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_button"
                 android:gravity="center"
-                android:text="Bàn 5"
-                android:hint="5" />
+                android:hint="5"
+                android:text="Bàn 5" />
 
             <Button
                 android:id="@+id/btnT6"
@@ -110,8 +112,8 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_button_vip"
                 android:gravity="center"
-                android:text="Bàn 6"
-                android:hint="6" />
+                android:hint="6"
+                android:text="Bàn 6" />
 
             <Button
                 android:id="@+id/btnT7"
@@ -123,8 +125,8 @@
                 android:layout_marginRight="50dp"
                 android:background="@drawable/custom_button"
                 android:gravity="center"
-                android:text="Bàn 7"
-                android:hint="7" />
+                android:hint="7"
+                android:text="Bàn 7" />
 
             <Button
                 android:id="@+id/btnT8"
@@ -136,8 +138,8 @@
                 android:layout_marginRight="50dp"
                 android:background="@drawable/custom_button_vip"
                 android:gravity="center"
-                android:text="Bàn 8"
-                android:hint="8"/>
+                android:hint="8"
+                android:text="Bàn 8" />
 
             <Button
                 android:id="@+id/btnT9"
@@ -151,8 +153,8 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_button"
                 android:gravity="center"
-                android:text="Bàn 9"
-                android:hint="9" />
+                android:hint="9"
+                android:text="Bàn 9" />
 
             <Button
                 android:id="@+id/btnT10"
@@ -166,8 +168,8 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_button"
                 android:gravity="center"
-                android:text="Bàn 10"
-                android:hint="10"/>
+                android:hint="10"
+                android:text="Bàn 10" />
 
             <Button
                 android:id="@+id/btnT11"
@@ -181,8 +183,8 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_button"
                 android:gravity="center"
-                android:text="Bàn 11"
-                android:hint="11" />
+                android:hint="11"
+                android:text="Bàn 11" />
 
             <Button
                 android:id="@+id/btnT12"
@@ -196,8 +198,8 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_button_vip"
                 android:gravity="center"
-                android:text="Bàn 12"
-                android:hint="12" />
+                android:hint="12"
+                android:text="Bàn 12" />
 
             <Button
                 android:id="@+id/btnT13"
@@ -211,8 +213,8 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_button"
                 android:gravity="center"
-                android:text="Bàn 13"
-                android:hint="13" />
+                android:hint="13"
+                android:text="Bàn 13" />
 
             <Button
                 android:id="@+id/btnT14"
@@ -226,8 +228,8 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_button"
                 android:gravity="center"
-                android:text="Bàn 14"
-                android:hint="14"/>
+                android:hint="14"
+                android:text="Bàn 14" />
 
             <Button
                 android:id="@+id/btnT15"
@@ -239,8 +241,8 @@
                 android:layout_marginRight="50dp"
                 android:background="@drawable/custom_button"
                 android:gravity="center"
-                android:text="Bàn 15"
-                android:hint="15" />
+                android:hint="15"
+                android:text="Bàn 15" />
 
             <Button
                 android:id="@+id/btnT16"
@@ -254,8 +256,8 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_button_vip"
                 android:gravity="center"
-                android:text="Bàn 16"
-                android:hint="16" />
+                android:hint="16"
+                android:text="Bàn 16" />
 
             <Button
                 android:id="@+id/btnT17"
@@ -269,8 +271,8 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_button"
                 android:gravity="center"
-                android:text="Bàn 17"
-                android:hint="17" />
+                android:hint="17"
+                android:text="Bàn 17" />
 
             <Button
                 android:id="@+id/btnT18"
@@ -284,8 +286,8 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_button_vip"
                 android:gravity="center"
-                android:text="Bàn 18"
-                android:hint="18" />
+                android:hint="18"
+                android:text="Bàn 18" />
 
         </GridLayout>
 
@@ -304,5 +306,86 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="78dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="**Note**"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+    <TextView
+        android:id="@+id/tvNote2"
+        android:layout_width="98dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Bàn Vip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNote3" />
+
+    <TextView
+        android:id="@+id/tvNote3"
+        android:layout_width="96dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="180dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Bàn Thường"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvNote"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvNote2"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/custom_button_vip" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="62dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvNote3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNote"
+        app:srcCompat="@drawable/custom_button" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="96dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Đang chọn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="62dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toEndOf="@+id/tvNote3"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2"
+        app:srcCompat="@drawable/custom_button_click" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

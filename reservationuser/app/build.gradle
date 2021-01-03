@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.reservationuser"
-        minSdkVersion 19
+        minSdkVersion 22
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -29,11 +29,11 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.annotation:annotation:1.1.0'
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
-    implementation 'com.google.firebase:firebase-database:19.5.1'
-    implementation 'com.google.firebase:firebase-storage:19.2.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'com.google.firebase:firebase-database:19.6.0'
+    implementation 'com.google.firebase:firebase-storage:19.2.1'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
@@ -42,12 +42,13 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-auth'
 
-    implementation 'com.facebook.android:facebook-core:[8,9)'
-    implementation 'com.facebook.android:facebook-login:[8,9)'
-    implementation 'com.facebook.android:facebook-share:[8,9)'
-    implementation 'com.facebook.android:facebook-messenger:[8,9)'
-    implementation 'com.facebook.android:facebook-applinks:[8,9)'
+    implementation 'com.facebook.android:facebook-core:8.2.0'
+    implementation 'com.facebook.android:facebook-login:8.2.0'
+    implementation 'com.facebook.android:facebook-share:8.2.0'
+    implementation 'com.facebook.android:facebook-messenger:8.2.0'
+    implementation 'com.facebook.android:facebook-applinks:8.2.0'
 
-    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+    implementation 'com.facebook.android:facebook-android-sdk:8.2.0'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.SanojPunchihewa:GlowButton:1.0.0'
 }
