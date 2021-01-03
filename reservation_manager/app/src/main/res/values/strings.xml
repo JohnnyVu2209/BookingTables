@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">reservation_manager</string>
+    <string name="th_m_b_n">Thêm bàn</string>
 </resources>

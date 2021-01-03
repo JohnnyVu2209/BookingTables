@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.android:facebook-applinks:8.2.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8c998147e6dc0897c9ba19b021615a37/jetified-facebook-applinks-8.2.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8c998147e6dc0897c9ba19b021615a37/jetified-facebook-applinks-8.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8c998147e6dc0897c9ba19b021615a37/jetified-facebook-applinks-8.2.0/res" />
+      <root url="file://C:/work/.gradle/caches/transforms-2/files-2.1/8c998147e6dc0897c9ba19b021615a37/jetified-facebook-applinks-8.2.0/res" />
+      <root url="file://C:/work/.gradle/caches/transforms-2/files-2.1/dec18754e643272d1060b0524128eda8/jetified-facebook-applinks-8.2.0/AndroidManifest.xml" />
+      <root url="jar://C:/work/.gradle/caches/transforms-2/files-2.1/dec18754e643272d1060b0524128eda8/jetified-facebook-applinks-8.2.0/jars/classes.jar!/" />
+      <root url="file://C:/work/.gradle/caches/transforms-2/files-2.1/dec18754e643272d1060b0524128eda8/jetified-facebook-applinks-8.2.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-applinks/8.2.0/9e3dbc3ec8cbe83ab0d42003d0309cb705dca9e0/facebook-applinks-8.2.0-javadoc.jar!/" />
+      <root url="jar://C:/work/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-applinks/8.2.0/9e3dbc3ec8cbe83ab0d42003d0309cb705dca9e0/facebook-applinks-8.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-applinks/8.2.0/abc2a6a80c2c2d642844f8a1c201bb44760b9d26/facebook-applinks-8.2.0-sources.jar!/" />
+      <root url="jar://C:/work/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-applinks/8.2.0/abc2a6a80c2c2d642844f8a1c201bb44760b9d26/facebook-applinks-8.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

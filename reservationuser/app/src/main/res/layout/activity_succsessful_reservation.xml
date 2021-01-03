@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".succsessful_reservation"
+    android:orientation="vertical">
+    <include layout="@layout/appbar"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_outline_check_circle_24"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ĐẶT BÀN THÀNH CÔNG"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Người đặt: "
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:id="@+id/tvTenNgDatThanhCong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="ten nguoi dat"
+            android:layout_marginStart="45dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại: "
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:id="@+id/tvSDTNgDatThanhCong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="so dien thoai"
+            android:layout_marginStart="18dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời gian: "
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Ngày"
+            android:layout_marginStart="18dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tvNgayDatThanhCong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dd/mm/yyyy"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Lúc"
+            android:layout_marginStart="120dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tvGioDatThanhCong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="giờ pm"
+            android:textColor="@color/black"
+            android:layout_marginStart="27dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vị trí: "
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Bàn"
+            android:layout_marginStart="55dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tvSoBanDatThanhCong"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="number"
+            android:textColor="@color/black"
+            android:layout_marginStart="21dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gọi món trước: "
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:id="@+id/tvXacNhanGoiMon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gọi món"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llGoiMonThanhCong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Món đặt trước:"
+            android:textColor="@color/black"
+            android:layout_marginStart="30dp"/>
+
+        <ListView
+            android:id="@+id/listMonGoiTruocThanhCong"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnBackToHome"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Quay lại trang chính"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_back_home_button"/>
+    </LinearLayout>
+
+</LinearLayout>

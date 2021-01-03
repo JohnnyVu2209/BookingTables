@@ -18,6 +18,7 @@ public class InsertName extends AppCompatActivity {
     private FirebaseUser mCurrentUser;
     private EditText name;
     private String phone;
+    private FirebaseController controller;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,18 +27,15 @@ public class InsertName extends AppCompatActivity {
         name = findViewById(R.id.tvName);
         mAuth = FirebaseAuth.getInstance();
         mCurrentUser = mAuth.getCurrentUser();
+        controller = new FirebaseController(getApplicationContext());
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String yourname = name.getText().toString();
-                phone = mCurrentUser.getPhoneNumber();
                 Intent home = new Intent(InsertName.this,MainActivity.class);
-                home.putExtra("name",yourname);
-                home.putExtra("phone",phone);
-                home.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                home.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                KhachHang khachmoi = new KhachHang(yourname,mCurrentUser.getPhoneNumber());
+                controller.WirteWithAutoIncreaseKey("KhachHang",khachmoi);
                 startActivity(home);
-                finish();
             }
         });
     }
