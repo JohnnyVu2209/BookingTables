@@ -12,10 +12,10 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bf732d1-a3b3-4997-b778-3f05cbf1122e" name="Default Changelist" comment="Re-Create navigation view">
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+    <list default="true" id="3bf732d1-a3b3-4997-b778-3f05cbf1122e" name="Default Changelist" comment="commit before merge">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_27_2020_11_53_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_27_2020_11_53_AM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservationuser/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservationuser/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/FirebaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservation_manager/FirebaseController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +252,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609011312011</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit before merge">
+      <created>1609659974450</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609659974450</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit before merge">
+      <created>1609660070348</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609660070348</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -261,7 +275,9 @@
     <MESSAGE value="Create package for MonAn and Login" />
     <MESSAGE value="fix listview problem" />
     <MESSAGE value="Re-Create navigation view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Re-Create navigation view" />
+    <MESSAGE value="commit before merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit before merge" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="330" y="91" key="#Notifications" timestamp="1607415184955">
@@ -296,10 +312,10 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="317" y="250" key="AndroidCreateResourceFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1609007845643" />
-    <state x="299" y="0" key="CommitChangelistDialog2" timestamp="1609136900740">
+    <state x="299" y="0" key="CommitChangelistDialog2" timestamp="1609660238228">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="299" y="0" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1609136900739" />
+    <state x="299" y="0" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1609660238228" />
     <state x="141" y="69" key="DiffContextDialog" timestamp="1607068016784">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -340,6 +356,14 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state width="1429" height="276" key="GridCell.Tab.1.right/0.0.1474.864@0.0.1474.864" timestamp="1607597006985" />
+    <state x="141" y="69" key="MergeDialog" timestamp="1609660164565">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="141" y="69" key="MergeDialog/0.0.1474.864@0.0.1474.864" timestamp="1609660164565" />
+    <state x="369" y="194" key="MultipleFileMergeDialog" timestamp="1609660225509">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="369" y="194" key="MultipleFileMergeDialog/0.0.1474.864@0.0.1474.864" timestamp="1609660225509" />
     <state x="409" y="143" key="RollbackChangesDialog" timestamp="1607432860156">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -348,10 +372,10 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="246" y="75" key="SettingsEditor/0.0.1474.864@0.0.1474.864" timestamp="1609659412885" />
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1609011341442">
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2" timestamp="1609660249900">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1609011341442" />
+    <state x="330" y="165" key="Vcs.Push.Dialog.v2/0.0.1474.864@0.0.1474.864" timestamp="1609660249900" />
     <state x="553" y="210" key="chooseDestDirectoryDialog" timestamp="1607603306200">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -368,6 +392,10 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="547" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1474.864@0.0.1474.864" timestamp="1607067984164" />
+    <state x="510" y="221" key="git4idea.merge.GitMergeDialog" timestamp="1609660096174">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="510" y="221" key="git4idea.merge.GitMergeDialog/0.0.1474.864@0.0.1474.864" timestamp="1609660096174" />
     <state x="394" y="197" key="run.anything.popup" timestamp="1607597951678">
       <screen x="0" y="0" width="1474" height="864" />
     </state>

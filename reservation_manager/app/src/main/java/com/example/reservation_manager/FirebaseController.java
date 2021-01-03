@@ -24,7 +24,6 @@ public class FirebaseController {
     private Context context;
     ArrayList<Integer> key = new ArrayList();
     private final String TAG = "READ DATABASE";
-    ArrayList key = new ArrayList();
     long maxid = 0;
     public FirebaseController(Context context){
         database = FirebaseDatabase.getInstance();
@@ -106,41 +105,6 @@ public class FirebaseController {
         return missingarray;
     }
     //kiểm tra xem danh sách có bị thiếu số không 
-    private Boolean isMissing(ArrayList<Integer> key, int lenght){
-        Boolean missing = false;
-        int missingCount = lenght - key.size();
-        BitSet bitSet = new BitSet(lenght);
-        for (Integer number : key){
-            bitSet.set(number - 1);
-        }
-        int lastMissingIndex = 0;
-        ArrayList missingarray = new ArrayList();
-        for (int i = 0;i < missingCount; i++){
-            lastMissingIndex = bitSet.nextClearBit(lastMissingIndex);
-            missingarray.add(++lastMissingIndex);
-        }
-        if (lastMissingIndex != 0){
-            missing = true;
-        }
-        return missing;
-    }
-
-    //Lấy số bị thiếu trong danh sách
-    private ArrayList<Integer> getMissingNumber(ArrayList<Integer> key, int lenght) {
-        int missingCount = lenght - key.size();
-        BitSet bitSet = new BitSet(lenght);
-        for (Integer number : key){
-            bitSet.set(number - 1);
-        }
-        ArrayList<Integer> missingarray = new ArrayList();
-        int lastMissingIndex = 0;
-        for (int i = 0;i < missingCount; i++){
-            lastMissingIndex = bitSet.nextClearBit(lastMissingIndex);
-            missingarray.add(++lastMissingIndex);
-        }
-        return missingarray;
-    }
-    //kiểm tra xem danh sách có bị thiếu số không
     private Boolean isMissing(ArrayList<Integer> key, int lenght){
         Boolean missing = false;
         int missingCount = lenght - key.size();
