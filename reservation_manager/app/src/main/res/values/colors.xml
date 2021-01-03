@@ -7,5 +7,10 @@
     <color name="lightGray">#F2F2F2</color>
     <color name="greenPhone">#3BBB95</color>
     <color name="add">#F33C3C</color>
-
+    <color name="black">#000000</color>
+    <color name="disabledBtnBg">#999999</color>
+    <color name="verify">#D81B60</color>
+    <color name="orderButton">#CF1E1E</color>
+    <color name="HistoryButton">#51AEDE</color>
+    <color name="ChooseColor">#10CBE9</color>
 </resources>

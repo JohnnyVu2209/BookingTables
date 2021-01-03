@@ -37,7 +37,7 @@
                 android:src="@drawable/img_20201013_112812" />
 
             <EditText
-                android:id="@+id/search_bar"
+                android:id= "@+id/search_bar"
                 android:layout_width="749dp"
                 android:layout_height="53dp"
                 android:layout_alignParentEnd="true"

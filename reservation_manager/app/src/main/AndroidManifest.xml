@@ -35,6 +35,8 @@
         <activity
             android:name=".KhachHang.SuaKhachHang"
             android:screenOrientation="fullUser" />
+        <activity android:name=".DonDatBan.DanhSachDonDat"
+            android:screenOrientation="fullUser"/>
     </application>
 
 </manifest>

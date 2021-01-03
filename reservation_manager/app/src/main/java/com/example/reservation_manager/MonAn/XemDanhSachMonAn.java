@@ -13,20 +13,25 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.reservation_manager.DonDatBan.DanhSachDonDat;
 import com.example.reservation_manager.KhachHang.KhachHang;
 import com.example.reservation_manager.KhachHang.XemDanhSachKhachHang;
 import com.example.reservation_manager.KhuyenMai.XemDanhSachKhuyenMai;
+import com.example.reservation_manager.MainActivity;
 import com.example.reservation_manager.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -57,6 +62,8 @@ public class XemDanhSachMonAn extends AppCompatActivity {
     MyAdapter adapter;
     DatabaseReference databaseReference;
     StorageReference storageReference;
+
+    EditText search_bar;
     //NAVIGATION VIEW
     Toolbar             toolbar;
     NavigationView      navview;
@@ -76,7 +83,8 @@ public class XemDanhSachMonAn extends AppCompatActivity {
         //SET UP NAVIGATION VIEW
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        String key;
+        ArrayList keyArr = new ArrayList();
         navview = (NavigationView)findViewById(R.id.nav_view);
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         navview.bringToFront();
@@ -84,14 +92,30 @@ public class XemDanhSachMonAn extends AppCompatActivity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         navview.setCheckedItem(R.id.mnuFood);
-        String key;
-        ArrayList keyArr = new ArrayList();
 
         //THAY DOI HINH ACTIONBAR
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_baseline_menu_24);
 
+        search_bar = (EditText)findViewById(R.id.search_bar);
+
+        search_bar.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -136,9 +160,11 @@ public class XemDanhSachMonAn extends AppCompatActivity {
                         drawerLayout.closeDrawer(GravityCompat.START);break;
                     case R.id.mnuReservation:
                         Toast.makeText(getApplicationContext(), "Reservation are opening", Toast.LENGTH_SHORT).show();
+                        intentActivity(DanhSachDonDat.class);
                         drawerLayout.closeDrawer(GravityCompat.START);break;
                     case R.id.mnuTables:
                         Toast.makeText(getApplicationContext(), "Tables are opening", Toast.LENGTH_SHORT).show();
+                        intentActivity(MainActivity.class);
                         drawerLayout.closeDrawer(GravityCompat.START);break;
                     case R.id.mnuPromotion:
                         Toast.makeText(getApplicationContext(), "Tables are opening", Toast.LENGTH_SHORT).show();

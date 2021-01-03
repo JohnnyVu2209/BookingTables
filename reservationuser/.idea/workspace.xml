@@ -12,7 +12,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9f813f-ce0a-4623-a37c-379db606b814" name="Default Changelist" comment="">
+    <list default="true" id="5e9f813f-ce0a-4623-a37c-379db606b814" name="Default Changelist" comment="Done create successful reservation">
       <change afterPath="$PROJECT_DIR$/../reservation_manager/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/DonDatBan/DanhSachDonDat.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/java/com/example/reservation_manager/DonDatBan/DonDatBan.java" afterDir="false" />
@@ -46,7 +46,6 @@
       <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/values/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../reservation_manager/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_so_do_ban.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_so_do_ban.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +127,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reservation_manager" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -347,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609659236401</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit before merge">
+      <created>1609688474139</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609688474139</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -355,7 +361,8 @@
     <MESSAGE value="create Dialog chon mon an" />
     <MESSAGE value="fix error" />
     <MESSAGE value="Done create successful reservation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done create successful reservation" />
+    <MESSAGE value="commit before merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit before merge" />
   </component>
   <component name="WindowStateProjectService">
     <state x="330" y="91" key="#Inspections" timestamp="1606793177291">
@@ -390,20 +397,20 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="597" y="263" key="AndroidCreateXmlResourceDialog/0.0.1474.864@0.0.1474.864" timestamp="1606786178684" />
-    <state x="269" y="0" key="CommitChangelistDialog2" timestamp="1609659233897">
+    <state x="269" y="0" key="CommitChangelistDialog2" timestamp="1609688472121">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="249" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607610244568" />
-    <state x="269" y="0" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1609659233897" />
+    <state x="269" y="0" key="CommitChangelistDialog2/0.0.1474.864@0.0.1474.864" timestamp="1609688472121" />
     <state x="160" y="97" key="DiffContextDialog" timestamp="1607610291934">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="160" y="97" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1607610291934" />
-    <state x="518" y="187" key="FileChooserDialogImpl" timestamp="1609659286153">
+    <state x="518" y="187" key="FileChooserDialogImpl" timestamp="1609688478584">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="450" y="147" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1608182129484" />
-    <state x="518" y="187" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1609659286153" />
+    <state x="518" y="187" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1609688478584" />
     <state x="600" y="326" key="Github.ShareDialog" timestamp="1607053297026">
       <screen x="0" y="0" width="1474" height="864" />
     </state>

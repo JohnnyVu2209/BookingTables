@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.reservation_manager.DonDatBan.DanhSachDonDat;
 import com.example.reservation_manager.MonAn.MonAn;
 import com.example.reservation_manager.MonAn.ThemMonAn;
 import com.example.reservation_manager.MonAn.XemDanhSachMonAn;
@@ -90,7 +91,7 @@ public class Login extends AppCompatActivity {
     }
     private void updateUI(FirebaseUser user){
         if (user != null){
-            Intent goHome = new Intent(Login.this, XemDanhSachMonAn.class);
+            Intent goHome = new Intent(Login.this, DanhSachDonDat.class);
             startActivity(goHome);
             finish();
         }

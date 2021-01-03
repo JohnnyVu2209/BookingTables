@@ -21,125 +21,107 @@
                 android:layout_width="155dp"
                 android:layout_height="match_parent"
                 android:src="@drawable/list" />
-
-
             <LinearLayout
-                android:layout_width="348dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tvTenBan"
-                    android:layout_width="290dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="3">
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="20dp"
-                    android:padding="5dp"
-                    android:text="Số bàn"
-                    android:textColor="#000000"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/GoiMon"
-                    android:layout_width="290dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvSoBanDat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Số bàn"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"/>
+                    <TextView
+                        android:id="@+id/tvNgayDat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ngày đặt"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="45dp"/>
+                    <TextView
+                        android:id="@+id/tvGioDat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="75dp"
+                        android:text="Thời gian"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="25dp"
-                    android:padding="5dp"
-                    android:text="Số món gọi trước"
-                    android:textColor="#000000"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/tvKhach"
-                    android:layout_width="290dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="25dp"
-                    android:padding="5dp"
-                    android:text="Khách"
-                    android:textColor="#000000"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-
-
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvSoMonDat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="25dp"
+                        android:padding="5dp"
+                        android:text="Số món gọi trước"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvTenKhachDat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="25dp"
+                        android:padding="5dp"
+                        android:text="Khách: Tên khách"
+                        android:textColor="#000000"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvSoDienThoaiDat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Số điện thoại"
+                        android:textColor="#000000"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginStart="25dp"
+                        />
+                </LinearLayout>
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="340dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tvNgay"
-                    android:layout_width="290dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="20dp"
-                    android:padding="5dp"
-                    android:text="Ngày"
-                    android:textColor="#000000"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/tvDienThoai"
-                    android:layout_width="290dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="60dp"
-                    android:padding="5dp"
-                    android:text="Số liên lạc"
-                    android:textColor="#000000"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="265dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tvThoigian"
-                    android:layout_width="215dp"
-                    android:layout_height="117dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="20dp"
-                    android:padding="5dp"
-                    android:text="Thời gian"
-                    android:textColor="#000000"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
             <LinearLayout
                 android:layout_width="160dp"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_weight="2">
 
                 <ImageView
-                    android:id="@+id/btnEditTable"
-                    android:layout_width="80dp"
-                    android:layout_height="65dp"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="30dp"
+                    android:id="@+id/btnEditReservation"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
                     android:src="@drawable/ic_baseline_edit_24" />
-
                 <ImageView
-                    android:id="@+id/btnDeleteTable"
-                    android:layout_width="80dp"
-                    android:layout_height="65dp"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/ic_baseline_delete_24" />
+                    android:id="@+id/btnDeleteReservation"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/ic_baseline_delete_24"/>
 
             </LinearLayout>
-
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>

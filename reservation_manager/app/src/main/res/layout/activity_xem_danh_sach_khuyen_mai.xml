@@ -1,55 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <include
-        android:id="@+id/appbar"
-        layout="@layout/appbar" />
-
-    <LinearLayout
-        android:id="@+id/llAddKMBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/appbar"
-        android:orientation="horizontal"
-        android:padding="10dp">
-        <ImageView
-            android:id="@+id/btnAddKM"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="95dp"
-            android:src="@drawable/ic_baseline_add_circle_outline_24" />
-
-        <TextView
-            android:id="@+id/tvAddKM"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawer_layout">
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|top"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/menubar">
+        <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginTop="25dp"
-            android:text="Thêm"
-            android:textAlignment="textStart"
-            android:textColor="#000"
-            android:textSize="35sp" />
-    </LinearLayout>
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/actionbar_color"
+            android:id="@+id/toolbar"
+            app:navigationIcon="@drawable/ic_baseline_menu_24">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:adjustViewBounds="true"
+                android:maxHeight="180dp"
+                android:maxWidth="180dp"
+                android:scaleType="fitCenter"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/img_20201013_112812" />
 
-    <LinearLayout
+            <EditText
+                android:id="@+id/search_bar"
+                android:layout_width="749dp"
+                android:layout_height="53dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+                android:hint="Tìm kiếm...."
+                android:drawableStart="@drawable/ic_baseline_search_24"
+                android:background="@drawable/text_input_bg2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/manager__1_"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentEnd="true"/>
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/llAddKMBtn"
-        android:baselineAligned="false">
-
-        <ListView
-            android:id="@+id/lvDSKM"
-            android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/llAddKMBtn"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:dividerHeight="15sp"
-            android:layout_weight="1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/llAddKMBtn" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="67dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/btnAddKM"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="95dp"
+                android:src="@drawable/ic_baseline_add_circle_outline_24" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tvAddKM"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="25dp"
+                android:text="Thêm"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="35sp" />
+        </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/llAddKMBtn"
+            android:baselineAligned="false">
+
+            <ListView
+                android:id="@+id/lvDSKM"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="15sp"
+                android:layout_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llAddKMBtn" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
