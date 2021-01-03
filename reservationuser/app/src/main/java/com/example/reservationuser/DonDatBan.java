@@ -13,6 +13,7 @@ public class DonDatBan implements Parcelable {
     public String SoDienThoai;
     public String NgayNhanBan;
     public String GioNhanBan;
+    public int SoLuongMon;
     public int SoBan;
     public boolean GoiMonTruoc;
     public ArrayList<MonAn> MonGoiTruoc;
