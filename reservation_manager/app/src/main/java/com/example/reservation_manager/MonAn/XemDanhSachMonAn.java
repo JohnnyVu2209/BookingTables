@@ -1,7 +1,6 @@
 package com.example.reservation_manager.MonAn;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -14,7 +13,6 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,8 +24,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.reservation_manager.CapNhatMonAn;
+import com.example.reservation_manager.KhachHang.KhachHang;
 import com.example.reservation_manager.KhachHang.XemDanhSachKhachHang;
+import com.example.reservation_manager.KhuyenMai.XemDanhSachKhuyenMai;
 import com.example.reservation_manager.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -35,7 +34,6 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.navigation.NavigationView;
 
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -64,6 +62,7 @@ public class XemDanhSachMonAn extends AppCompatActivity {
     NavigationView      navview;
     DrawerLayout        drawerLayout;
     ActionBarDrawerToggle toggle;
+    ArrayList keyArr = new ArrayList();
     private void AnhXa() {
         databaseReference = FirebaseDatabase.getInstance().getReference();
         storageReference = FirebaseStorage.getInstance().getReference();
@@ -73,8 +72,6 @@ public class XemDanhSachMonAn extends AppCompatActivity {
         listView.setAdapter(adapter);
         btnaddfood = (ImageView) findViewById(R.id.btnAddFood);
         tvaddfood = (TextView)findViewById(R.id.tvAddFood);
-        btneditFood = (ImageView)findViewById(R.id.btnEditFood);
-        btndeleteFood = (ImageView)findViewById(R.id.btnDeleteFood);
 
         //SET UP NAVIGATION VIEW
         toolbar = (Toolbar)findViewById(R.id.toolbar);
@@ -111,7 +108,7 @@ public class XemDanhSachMonAn extends AppCompatActivity {
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()){
                     MonAn monAn = dataSnapshot.getValue(MonAn.class);
                     monan.add(monAn);
-                     keyArr.add(dataSnapshot.getKey());
+                    keyArr.add(dataSnapshot.getKey());
 
                 }
                 monan.add(monrong);
@@ -135,6 +132,7 @@ public class XemDanhSachMonAn extends AppCompatActivity {
                         break;
                     case R.id.mnuGuest:
                         Toast.makeText(getApplicationContext(), "Guest are opening", Toast.LENGTH_SHORT).show();
+                        intentActivity(XemDanhSachKhachHang.class);
                         drawerLayout.closeDrawer(GravityCompat.START);break;
                     case R.id.mnuReservation:
                         Toast.makeText(getApplicationContext(), "Reservation are opening", Toast.LENGTH_SHORT).show();
@@ -142,6 +140,11 @@ public class XemDanhSachMonAn extends AppCompatActivity {
                     case R.id.mnuTables:
                         Toast.makeText(getApplicationContext(), "Tables are opening", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(GravityCompat.START);break;
+                    case R.id.mnuPromotion:
+                        Toast.makeText(getApplicationContext(), "Tables are opening", Toast.LENGTH_SHORT).show();
+                        intentActivity(XemDanhSachKhuyenMai.class);
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
                 }
                 return true;
             }
@@ -166,6 +169,12 @@ public class XemDanhSachMonAn extends AppCompatActivity {
         });
     }
 
+    private<T> void intentActivity(Class<T> CClass) {
+        Intent intent = new Intent(XemDanhSachMonAn.this,CClass);
+        startActivity(intent);
+        finish();
+    }
+
     private void AddAction() {
         btnaddfood.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -181,25 +190,10 @@ public class XemDanhSachMonAn extends AppCompatActivity {
         });
     }
 
-
     private void intentToCreateFood() {
         Intent Createintent = new Intent(XemDanhSachMonAn.this, ThemMonAn.class);
         startActivity(Createintent);
         finish();
-    }
-
-
-   
-
-    private void AnhXa() {
-        databaseReference = FirebaseDatabase.getInstance().getReference();
-        storageReference = FirebaseStorage.getInstance().getReference();
-        listView = (ListView) findViewById(R.id.lvDanhSachMonAn);
-        monan = new ArrayList<MonAn>();
-        adapter = new MyAdapter(getApplicationContext(), R.layout.item_list, monan);
-        listView.setAdapter(adapter);
-        btnaddfood = (ImageView) findViewById(R.id.btnAddFood);
-        tvaddfood = (TextView) findViewById(R.id.tvAddFood);
     }
      class MyAdapter extends BaseAdapter {
         Context context;

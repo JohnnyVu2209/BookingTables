@@ -327,8 +327,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/edit/baseline_edit_24.xml" />
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/add_circle_outline/baseline_add_circle_outline_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/card_giftcard/baseline_card_giftcard_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -338,9 +337,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="edit_jpg" />
-                            <entry key="sourceFile" value="C:\Users\Public\Downloads\BookingTables\reservation_manager" />
-                            <entry key="outputName" value="ic_baseline_add_circle_outline_24" />
+                            <entry key="outputName" value="ic_baseline_card_giftcard_24" />
                             <entry key="sourceFile" value="D:\Project\Android\SourceCode\reservationapp\reservation_manager" />
                           </map>
                         </option>

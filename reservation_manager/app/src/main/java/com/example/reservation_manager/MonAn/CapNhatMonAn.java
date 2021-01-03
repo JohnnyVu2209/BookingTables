@@ -1,4 +1,4 @@
-package com.example.reservation_manager;
+package com.example.reservation_manager.MonAn;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,10 +21,8 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.example.reservation_manager.MonAn.LoaiMonAn;
-import com.example.reservation_manager.MonAn.MonAn;
-import com.example.reservation_manager.MonAn.ThemMonAn;
-import com.example.reservation_manager.MonAn.XemDanhSachMonAn;
+import com.example.reservation_manager.FirebaseController;
+import com.example.reservation_manager.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.ChildEventListener;

@@ -17,5 +17,9 @@
             android:id="@+id/mnuTables"
             android:title="Quản lý bàn"
             android:icon="@drawable/kitchen_table"/>
+        <item
+            android:id="@+id/mnuPromotion"
+            android:title="Quản lý khuyến mãi"
+            android:icon="@drawable/ic_baseline_card_giftcard_24"/>
     </group>
 </menu>

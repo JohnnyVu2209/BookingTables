@@ -14,7 +14,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.reservation_manager.MonAn.MonAn;
 import com.example.reservation_manager.MonAn.ThemMonAn;
+import com.example.reservation_manager.MonAn.XemDanhSachMonAn;
 import com.example.reservation_manager.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -27,6 +29,13 @@ public class Login extends AppCompatActivity {
     Button dangnhap;
     EditText etEmail,etPassword;
     FirebaseAuth mAuth;
+    FirebaseUser user;
+    private void AnhXa() {
+        dangnhap = (Button)findViewById(R.id.btnLogin);
+        etEmail = (EditText)findViewById(R.id.email_text);
+        etPassword = (EditText)findViewById(R.id.password_text);
+        user = mAuth.getCurrentUser();
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,8 +72,10 @@ public class Login extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d("Authentication", "createUserWithEmail:success");
+                            user = mAuth.getCurrentUser();
+                            Log.d("TAG", "onComplete: " + user);
                             Toast.makeText(Login.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-                            updateUI(mAuth.getCurrentUser());
+                            updateUI(user);
 
                         } else {
                             // If sign in fails, display a message to the user.
@@ -77,18 +88,17 @@ public class Login extends AppCompatActivity {
                     }
                 });
     }
-    private void AnhXa() {
-        dangnhap = (Button)findViewById(R.id.btnLogin);
-        etEmail = (EditText)findViewById(R.id.email_text);
-        etPassword = (EditText)findViewById(R.id.password_text);
-    }
     private void updateUI(FirebaseUser user){
-        Intent goHome = new Intent(Login.this, ThemMonAn.class);
-        goHome.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        goHome.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(goHome);
-        finish();
-
+        if (user != null){
+            Intent goHome = new Intent(Login.this, XemDanhSachMonAn.class);
+            startActivity(goHome);
+            finish();
+        }
     }
 
+    @Override
+    protected void onStart() {
+        updateUI(user);
+        super.onStart();
+    }
 }
