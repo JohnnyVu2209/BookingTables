@@ -1,8 +1,11 @@
 package com.example.reservationuser;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import androidx.annotation.Nullable;
 
-public class MonAn {
+public class MonAn implements Parcelable {
     public String tenmonan;
     public String gia;
     public String loaimonan;
@@ -10,6 +13,46 @@ public class MonAn {
     public String idhinh;
     public  @Nullable String mota;
     public Boolean isSelected = false;
+
+    protected MonAn(Parcel in) {
+        tenmonan = in.readString();
+        gia = in.readString();
+        loaimonan = in.readString();
+        byte tmpGoimon = in.readByte();
+        goimon = tmpGoimon == 0 ? null : tmpGoimon == 1;
+        idhinh = in.readString();
+        mota = in.readString();
+        byte tmpIsSelected = in.readByte();
+        isSelected = tmpIsSelected == 0 ? null : tmpIsSelected == 1;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(tenmonan);
+        dest.writeString(gia);
+        dest.writeString(loaimonan);
+        dest.writeByte((byte) (goimon == null ? 0 : goimon ? 1 : 2));
+        dest.writeString(idhinh);
+        dest.writeString(mota);
+        dest.writeByte((byte) (isSelected == null ? 0 : isSelected ? 1 : 2));
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    public static final Creator<MonAn> CREATOR = new Creator<MonAn>() {
+        @Override
+        public MonAn createFromParcel(Parcel in) {
+            return new MonAn(in);
+        }
+
+        @Override
+        public MonAn[] newArray(int size) {
+            return new MonAn[size];
+        }
+    };
 
     public Boolean getSelected() {
         return isSelected;

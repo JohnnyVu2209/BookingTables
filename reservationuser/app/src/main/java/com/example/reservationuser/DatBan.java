@@ -47,6 +47,7 @@ import com.sanojpunchihewa.glowbutton.GlowButton;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.Serializable;
 import java.security.interfaces.DSAKey;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -177,11 +178,19 @@ public class DatBan extends AppCompatActivity implements DatePickerDialog.OnDate
             Log.d("TAG", "getData: "+ mongoitruoc.size());
             donDatBan = new DonDatBan(tennguoidat,sdtngdat,ngayden,gioden,soban,goimontruoc,mongoitruoc);
             controller.WirteWithAutoIncreaseKey("DonDatBan",donDatBan);
+            intenToSuccess(donDatBan);
         }
         else {
             donDatBan = new DonDatBan(tennguoidat,sdtngdat,ngayden,gioden,soban,goimontruoc);
             controller.WirteWithAutoIncreaseKey("DonDatBan",donDatBan);
+            intenToSuccess(donDatBan);
         }
+    }
+    private void intenToSuccess(DonDatBan donDatBan){
+        Intent intent = new Intent(DatBan.this,succsessful_reservation.class);
+        intent.putExtra("DON",  donDatBan);
+        intent.putParcelableArrayListExtra("MONAN",donDatBan.MonGoiTruoc);
+        startActivity(intent);
     }
     public void openDialog(View view){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -259,7 +268,7 @@ public class DatBan extends AppCompatActivity implements DatePickerDialog.OnDate
         c.set(Calendar.YEAR, year);
         c.set(Calendar.MONTH , month+1);
         c.set(Calendar.DAY_OF_MONTH,dayOfMonth);
-        nam = c.getTime().getYear();
+        nam = c.get(Calendar.YEAR);
         etNgay.setText(String.valueOf(c.getTime().getDate()));
         int m =c.getTime().getMonth();
         if(m == 0){

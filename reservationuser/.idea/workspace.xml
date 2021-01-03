@@ -13,25 +13,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9f813f-ce0a-4623-a37c-379db606b814" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_SanojPunchihewa_GlowButton_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/DonDatBan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_remove_circle_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/mon_da_chon_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reservation_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reservation_manager/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/succsessful_reservation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/custom_back_home_button.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_outline_check_circle_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_succsessful_reservation.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/DatBan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/DatBan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/FirebaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/FirebaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/SoDoBan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/SoDoBan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/custom_button_vip.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/custom_button_vip.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/custom_button_vip_click.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/custom_button_vip_click.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dat_ban.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_dat_ban.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_so_do_ban.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_so_do_ban.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/DonDatBan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/DonDatBan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/MonAn.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/reservationuser/MonAn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +86,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="tankhanh" />
+        <entry key="$PROJECT_DIR$/.." value="minhtrung" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -106,6 +98,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="192.168.202.110:5555" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-01-03T06:38:40.701Z" />
     <property name="ResourceManagerPrefKey.ResourceType" value="DRAWABLE" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -122,6 +116,9 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
+    <key name="android.template.-69927639">
+      <recent name="com.example.reservationuser" />
+    </key>
     <key name="android.template.-668330626">
       <recent name="com.example.reservationuser" />
     </key>
@@ -313,27 +310,39 @@
       <option name="project" value="LOCAL" />
       <updated>1609600425816</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix error">
+      <created>1609625872806</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609625872807</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="import drawable cho manager va them 1 so ham cho firebasecontroller" />
     <MESSAGE value="create Dialog chon mon an" />
-    <option name="LAST_COMMIT_MESSAGE" value="create Dialog chon mon an" />
+    <MESSAGE value="fix error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix error" />
   </component>
   <component name="WindowStateProjectService">
     <state x="330" y="91" key="#Inspections" timestamp="1606793177291">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="330" y="91" key="#Inspections/0.0.1474.864@0.0.1474.864" timestamp="1606793177291" />
+    <state x="330" y="91" width="814" height="728" key="#Intentions" timestamp="1609658387239">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="330" y="91" width="814" height="728" key="#Intentions/0.0.1474.864@0.0.1474.864" timestamp="1609658387239" />
     <state x="401" y="73" key="#PSD" timestamp="1609615754210">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="401" y="73" key="#PSD/0.0.1474.864@0.0.1474.864" timestamp="1609615754210" />
-    <state x="826" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1609621435671">
+    <state x="826" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1609657928238">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="826" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1474.864@0.0.1474.864" timestamp="1609621435671" />
+    <state x="826" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1474.864@0.0.1474.864" timestamp="1609657928238" />
     <state x="392" y="0" key="#reservationmanager" timestamp="1607586559517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -342,10 +351,10 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="318" y="187" key="AndroidCreateResourceDirectoryDialog/0.0.1474.864@0.0.1474.864" timestamp="1606788297560" />
-    <state x="318" y="187" key="AndroidCreateResourceFileDialog" timestamp="1609616943635">
+    <state x="318" y="187" key="AndroidCreateResourceFileDialog" timestamp="1609655463676">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="318" y="187" key="AndroidCreateResourceFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1609616943635" />
+    <state x="318" y="187" key="AndroidCreateResourceFileDialog/0.0.1474.864@0.0.1474.864" timestamp="1609655463676" />
     <state x="597" y="263" key="AndroidCreateXmlResourceDialog" timestamp="1606786178684">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -359,35 +368,35 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="160" y="97" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1607610291934" />
-    <state x="518" y="187" key="FileChooserDialogImpl" timestamp="1609591660987">
+    <state x="518" y="187" key="FileChooserDialogImpl" timestamp="1609651462415">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="450" y="147" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1608182129484" />
-    <state x="518" y="187" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1609591660987" />
+    <state x="518" y="187" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1609651462415" />
     <state x="600" y="326" key="Github.ShareDialog" timestamp="1607053297026">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="600" y="326" key="Github.ShareDialog/0.0.1474.864@0.0.1474.864" timestamp="1607053297026" />
-    <state width="1429" height="330" key="GridCell.Tab.0.bottom" timestamp="1609623905147">
+    <state width="1429" height="330" key="GridCell.Tab.0.bottom" timestamp="1609658795452">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state width="1367" height="186" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607666666372" />
-    <state width="1429" height="330" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1609623905147" />
-    <state width="1429" height="330" key="GridCell.Tab.0.center" timestamp="1609623905146">
+    <state width="1429" height="330" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1609658795452" />
+    <state width="1429" height="330" key="GridCell.Tab.0.center" timestamp="1609658795452">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state width="1367" height="186" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607666666372" />
-    <state width="1429" height="330" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1609623905146" />
-    <state width="1429" height="330" key="GridCell.Tab.0.left" timestamp="1609623905145">
+    <state width="1429" height="330" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1609658795452" />
+    <state width="1429" height="330" key="GridCell.Tab.0.left" timestamp="1609658795452">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state width="1367" height="186" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607666666372" />
-    <state width="1429" height="330" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1609623905145" />
-    <state width="1429" height="330" key="GridCell.Tab.0.right" timestamp="1609623905147">
+    <state width="1429" height="330" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1609658795452" />
+    <state width="1429" height="330" key="GridCell.Tab.0.right" timestamp="1609658795452">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state width="1367" height="186" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607666666372" />
-    <state width="1429" height="330" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1609623905147" />
+    <state width="1429" height="330" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1609658795452" />
     <state x="228" y="18" key="SettingsEditor" timestamp="1607582608713">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

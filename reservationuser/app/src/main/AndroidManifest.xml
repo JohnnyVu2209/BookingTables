@@ -12,11 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DatBan"></activity>
+        <activity android:name=".succsessful_reservation"></activity>
+        <activity android:name=".DatBan" />
         <activity android:name=".InsertName" />
         <activity android:name=".OTPReceive" />
         <activity android:name=".Login">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
